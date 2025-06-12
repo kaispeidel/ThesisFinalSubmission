@@ -1,0 +1,183 @@
+\documentclass[twoside]{article}
+
+
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage[english]{babel}
+\usepackage{geometry}
+\geometry{margin=1in}
+\usepackage{setspace}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{amsmath, amssymb}
+\usepackage{array}
+\usepackage{longtable}
+\usepackage{fancyhdr}
+\usepackage{hyperref}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=black,
+    filecolor=magenta,      
+    urlcolor=blue,
+    citecolor=blue,
+    pdftitle={Investigating the Use of Agent-Based Modeling for Wildfire Prevention},
+    pdfauthor={Kai Speidel},
+    pdfsubject={Cognitive Science \& Artificial Intelligence Thesis},
+    pdfkeywords={agent-based modeling, wildfire, simulation, drone swarms, firefighting},
+    bookmarksnumbered=true,
+    bookmarksopen=true,
+    bookmarksopenlevel=1,
+    pdfstartview=Fit,
+}
+
+\usepackage{bookmark}
+\usepackage{natbib}
+
+
+\usepackage{titlesec}
+\titleformat{\section}{\normalfont\bfseries}{\thesection.}{1em}{}
+\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{1em}{}
+
+
+\begin{document}
+
+
+% Title Page 
+\begin{titlepage}
+    \thispagestyle{empty}
+    \begin{center}
+
+        \vspace{2cm}
+        
+        {\LARGE\bfseries Investigating the Use of Agent-Based Modeling for Wildfire Prevention: A Simulation Study\par}
+        
+        \vspace{2cm}
+        \large Name: Kai Speidel \\
+        \textsc{Student number: U627621}
+
+        \vspace{2cm}
+        \small
+        \textbf{THESIS SUBMITTED IN PARTIAL FULFILLMENT} \\
+        \textbf{OF THE REQUIREMENTS FOR THE DEGREE OF} \\
+        \textbf{BACHELOR OF SCIENCE IN COGNITIVE SCIENCE \& ARTIFICIAL INTELLIGENCE} \\
+        \textbf{DEPARTMENT OF COGNITIVE SCIENCE \& ARTIFICIAL INTELLIGENCE} \\
+        \textbf{SCHOOL OF HUMANITIES AND DIGITAL SCIENCES} \\
+        \textbf{TILBURG UNIVERSITY}
+
+        \vspace{2cm}
+
+        \large\textbf{Thesis Committee:} \\
+        \normalsize
+        Supervisor: Dr. Travis J. Wiltshire \\
+        Second Reader: Natalie Ranzhi Wei, Msc. 
+
+        \vfill
+
+        Tilburg University \\
+        School of Humanities and Digital Sciences \\
+        Department of Cognitive Science \& Artificial Intelligence \\
+        Tilburg, The Netherlands \\
+        May 2025
+    \end{center}
+\end{titlepage}
+\setcounter{page}{1}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyhead[LE]{\small Kai Speidel}         
+\fancyhead[RE]{\small\nouppercase{\rightmark}}
+
+% Odd pages (right-hand side)
+\fancyhead[LO]{\small Cognitive Science \& Artificial Intelligence}
+\fancyhead[RO]{\small 2025} 
+\fancyfoot[C]{\thepage}
+
+
+\begin{abstract}
+Wildfires pose a growing threat resulting from climate change, the loss of biodiversity and human activity \citep{copernicus-wildfires}. This research explores economic and sustainable firefighting approaches using autonomous drone swarms, traditional aircraft, and hybrid models. A simulation framework created in Python using the agent-based modeling library Mesa \citep{terMesa}  simulates these methods focusing on cost, environmental impact, and computational efficiency. Drones, planes, fires, and resource stations  were modeled as agents in the environment with parameters supported by current research. Results from 1000 steps over 1000 simulation iterations prove that drone swarms significantly and consistently outperform manned aircraft in both sustainability and cost. Hybrid systems offer the fastest response but with higher emissions and costs. This research contributes an open-source framework for evaluating aerial firefighting strategies, designed to support evidence-based guidelines and encourage sustainable  and frugal fire management.
+\end{abstract}
+
+
+\section{Data Source, Ethics, Code, and Technology (DSECT) Statement}
+\label{sec:CodeOfCondunt}
+
+\subsection{Data Source}
+
+This thesis does not use any datasets or human/animal data. All data used in the project is synthetically generated through simulations developed by the author. No external data owners are involved, and no consent was necessary. All data was produced locally using custom agent-based models created in Python using the mesa library. The parameters of the simulation are taken from cited research.
+
+\subsection{Figures}
+
+All Figures, plots, tables and visualizations included in the thesis were created by the author using the original simulation output. No external or copyrighted images were used. Visuals were generated using Python libraries such as \texttt{matplotlib} and \texttt{seaborn}. The creation of the visuals is documented and explained in the GitHub repository \citep{AgentBasedFirefightingModel_repository}
+
+\subsection{Code}
+
+The simulation uses multiple open-source Python libraries such as \texttt{ mesa, numpy, pandas}, their implementation is documented in the Methodology section~\ref{sec:Methodology} and the referenced GitHub repository.
+
+\subsection{Technology}
+
+The thesis was typeset using the standard LaTeX thesis template provided by the university, with additional formatting packages such as \texttt{fancyhr, tikz} for formatting preferences. References were managed using BibTeX and LaTeX’s built-in bibliography environment. Zotero was used as a reference manager.
+Generative models such as GitHub's Copilot, Claude and ChatGpt were used for harsh feedback on personal created text and code. The content was not directly copied; instead used as a valuable tool to generate feedback and point out room for improvement. All conceptual, experimental, and implementation work was done by the author, with inspiration from the documentation of the mentioned libraries.
+
+
+\section{Introduction}
+
+% - Why are wildfires problematic? 
+% - How are they currently studied? 
+% - What is ABM and why is it a powerful tool to study this phenomena? 
+%- What are the components of your RQ that need to be explained? - Also see the results comment on RQs.  
+
+Wildfires pose an escalating global threat, driven by climate change and human activity, with 96\% of wildfires being human-induced \citep{HybridAntColonyWildfire}. These events cause ecological, economic, and societal damage \citep{Saffre2022}, emitting over 2,000 megatons of carbon emissions globally in 2023 alone \citep{Lelis2024}. The UN Environment Program (UNEP2) forecasts a 50\% increase by the end of the century in extreme wildfires if no countermeasures are taken \citep{Sullivan2022}. Escalating wildfire frequency also threatens agricultural productivity \citep{IPCC2023} and poses significant health risks through smoke exposure \citep{Finlay2012}. These combined effects make wildfires one of the most urgent environmental and societal challenges today.
+
+Wildfire research traditionally employs different methodological approaches with different advantages and limitations. Historical analysis creates the foundation of wildfire research. Researchers examine fire records, satellite imagery and climate data to identify patterns, trends and correlations between environmental factors and fire behavior \citep{copernicus-wildfires,IPCC2023}. These studies offer valuable insights into long-term fire cycles and climate relationship, but their retrospective nature limits their adaptability in the accelerating climate change. 
+
+Field studies including controlled burns present another critical research approach \citep{wildland}. While these approaches offer scientists valuable real-world data about fire physics and suppression in a controlled environment, they are inherently limited by safety concerns, high costs and their impossibility of testing extreme scenarios or comparing multiple suppression strategies simultaneously.
+
+Traditional aerial firefighting and data collection relies heavily on manned aircraft such as Helicopters or fixed-wing planes. For decades this has been the backbone of wildfire suppression \citep{janney2012airtankers}. These aircraft deliver water or fire retardant directly to the fire zones, often in dangerous conditions such as limited visibility. Their effectiveness comes with safety constraints, high operational cost and substantial carbon emissions \citep{spicerRapidMeasurementEmissions2009}.
+
+Recent technological advancements have sparked growing interest in autonomous drone systems for wildfire suppression. Modern drone technology potentially offers operation in extreme conditions without risking human life while being lower in cost and emissions. Research done by \citet{Yan2024} effectively demonstrates the possibility of using coordinated swarm behavior to detect forest fires. Current research presents promising applications such as new suppression techniques like the "fireball" by \citet{fireBalls}.
+
+While the development is promising especially with more applied drone applications being tested, scientists have also turned to simulation studies as they provide evidence for fire spread behavior at a lower cost. One of the earliest tools in this domain was the fire area simulator FARSITE \citep{FARSITE}, which established a baseline for future work. This laid the groundwork for more advanced systems, such as the model proposed by \citet{integrated_simulation}, which integrates fire simulation with optimization-based analysis.
+This is where Agent-Based Modeling (ABM) plays an important role.
+
+Based on \citet{wilensky2015introduction}, ABM is defined as a methodology for conducting computer-based experiments that enables the study of complex systems by simulating the actions and interactions of autonomous agents within natural, social, or engineered contexts. These dynamic interactions generate complex, system-level patterns, commonly referred to as \textit{emergent behavior}. In wildfire research, ABM enables researchers to model fires, suppression vehicles, and environmental factors as independent agents with distinct behaviors and decision-making capabilities. This approach captures the emergent properties of complex firefighting scenarios that would be difficult or impossible to study through traditional analytical methods or real-world experiments. ABM provides evidence through the analysis of emergent behavior, which can inform real-world firefighting strategies.
+
+ABM is particularly suited for wildfire suppression research because it allows for the modeling of dynamic, spatially distributed systems where multiple autonomous agents must coordinate to achieve common objectives. The framework enables systematic comparison of different suppression strategies under controlled conditions while varying key parameters such as swarm size, resource allocation, and path-finding algorithms.
+
+As wildfires grow in intensity and frequency, traditional suppression methods face increasing limitations. Agent-Based Modeling (ABM) presents a powerful tool for simulating complex scenarios involving autonomous firefighting drones. However, there is limited research directly comparing different suppression strategies, such as drone swarms, hybrid systems, and traditional aircraft, within the same simulation environment.
+
+This research aims to fill this gap by asking:
+
+\paragraph{Research Question}
+
+"How can agent-based modeling be used to evaluate and optimize autonomous aerial wildfire suppression strategies across drone, plane, and hybrid systems, using path-finding algorithms to assess effectiveness, efficiency, and sustainability?"
+
+Given the research question the following sub-questions arise and will guide this study:
+\begin{enumerate}
+    \item "How do drone swarms, hybrid systems, and planes compare in wildfire suppression?"
+    \item "What are path-finding algorithms and how do they influence the performance autonomous drone swarms in wildfire scenarios?"
+    \item "What trade-offs emerge among suppression effectiveness, efficiency and sustainability?"
+\end{enumerate}
+
+
+
+The strength of this thesis is that it presents a robust open-source agent-based simulation framework developed in Python using the Mesa library. Its object-oriented and well-documented architecture promotes interdisciplinary research. Presenting the possibility of an easy integration for different algorithms such as Ant Colony Optimization and Artificial Bee Colony underlines its strengths. The framework provides researchers and relevant stakeholders such as policymakers, emergency response planners, and environmental scientists, with a flexible tool to build on top of and evaluate custom aerial vehicle models and coordination strategies across a range of simulated scenarios. Its public availability offers societal benefit, especially in resource-limited regions, by enabling access to advanced simulation and planning tools.
+
+
+In the scope of this research different wildfire suppression methods, namely traditional aerial firefighting, autonomous drone swarms and a hybrid system are modeled. These approaches have been simulated and compared focusing on cost, emissions, and water usage. The work combines agent-based modeling, swarm properties, and environmental sustainability. While drone technology has advanced tremendously in both hardware and software, practical evaluations in firefighting contexts remain limited, especially when compared directly. Current systems heavily depend on manned aircraft's despite the growing need for scalable, efficient, and sustainable alternatives.
+
+
+\section{Related Work}
+
+--> what are path-finding algorithms
+\section{Methodology}
+\section{Results}
+\section{Discussion}
+
+
+
+\bibliographystyle{apalike}
+\bibliography{references}
+
+\end{document}

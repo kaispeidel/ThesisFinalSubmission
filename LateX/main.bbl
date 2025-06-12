@@ -1,0 +1,90 @@
+\begin{thebibliography}{}
+
+\bibitem[Aydin et~al., 2019]{fireBalls}
+Aydin, B., Selvi, E., Tao, J., and Starek, M.~J. (2019).
+\newblock Use of {{Fire-Extinguishing Balls}} for a {{Conceptual System}} of {{Drone-Assisted Wildfire Fighting}}.
+\newblock {\em Drones}, 3(1):17.
+
+\bibitem[Cañizares et~al., 2017]{HybridAntColonyWildfire}
+Cañizares, P.~C., Núñez, A., Merayo, M.~G., and Núñez, M. (2017).
+\newblock A hybrid ant colony based system for assist the prevention and mitigation of wildfires in forests.
+\newblock In {\em IEEE Conference Publication}. IEEE Xplore.
+
+\bibitem[Finlay et~al., 2012]{Finlay2012}
+Finlay, S.~E., Moffat, A., Gazzard, R., Baker, D., and Murray, V. (2012).
+\newblock Health impacts of wildfires.
+\newblock {\em PLoS Currents}, 4:e4f959951cce2c.
+
+\bibitem[Finney and Andrews, 1999]{FARSITE}
+Finney, M.~A. and Andrews, P.~L. (1999).
+\newblock {FARSITE} - a program for fire growth simulation.
+\newblock {\em Fire Management Notes}, 59(2):13--15.
+
+\bibitem[Hu and Ntaimo, 2009]{integrated_simulation}
+Hu, X. and Ntaimo, L. (2009).
+\newblock Integrated simulation and optimization for wildfire containment.
+\newblock {\em ACM Trans. Model. Comput. Simul.}, 19.
+
+\bibitem[{Intergovernmental Panel on Climate Change}, 2023]{IPCC2023}
+{Intergovernmental Panel on Climate Change} (2023).
+\newblock {\em Weather and Climate Extreme Events in a Changing Climate}, pages 1513--1766.
+\newblock Cambridge University Press, Cambridge.
+
+\bibitem[Janney, 2012]{janney2012airtankers}
+Janney, T. (2012).
+\newblock Airtankers: An historic overview.
+\newblock Version 2, Airtanker.
+\newblock Accessed: 2025-05-13.
+
+\bibitem[Jones et~al., 2024]{copernicus-wildfires}
+Jones, M.~W., Kelley, D.~I., Burton, C.~A., Di~Giuseppe, F., Barbosa, M. L.~F., Brambleby, E., Hartley, A.~J., Lombardi, A., Mataveli, G., McNorton, J.~R., Spuler, F.~R., Wessel, J.~B., Abatzoglou, J.~T., Anderson, L.~O., Andela, N., Archibald, S., Armenteras, D., Burke, E., Carmenta, R., Chuvieco, E., Clarke, H., Doerr, S.~H., Fernandes, P.~M., Giglio, L., Hamilton, D.~S., Hantson, S., Harris, S., Jain, P., Kolden, C.~A., Kurvits, T., Lampe, S., Meier, S., New, S., Parrington, M., Perron, M. M.~G., Qu, Y., Ribeiro, N.~S., Saharjo, B.~H., {San-Miguel-Ayanz}, J., Shuman, J.~K., Tanpipat, V., {van der Werf}, G.~R., Veraverbeke, S., and Xanthopoulos, G. (2024).
+\newblock State of {{Wildfires}} 2023--2024.
+\newblock {\em Earth System Science Data}, 16(8):3601--3685.
+
+\bibitem[Lelis et~al., 2024]{Lelis2024}
+Lelis, C. A.~S., Roncal, J.~J., Silveira, L., De~Aquino, R. D.~G., Marcondes, C. A.~C., Marques, J., Loubach, D.~S., Verri, F. A.~N., Curtis, V.~V., and De~Souza, D.~G. (2024).
+\newblock Drone-based ai system for wildfire monitoring and risk prediction.
+\newblock {\em IEEE Access}, 12:139865--139882.
+
+\bibitem[Saffre et~al., 2022]{Saffre2022}
+Saffre, F., Hildmann, H., Karvonen, H., and Lind, T. (2022).
+\newblock Monitoring and cordoning wildfires with an autonomous swarm of unmanned aerial vehicles.
+\newblock {\em Drones}, 6(10).
+
+\bibitem[Santoni et~al., 2011]{wildland}
+Santoni, P.-A., Filippi, J.-B., Balbi, J.-H., and Bosseur, F. (2011).
+\newblock Wildland fire behaviour case studies and fuel models for landscape-scale fire modeling.
+\newblock {\em Journal of Combustion}, 2011(1):613424.
+
+\bibitem[Speidel, 2025]{AgentBasedFirefightingModel_repository}
+Speidel, K. (2025).
+\newblock Simulation code for wildfire response models.
+\newblock Accessed: 2025-05-15.
+
+\bibitem[Spicer et~al., 2009]{spicerRapidMeasurementEmissions2009}
+Spicer, C.~W., Holdren, M.~W., Cowen, K.~A., Joseph, D.~W., Satola, J., Goodwin, B., Mayfield, H., Laskin, A., Lizabeth~Alexander, M., Ortega, J.~V., Newburn, M., Kagann, R., and Hashmonay, R. (2009).
+\newblock Rapid measurement of emissions from military aircraft turbine engines by downstream extractive sampling of aircraft on the ground: {{Results}} for {{C-130}} and {{F-15}} aircraft.
+\newblock {\em Atmospheric Environment}, 43(16):2612--2622.
+
+\bibitem[Sullivan et~al., 2022]{Sullivan2022}
+Sullivan, A., Baker, E., Kurvits, T., Popescu, A., Paulson, A.~K., Cardinal~Christianson, A., Tulloch, A., Bilbao, B., Mathison, C., Robinson, C., Burton, C., Ganz, D., Nangoma, D., Saah, D., Armenteras, D., Driscoll, D.~A., Hankins, D.~L., Kelley, D.~I., Langer, E.~R., et~al. (2022).
+\newblock Spreading like wildfire: The rising threat of extraordinary landscape fires.
+\newblock Technical report, United Nations Environment Programme.
+\newblock \url{https://www.unep.org/resources/report/spreading-wildfire-rising-threat-extraordinary-landscape-fires}.
+
+\bibitem[ter Hoeven et~al., 2025]{terMesa}
+ter Hoeven, E., Kwakkel, J., Hess, V., Pike, T., Wang, B., Rht, and Kazil, J. (2025).
+\newblock Mesa 3: Agent-based modeling with python in 2025.
+\newblock {\em Journal of Open Source Software}, 10(107):7668.
+
+\bibitem[Wilensky and Rand, 2015]{wilensky2015introduction}
+Wilensky, U. and Rand, W. (2015).
+\newblock {\em An Introduction to Agent-Based Modeling: Modeling Natural, Social, and Engineered Complex Systems with NetLogo}.
+\newblock MIT Press, Cambridge, Massachusetts.
+
+\bibitem[Yan and Chen, 2024]{Yan2024}
+Yan, X. and Chen, R. (2024).
+\newblock Application strategy of unmanned aerial vehicle swarms in forest fire detection based on the fusion of particle swarm optimization and artificial bee colony algorithm.
+\newblock {\em Applied Sciences}, 14(11).
+
+\end{thebibliography}
