@@ -29,11 +29,31 @@ Cañizares, P.~C., Núñez, A., Merayo, M.~G., and Núñez, M. (2017).
 \newblock A hybrid ant colony based system for assist the prevention and mitigation of wildfires in forests.
 \newblock In {\em IEEE Conference Publication}. IEEE Xplore.
 
+\bibitem[Chen and Barnes, 2014]{SAT_first}
+Chen, J. Y.~C. and Barnes, M.~J. (2014).
+\newblock Human–{{Agent Teaming}} for {{Multirobot Control}}: {{A Review}} of {{Human Factors Issues}}.
+\newblock {\em IEEE Transactions on Human-Machine Systems}, 44(1):13--29.
+
 \bibitem[Corporation, 2018]{LockheedSuperHercules}
 Corporation, L.~M. (2018).
 \newblock C-130j super hercules: Proven, ready, reliable, and affordable.
 \newblock \url{https://www.lockheedmartin.com/content/dam/lockheed-martin/aero/documents/C-130J/MG180389_C-130Brochure_NewPurchase_Final_Web.pdf}.
 \newblock Brochure.
+
+\bibitem[Dorigo et~al., 1996]{ACO}
+Dorigo, M., Maniezzo, V., and Colorni, A. (1996).
+\newblock Ant system: optimization by a colony of cooperating agents.
+\newblock {\em IEEE Transactions on Systems, Man, and Cybernetics, Part B (Cybernetics)}, 26(1):29--41.
+
+\bibitem[Dorigo and Stützle, 2019]{ACO_recent_advances}
+Dorigo, M. and Stützle, T. (2019).
+\newblock Ant colony optimization: Overview and recent advances.
+\newblock In Gendreau, M. and Potvin, J.-Y., editors, {\em Handbook of Metaheuristics}, volume 272 of {\em International Series in Operations Research \& Management Science}. Springer, Cham.
+
+\bibitem[Dorrer and Yarovoy, 2020]{Dorrer_2020}
+Dorrer, G.~A. and Yarovoy, S.~V. (2020).
+\newblock Description of wildfires spreading and extinguishing with the aid of agent-based models.
+\newblock {\em IOP Conference Series: Materials Science and Engineering}, 822(1):012010.
 
 \bibitem[Emimi et~al., 2023]{emimiCurrentOpportunitiesChallenges2023}
 Emimi, M., Khaleel, M., and Alkrash, A. (2023).
@@ -49,6 +69,11 @@ Finlay, S.~E., Moffat, A., Gazzard, R., Baker, D., and Murray, V. (2012).
 Finney, M.~A. and Andrews, P.~L. (1999).
 \newblock {FARSITE} - a program for fire growth simulation.
 \newblock {\em Fire Management Notes}, 59(2):13--15.
+
+\bibitem[Hart et~al., 1968]{heuristic}
+Hart, P.~E., Nilsson, N.~J., and Raphael, B. (1968).
+\newblock A formal basis for the heuristic determination of minimum cost paths.
+\newblock {\em IEEE Transactions on Systems Science and Cybernetics}, 4(2):100--107.
 
 \bibitem[Hocraffer and Nam, 2017]{MetaanalysisHumansystemInterfaces}
 Hocraffer, A. and Nam, C.~S. (2017).
@@ -84,6 +109,17 @@ Karaboga, D. and Basturk, B. (2007).
 Lelis, C. A.~S., Roncal, J.~J., Silveira, L., De~Aquino, R. D.~G., Marcondes, C. A.~C., Marques, J., Loubach, D.~S., Verri, F. A.~N., Curtis, V.~V., and De~Souza, D.~G. (2024).
 \newblock Drone-based ai system for wildfire monitoring and risk prediction.
 \newblock {\em IEEE Access}, 12:139865--139882.
+
+\bibitem[Macal and North, 2005]{intro_to_abm}
+Macal, C. and North, M. (2005).
+\newblock Tutorial on agent-based modeling and simulation.
+\newblock In {\em Proceedings of the Winter Simulation Conference, 2005.}, pages 14 pp.--.
+
+\bibitem[Moreno-Espino et~al., 2025]{MorenoEspino2025}
+Moreno-Espino, M., Reyes-Valdés, L.~M., Benitez, R.~R., López-González, A., Yáñez-Márquez, C., and Hadfeg-Fernández, Y. (2025).
+\newblock Intelligent agent-based simulation of fire propagation in multiple environments.
+\newblock {\em Contemporary Mathematics}, 6(3):3033--3035.
+\newblock [cited 2025 Jun. 13].
 
 \bibitem[Saffre et~al., 2022]{Saffre2022}
 Saffre, F., Hildmann, H., Karvonen, H., and Lind, T. (2022).
@@ -130,6 +166,11 @@ Sullivan, A., Baker, E., Kurvits, T., Popescu, A., Paulson, A.~K., Cardinal~Chri
 \newblock Spreading like wildfire: The rising threat of extraordinary landscape fires.
 \newblock Technical report, United Nations Environment Programme.
 \newblock \url{https://www.unep.org/resources/report/spreading-wildfire-rising-threat-extraordinary-landscape-fires}.
+
+\bibitem[Taillandier et~al., 2019]{Gamma}
+Taillandier, P., Gaudou, B., Grignard, A., Huynh, Q.-N., Marilleau, N., Caillou, P., Philippon, D., and Drogoul, A. (2019).
+\newblock Building, composing and experimenting complex spatial models with the gama platform.
+\newblock {\em GeoInformatica}, 23(2):299--322.
 
 \bibitem[ter Hoeven et~al., 2025]{terMesa}
 ter Hoeven, E., Kwakkel, J., Hess, V., Pike, T., Wang, B., Rht, and Kazil, J. (2025).

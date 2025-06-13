@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  13 JUN 2025 11:51
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  13 JUN 2025 18:19
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -552,28 +552,32 @@ Underfull \vbox (badness 1895) has occurred while \output is active []
 
 
 
-[3] (./main.bbl
+[3]
 
 [4]
-Underfull \hbox (badness 5446) in paragraph at lines 33--37
+
+[5{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}] (./main.bbl
+Underfull \hbox (badness 5446) in paragraph at lines 38--42
 []\T1/lmr/m/n/10 Corporation, L. M. (2018).  C-130j su-per her-cules: Proven, ready, re-li-able, and af-ford-
  []
 
 
 
-[5]
-Underfull \hbox (badness 1874) in paragraph at lines 129--133
+[6]
+
+[7]
+Underfull \hbox (badness 1874) in paragraph at lines 165--169
 \T1/lmr/m/n/10 D., Ar-menteras, D., Driscoll, D. A., Han-k-ins, D. L., Kel-ley, D. I., Langer, E. R., et al.
  []
 
 
-Underfull \hbox (badness 1454) in paragraph at lines 129--133
+Underfull \hbox (badness 1454) in paragraph at lines 165--169
 \T1/lmr/m/n/10 (2022).  Spread-ing like wild-fire: The ris-ing threat of ex-traor-di-nary land-scape fires.  Tech-ni-
  []
 
 )
 
-[6] (./main.aux)
+[8] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -584,18 +588,18 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 17100 strings out of 473190
- 331619 string characters out of 5704335
- 715251 words of memory out of 5000000
- 40088 multiletter control sequences out of 15000+600000
+ 17139 strings out of 473190
+ 332291 string characters out of 5704335
+ 717540 words of memory out of 5000000
+ 40114 multiletter control sequences out of 15000+600000
  606212 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,80p,1150b,1200s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (7 pages, 298411 bytes).
+ 75i,12n,80p,1328b,1206s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on main.pdf (9 pages, 317791 bytes).
 PDF statistics:
- 306 PDF objects out of 1000 (max. 8388607)
- 274 compressed objects within 3 object streams
- 55 named destinations out of 1000 (max. 500000)
+ 370 PDF objects out of 1000 (max. 8388607)
+ 332 compressed objects within 4 object streams
+ 66 named destinations out of 1000 (max. 500000)
  129 words of extra memory for PDF output out of 10000 (max. 10000000)
 
