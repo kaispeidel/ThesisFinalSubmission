@@ -99,7 +99,6 @@
 Wildfires pose a growing threat resulting from climate change, the loss of biodiversity and human activity \citep{copernicus-wildfires}. This research explores economic and sustainable firefighting approaches using autonomous drone swarms, traditional aircraft, and hybrid models. A simulation framework created in Python using the agent-based modeling library Mesa \citep{terMesa}  simulates these methods focusing on cost, environmental impact, and computational efficiency. Drones, planes, fires, and resource stations  were modeled as agents in the environment with parameters supported by current research. Results from 1000 steps over 1000 simulation iterations prove that drone swarms significantly and consistently outperform manned aircraft in both sustainability and cost. Hybrid systems offer the fastest response but with higher emissions and costs. This research contributes an open-source framework for evaluating aerial firefighting strategies, designed to support evidence-based guidelines and encourage sustainable  and frugal fire management.
 \end{abstract}
 
-
 \section{Data Source, Ethics, Code, and Technology (DSECT) Statement}
 \label{sec:CodeOfCondunt}
 
@@ -122,6 +121,7 @@ Generative models such as GitHub's Copilot, Claude and ChatGpt were used for har
 
 
 \section{Introduction}
+\label{sec:Introduction}
 
 % - Why are wildfires problematic? 
 % - How are they currently studied? 
@@ -169,6 +169,47 @@ In the scope of this research different wildfire suppression methods, namely tra
 
 
 \section{Related Work}
+
+\subsection{The Importance of preventing Wildfires}
+As already mention wildfires are increasing, creating devastating destruction. Additionally, the economic damage from wildfires is immense, while the annual cost of wildfire management in the U.S. is estimated to be  \$7.6 billion to \$62.8 billion, the economic damage is estimated between  \$63.5 billion to \$285.0 billion \cite{Afghah2019}. This highlights the importance of this research topic and the need for practical, cost-effective and quick solutions. Aiming for a sustainable approach should be emphasized as traditional methods are costly and emit a lot of CO\textsubscript{2} \cite{Saffre2022}. The ecological impact especially on the agricultural sector is seen as a societal threat as several sources report \citep{grassland_Wildfires,IPCC2023}. 
+
+\subsection{Traditional Methods}
+
+(Traditional) Aerial firefighting using manned planes has been employed since the 1950s, originating from repurposed military aircraft's \citep{janney2012airtankers}. Important advancements in the 1960s introduced specialized tactics and retardants, which significantly improved effectiveness \citep{struminskaFlightPerformanceAnalysis2024}.
+These methods made access to remote areas feasible and led to the development of aircraft specifically for firefighting roles \citep{struminskaFlightPerformanceAnalysis2024,LockheedSuperHercules}. Modern firefighting-fleets include a range of aerial vehicles for specific operational tasks \citep{FleetInformationFirefighting}. 
+
+Despite their effectiveness, these methods are costly and "dangerous and risky for the crew involved" \citep[p. 1896]{struminskaFlightPerformanceAnalysis2024}. \citet{struminskaFlightPerformanceAnalysis2024} also pointed out that aerial firefighting is fast and capable but economically and operationally demanding. Additionally, emissions from aircraft like the C-130 Hercules are immense and difficult to quantify \citep{LockheedC130Hercules2022,spicerRapidMeasurementEmissions2009}, highlighting the need for lower-emission alternatives.
+Traditional aerial firefighting faces limitations regarding coordination and situational awareness, which motivate the development of autonomous alternatives. Current operations rely heavily on human pilots making real-time decisions in dangerous, low-visibility conditions due to smoke, wind and turbulence \citep{struminskaFlightPerformanceAnalysis2024}. These complex situations present challenges for human operators, which can result in suboptimal suppression strategies and safety risks. Autonomous systems offer the potential for real-time data sharing, coordinated swarm behavior and quick adaptation to changing fire conditions, forming the foundation for more effective suppression strategies. With multiple sources reporting that the frequency and intensity of wildfires are increasing \citep{copernicus-wildfires,IPCC2023,grassland_Wildfires}, the development of more responsive and autonomous strategies is especially favorable.
+
+\subsection{Emergence of Drone-Based Solutions}
+
+With advancement of global technologies in recent years, drone systems, including both hardware and software components, went through  significant technological advancements  in terms of functionality and operational capabilities. Unmanned Aerial Vehicles (UAV) are increasingly integrated across a range of industrial sectors, including agriculture, healthcare, logistics, and military operations \citep{emimiCurrentOpportunitiesChallenges2023}. Their main advantages being their adaptability, precision and cost-efficiency. However, these benefits go in line with by persistent regulatory, operational, and ethical challenges \citep{emimiCurrentOpportunitiesChallenges2023}.
+In the context of firefighting, drones are  establishing themselves as promising tools, offering new approaches to increasing problems in wildfire management. Research conducted by \citet{Saffre2022} demonstrates that autonomous drone swarms are capable of effectively containing wildfire while also reducing greenhouse gas emissions compared to traditional methods \citep{Saffre2022}. In addition, drones are increasingly recognized for their energy efficiency, making them a promising solution for sustainable disaster response strategies \citep{stolaroffEnergyUseLife2018}.
+
+Emerging drone-specific firefighting techniques further expand the potential of UAV's in this domain. For example, the “Firefighting Ball” represents a novel condemning technology designed specifically for aerial deployment via drones \citep{fireBalls}. Building upon this, an autonomous system that integrates the fireball concept into a coordinated drone-based suppression framework got introduced \citep{alkhatibProposedAutomaticForest2024}.
+
+The effectiveness of drone-based firefighting systems is evident, specifically in terms of cost-efficiency and their potential to reduce environmental impact through lower emissions. However, for these systems to achieve optimal performance, early wildfire detection is crucial. Fast and confident identification of fire outbreaks is one of the most critical factors in minimizing damage, especially during the initial stages of a wildfire event \citep{Sudhakar2020}.
+In comparison, Traditional risk assessment measures are delayed and have low confidence, especially in remote areas \citep{Afghah2019}, highlighting the potential for improvement in autonomous data collection \citep{Lelis2024} with drones.
+
+The relatively low cost and compact size of drones also makes simultaneous deployment of multiple units possible, therefore enabling coordinated swarm behavior which is a logical progression in UAV-based wildfire management \citep{MetaanalysisHumansystemInterfaces}. Swarm behavior supports the application of bio-inspired algorithms, such as Ant Colony Optimization \citep{HybridAntColonyWildfire} and Artificial Bee Colony algorithms \citep{karaboga2007abc}, which increase in effectivity as swarm size increases. These algorithms allow drones to efficiently compute optimal paths to fire sites, managing speed and resource use.
+Hofcraffer \& Nam ~\citep{MetaanalysisHumansystemInterfaces} identified that, interest in swarm-based UAV systems is growing rapidly, and this area of research is expected to become increasingly important in addressing complex real-world challenges such as wildfire detection and suppression.
+
+
+
+\subsection{Agent-Based Modeling}
+
+
+\subsection{Nature-Inspired Path-finding Algorithms}
+
+
+\subsection{Human-Drone Teaming and Human-Swarm Interaction}
+
+
+
+
+
+
+
 
 --> what are path-finding algorithms
 \section{Methodology}

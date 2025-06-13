@@ -1,5 +1,24 @@
 \begin{thebibliography}{}
 
+\bibitem[Afghah et~al., 2019]{Afghah2019}
+Afghah, F., Razi, A., Chakareski, J., and Ashdown, J. (2019).
+\newblock Wildfire monitoring in remote areas using autonomous unmanned aerial vehicles.
+\newblock {\em arXiv}.
+\newblock No. arXiv:1905.00492.
+
+\bibitem[Alkhatib et~al., 2024]{alkhatibProposedAutomaticForest2024}
+Alkhatib, A.~A., Mohammad~Jaber, K., and Al-Madi, M. (2024).
+\newblock A {{Proposed Automatic Forest Fire Extinguishing}} and {{Prevention System Using Drones}}.
+\newblock In {\em 2024 {{IEEE International Humanitarian Technologies Conference}} ({{IHTC}})}, pages 1--6.
+
+\bibitem[Aviation, 2018]{FleetInformationFirefighting}
+Aviation, C. (2018).
+\newblock Fleet information of firefighting.
+
+\bibitem[{aviationzone}, 2022]{LockheedC130Hercules2022}
+{aviationzone} (2022).
+\newblock Lockheed {{C-130 Hercules}} - {{The Aviation Zone}}.
+
 \bibitem[Aydin et~al., 2019]{fireBalls}
 Aydin, B., Selvi, E., Tao, J., and Starek, M.~J. (2019).
 \newblock Use of {{Fire-Extinguishing Balls}} for a {{Conceptual System}} of {{Drone-Assisted Wildfire Fighting}}.
@@ -10,6 +29,17 @@ Cañizares, P.~C., Núñez, A., Merayo, M.~G., and Núñez, M. (2017).
 \newblock A hybrid ant colony based system for assist the prevention and mitigation of wildfires in forests.
 \newblock In {\em IEEE Conference Publication}. IEEE Xplore.
 
+\bibitem[Corporation, 2018]{LockheedSuperHercules}
+Corporation, L.~M. (2018).
+\newblock C-130j super hercules: Proven, ready, reliable, and affordable.
+\newblock \url{https://www.lockheedmartin.com/content/dam/lockheed-martin/aero/documents/C-130J/MG180389_C-130Brochure_NewPurchase_Final_Web.pdf}.
+\newblock Brochure.
+
+\bibitem[Emimi et~al., 2023]{emimiCurrentOpportunitiesChallenges2023}
+Emimi, M., Khaleel, M., and Alkrash, A. (2023).
+\newblock The {{Current Opportunities}} and {{Challenges}} in {{Drone Technology}}.
+\newblock {\em International Journal of Electrical Engineering and Sustainability}, pages 74--89.
+
 \bibitem[Finlay et~al., 2012]{Finlay2012}
 Finlay, S.~E., Moffat, A., Gazzard, R., Baker, D., and Murray, V. (2012).
 \newblock Health impacts of wildfires.
@@ -19,6 +49,10 @@ Finlay, S.~E., Moffat, A., Gazzard, R., Baker, D., and Murray, V. (2012).
 Finney, M.~A. and Andrews, P.~L. (1999).
 \newblock {FARSITE} - a program for fire growth simulation.
 \newblock {\em Fire Management Notes}, 59(2):13--15.
+
+\bibitem[Hocraffer and Nam, 2017]{MetaanalysisHumansystemInterfaces}
+Hocraffer, A. and Nam, C.~S. (2017).
+\newblock A meta-analysis of human-system interfaces in unmanned aerial vehicle ({{UAV}}) swarm management - {{ScienceDirect}}.
 
 \bibitem[Hu and Ntaimo, 2009]{integrated_simulation}
 Hu, X. and Ntaimo, L. (2009).
@@ -40,6 +74,11 @@ Janney, T. (2012).
 Jones, M.~W., Kelley, D.~I., Burton, C.~A., Di~Giuseppe, F., Barbosa, M. L.~F., Brambleby, E., Hartley, A.~J., Lombardi, A., Mataveli, G., McNorton, J.~R., Spuler, F.~R., Wessel, J.~B., Abatzoglou, J.~T., Anderson, L.~O., Andela, N., Archibald, S., Armenteras, D., Burke, E., Carmenta, R., Chuvieco, E., Clarke, H., Doerr, S.~H., Fernandes, P.~M., Giglio, L., Hamilton, D.~S., Hantson, S., Harris, S., Jain, P., Kolden, C.~A., Kurvits, T., Lampe, S., Meier, S., New, S., Parrington, M., Perron, M. M.~G., Qu, Y., Ribeiro, N.~S., Saharjo, B.~H., {San-Miguel-Ayanz}, J., Shuman, J.~K., Tanpipat, V., {van der Werf}, G.~R., Veraverbeke, S., and Xanthopoulos, G. (2024).
 \newblock State of {{Wildfires}} 2023--2024.
 \newblock {\em Earth System Science Data}, 16(8):3601--3685.
+
+\bibitem[Karaboga and Basturk, 2007]{karaboga2007abc}
+Karaboga, D. and Basturk, B. (2007).
+\newblock A powerful and efficient algorithm for numerical function optimization: artificial bee colony (abc) algorithm.
+\newblock {\em Journal of Global Optimization}, 39(3):459--471.
 
 \bibitem[Lelis et~al., 2024]{Lelis2024}
 Lelis, C. A.~S., Roncal, J.~J., Silveira, L., De~Aquino, R. D.~G., Marcondes, C. A.~C., Marques, J., Loubach, D.~S., Verri, F. A.~N., Curtis, V.~V., and De~Souza, D.~G. (2024).
@@ -65,6 +104,26 @@ Speidel, K. (2025).
 Spicer, C.~W., Holdren, M.~W., Cowen, K.~A., Joseph, D.~W., Satola, J., Goodwin, B., Mayfield, H., Laskin, A., Lizabeth~Alexander, M., Ortega, J.~V., Newburn, M., Kagann, R., and Hashmonay, R. (2009).
 \newblock Rapid measurement of emissions from military aircraft turbine engines by downstream extractive sampling of aircraft on the ground: {{Results}} for {{C-130}} and {{F-15}} aircraft.
 \newblock {\em Atmospheric Environment}, 43(16):2612--2622.
+
+\bibitem[Steiner et~al., 2020]{grassland_Wildfires}
+Steiner, J.~L., Wetter, J., Robertson, S., Teet, S., Wang, J., Wu, X., Zhou, Y., Brown, D., and Xiao, X. (2020).
+\newblock Grassland wildfires in the southern great plains: {{Monitoring}} ecological impacts and recovery.
+\newblock {\em Remote Sensing}, 12(619).
+
+\bibitem[Stolaroff et~al., 2018]{stolaroffEnergyUseLife2018}
+Stolaroff, J.~K., Samaras, C., O’Neill, E.~R., Lubers, A., Mitchell, A.~S., and Ceperley, D. (2018).
+\newblock Energy use and life cycle greenhouse gas emissions of drones for commercial package delivery.
+\newblock {\em Nature Communications}, 9(1):409.
+
+\bibitem[Struminska and Filippone, 2024]{struminskaFlightPerformanceAnalysis2024}
+Struminska, A. and Filippone, A. (2024).
+\newblock Flight performance analysis of aerial fire fighting.
+\newblock {\em The Aeronautical Journal}, 128(1327):1895--1923.
+
+\bibitem[Sudhakar et~al., 2020]{Sudhakar2020}
+Sudhakar, S., Vijayakumar, V., Sathiya~Kumar, C., Priya, V., Ravi, L., and Subramaniyaswamy, V. (2020).
+\newblock Unmanned aerial vehicle (uav) based forest fire detection and monitoring for reducing false alarms in forest-fires.
+\newblock {\em Computer Communications}, 149:1--16.
 
 \bibitem[Sullivan et~al., 2022]{Sullivan2022}
 Sullivan, A., Baker, E., Kurvits, T., Popescu, A., Paulson, A.~K., Cardinal~Christianson, A., Tulloch, A., Bilbao, B., Mathison, C., Robinson, C., Burton, C., Ganz, D., Nangoma, D., Saah, D., Armenteras, D., Driscoll, D.~A., Hankins, D.~L., Kelley, D.~I., Langer, E.~R., et~al. (2022).
