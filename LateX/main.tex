@@ -16,6 +16,7 @@
 \usepackage{longtable}
 \usepackage{fancyhdr}
 \usepackage{hyperref}
+\usepackage{float}
 
 \hypersetup{
   colorlinks=true,
@@ -242,33 +243,28 @@ In the context of this research, sustainability is evaluated by water consumptio
 
 \section{Methodology}
 \label{sec:Methodology}
-The simulation model (see \citep{myCode}) implements three different nature-inspired path-finding algorithms ~\ref{sec:PathfindingAlgorithms} and agent logic for wildfire suppression as described in Figure ~\ref{fig:droneAgentlogic}. Different Firefighting approaches have been tested based on cost, emission and water consumption. With the approaches being a main Drone approach using autonomous drones ~\ref{sec:DroneAgent}, a plane approach using Firefighting planes ~\ref{sec:PlaneAgent} and a hybrid approach which combines the two mentioned approaches. The properties of the agents are based on their real-world counterpart in order to create meaningful data. Parameters can be customized to simulate a specific drone or plane model in order to do personalize comparisons. 
 
-\subsection{Simulation framework}
+This study uses a simulation-based computational approach to evaluate different wildfire suppression strategies. At its core the methodology involves agent-based modeling, swarm path-finding algorithms, and machine learning-based post hoc analysis. The goal is to determine the operational, environmental, and economic effectiveness of drones, manned aircraft, and hybrid firefighting systems. All simulations are implemented in Python using the Mesa framework \citep{terMesa}, as it is ideal study complex emergent behavior. Given the complexity inherent in agent-based simulation studies, a detailed description of the initialization process and agent setup is provided to ensure clarity, reproducibility, and transparency.
 
-The Simulation is developed in Python using the Mesa agent-based modeling framework \citep{terMesa}. Mesa provides a stable object-oriented programming platform, ideal to study complex emergent behavior. This framework aids in creating detailed models which can simulated wildfire dynamics and different firefighting approaches within a customizable environment.
-
-The simulation provides a framework with three key properties:
-
+\subsection{Simulation Design and Setup}
+The simulation environment consists of a 250×250 discrete grid (62,500 total cells) representing the landscape where wildfire events occur, where one cell is equivalent to 10 meters. This creates a simulation area of 2.5 km × 2.5 km (6.25 km\textsuperscript{2}), representing a realistic wildfire scenario. This grid size was selected to balance computational efficiency, while maintaining an appropriate size for meaningful agent interactions and fire dynamics. Each cell tracks state information about occupancy status, fire state and resource station allocation, it can contain agents or fire.
+The simulation proceeds in fixed time steps defined by the steps variable. Fires can ignite, grow in intensity, and spread to adjacent cells probabilistically. Fire suppression agents attempt to extinguish them while managing internal
+resource constraints. (e.g., water supply, energy). 
+Three suppression approaches were simulated:
 \begin{enumerate}
-  \item Grid based Environment
-  \item Agent-Based System
-  \item A comprehensive Data Collection model with integrated analysis
+  \item Drone-Only: 30 autonomous drone agents
+  \item Plane-Only: 4 aircraft agents 
+  \item Hybrid: 30 drones, 5 planes, 2 runways
 \end{enumerate}
 
-\subsection{Grid Based Environment}
-The simulation environment consists of a 250×250 discrete grid (62,500 total cells) representing the landscape where wildfire events occur, where one cell is equivalent to 10 meters. This creates a simulation area of 2.5 km × 2.5 km (6.25 km\textsuperscript{2}), representing a realistic wildfire scenario. This grid size was selected to balance computational efficiency, while maintaining an appropriate size for meaningful agent interactions and fire dynamics. Each cell tracks state information about occupancy status, fire state and resource station allocation.
+\subsection{Agent Design and Setup}
 
-\subsection{Agent Design}
+Each approach was tested across 1000 independent simulation runs of 1000 steps each, providing statistical power for comparison. The logic of the model illustrated in the Appendix~\ref{app:modellogic}.
+For the simulation, multiple agent classes are implemented: Drone, Plane, Fires, Water Station, Recharge Station, and a Runway class. Each agent acts based on internal logic and interacts with the environment according to its proper-
+ties. The Agents were developed following the principles of Situation Awareness-based
+Agent Transparency (SAT), as shown in Figure 1 of \citep{chenSituationAwarenessbasedAgent2018} based on the
+original framework in \citet*{SAT_first}. The \texttt{agent\_data}, which collects data at each simulation step offers insight into the agent’s internal state, collecting its goals and actions (SAT Level 1), reasoning (SAT Level 2), and projections (SAT Level 3), as reflected in its chosen paths, performance history and resources.
 
-For the simulation multiple agents classes (Drone, Fire, Water Station, Energy Station, Plane, Runway) are created which interact with each other within the environment in line with their properties. Each agent operates based on its internal decision-making logic while responding to the changing environment.
-\begin{itemize}
-  \item \textbf{Drone Agents:} Small, agile units responsible for detecting and suppressing fires. They manage water and energy levels autonomously and choose optimal paths using different search algorithms.
-  \item \textbf{Plane Agents:} Large aircraft with higher water capacity and faster movement. They require runways for takeoff/refueling and follow more structured patterns.
-  \item \textbf{Fire Agents:} Simulate active wildfire locations. Fires grow over time and can spread to nearby cells unless extinguished.
-  \item \textbf{Water and Recharge Stations:} Refill points for drones. Water stations provide firefighting resources; recharge stations restore energy levels. Regenerate level automatically.
-  \item \textbf{Runway Agents:} Infrastructure required for plane operations. They handle refueling and reloading operations.
-\end{itemize}
 
 \subsubsection{Drone Agent}
 \label{sec:DroneAgent}
@@ -279,7 +275,7 @@ The parameters of the Agent are based on the '' DJI AGRAS T50'' —a state-of-th
 The implementation draws inspiration from current state-of-the-art agricultural drones, specifically the DJI AGRAS T50 model \citep{DJIAGRAST50}, with modifications to adapt it for firefighting purposes. The parametric design allows for customization of drone capabilities during model initialization to facilitate sensitivity analysis and scenario testing.
 
 \paragraph{Decision-making Architecture} The Drone Agent uses a state-based decision architecture that determines its behavior based on current conditions and resource levels. This approach has proven to be computationally more efficient than a rule-based approach by using a dictionary-based decision-making system that selects appropriate methods based on the drone's current mode of operation.
-The decision-making framework, illustrated in Figure Figure ~\ref{fig:droneAgentlogic}, consists of three primary components:
+The decision-making framework, illustrated in Figure ~\ref{fig:droneAgentlogic}, consists of three primary components:
 \begin{enumerate}
   \item {State Assessment:} The drone continuously monitors its current state, including position, resource levels (energy and water), and environmental conditions.
   
@@ -390,7 +386,7 @@ total\_cost & 0.0 & Accumulated operational costs \\
 \end{figure}
 
 \newpage
-\subsubsection{Plane Agent}
+\subsubsection{Firefighting Plane}
 \label{sec:PlaneAgent}
 
 The simulation framework incorporates manned aircraft as a benchmark to evaluate drone-based firefighting solutions. The Lockheed Martin C-130 Hercules was chosen as the reference platform due to its proven operational history, widespread use in aerial firefighting, and well-documented performance characteristics \citep{LockheedC130Hercules2022}. As a repurposed military transport aircraft, the C-130 represents a conventional approach to wildfire management, providing a solid baseline for assessing the effectiveness of emerging drone-based strategies. Due to its military design heritage it offers the capability to carry heavy payloads and has proven itself in reliability.
@@ -428,10 +424,377 @@ In addition to similar parameters, the logic of the plane also works differently
 
 
 
+%TC:ignore
+\begin{center}
+\begin{longtable}{>{\raggedright\arraybackslash}p{4.4cm} >{\raggedright\arraybackslash}p{1.4cm} >{\raggedright\arraybackslash}p{6.4cm}}
+\caption{Firefighting Plane Class Parameters} \\
+\toprule
+\textbf{Parameter Name} & \textbf{Default Value} & \textbf{Description} \\
+\midrule
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\toprule
+\textbf{Parameter Name} & \textbf{Default Value} & \textbf{Description} \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{3}{r}{{Continued on next page}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+\multicolumn{3}{l}{\textbf{Basic Parameters}} \\
+\midrule
+unique\_id & int & Unique identifier for the plane agent \\
+typ & ``plane'' & Agent type identifier \\
+location & None & Current position of the plane \\
+goal & None & Target destination \\
+path & [list] & Calculated path to destination \\
+speed & 7 & Movement cells per step \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Resource Parameters}} \\
+\midrule
+water\_capacity & \SI{18184}{\liter} & = 4000 gallons C-130 \citep{LockheedSuperHercules} \\
+water & 2000 & Current water level \\
+water\_threshold & 500 & Minimum water level before refill \\
+water\_used & 0 & Total water used during operations \\
+water\_drop\_rate & \SI{8.328}{\liter}/s &  = 2200 gallons/s C-130 aircraft \\
+
+fuel\_capacity &  \SI{3600}{\liter} & = 9530 gallons  \citep{LockheedC130Hercules2022}\\
+fuel & 1000 & Current fuel level \\
+fuel\_threshold & 200 & Minimum fuel level before refueling\\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Time and State Parameters}} \\
+\midrule
+refill\_time & 10 & Time steps required to refill water \\
+refill\_time\_remaining & 0 & Countdown for current refill operation \\
+refueling\_time\_remaining & 0 & Countdown for current refueling operation \\
+refueling & T/F & Boolean indicating refueling state\\
+time\_at\_fire & 0 & Time spent at current fire \\
+max\_time\_at\_fire & 2 & Maximum time to spend at a fire \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Environmental Impact Parameters}} \\
+\midrule
+emission\_rate & 0.24584 & Kg CO\textsubscript{2} / L fuel \citep{spicerRapidMeasurementEmissions2009} \\ 
+total\_emission & 0.0 & Cumulative emissions produced \\
+operational\_cost\_per\_step & 0.5 & Base operational cost per step \\
+fuel\_cost\_per\_unit & 0.1 & Cost per unit of fuel \\
+total\_cost & 0.0 & Cumulative operational cost \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Target References}} \\
+\midrule
+current\_target & None & Current target object (fire, runway, etc.) \\
+target\_fire & None & Reference to the specific fire being targeted \\
+fires & [list] & List of all known fires \\
+firefighting & T/F & Boolean indicating firefighting state \\
+\label{fig:plane_parameters}
+\end{longtable}
+\end{center}
+\newpage
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.6\linewidth]{figures/plane_logic.png}
+    \caption{Plane Logic}
+    \label{fig:planeLogic}
+\end{figure}
+\newpage
+
+\subsubsection{Water Station}
+\label{sec:WaterStation}
+Water Stations are key infrastructure agents responsible for refilling the drone. Each station has a limited refill rate, introducing a time cost to each interaction. Water usage data per refill is collected for each agent, and the refill interaction contributes to total operational cost and emissions. Placement of Water Stations influences overall suppression efficiency and is therefore predefined to ensure comparability between approaches. The chosen parameters can be observed in Table~\ref{fig:waterStation}.
+
+\subsubsection{Recharge Station}
+\label{sec:RechargeStation}
+Environmental sustainability represents a primary design consideration for the recharge station network. Each station's operations are characterized by an emissions factor of 0.200 kg CO\textsubscript{2} per kWh provided, based on research conducted by \citet*{stolaroffEnergyUseLife2018}, which compares energy efficiency of different drone delivery systems. It is important to highlight that emissions caused by green electricity generated through solar panels highly fluctuate and can range from ``40g to 180g of CO\textsubscript{2} per kWh for PV'' \citep{GreenhousegasEmissionsSolar2007}, depending on various factors. For simplicity reasons the value proposed by  \citet*{stolaroffEnergyUseLife2018} will be used to calculate emissions caused by the recharge station in connection with the drones. The electricity cost is based on the EU average of 2023 \citep{ElectricityPriceStatistics}, with a value of 0.2872 euro per kWh. \texttt{total\_energy\_provided} and \texttt{recharge\_event} are metrics to calculate the usage of the recharge station and can be used for more in-depth analytics. The chosen parameters are illustrated in Table~\ref{fig:rechargeStation}.
+
+\subsubsection{Fire Agent}
+\label{sec:FireAgent}
+
+As this study is in the field of multiagent systems every instance in the simulation is an agent, therefore also the fire needs to be defined as an agent. As shown in Appendix~\ref{app:FireAgentParameters} the fire agent has customizable parameters which allow for complex interactions with the firefighting vehicles. To mimic the real world the fire agents spawn in the environment with different intensities and have the possibility to spread to a neighboring cell. The spread fire is its own agent with a slightly lower intensity. Through functions such as \texttt{apply\_water(water\_amount)} the fire agent receives water from the given firefighting agent and extinguishes. The parameters for the \texttt{FireAgent} can be observed in Appendix~\ref{app:FireAgentParameters}. When fire spreads to neighboring cells, new fire agents are created, meaning that a higher fire count reflects fire area growth rather than the ignition of new fires.
+
+\subsubsection{Runway Agent}
+\label{sec:RunwayClass}
+The runway agent is created specifically for the firefighting plane. A plane needs a runway to start, takeoff and refill fuel and water, contradictory to a drone which can autonomously refill itself and charge itself through a given station. The runway is implemented to ensure a logical approach to real-world firefighting models. It is kept track of whether the runway is currently occupied to make sure multiple planes do not collide. The parameters of the runway class are explained in appendix~\ref{app:runway_parameters}
+
+\subsection{Path-finding Algorithms}
+Each drone selects paths using of one of the following algorithms:
+\begin{enumerate}
+    \item A* Search: Heuristic-based algorithm with low resource usage. Efficient for small or structured environments. Implemented through the \texttt{heapq} Python library \citep{python-heapq}.
+    \item Artificial Bee Colony (ABC): Swarm-inspired, decentralized optimization method effective in dynamic or noisy spaces \citep{karaboga2007abc}.
+    \item Ant Colony Optimization (ACO): Probabilistic method using pheromone trails to discover optimal paths over time \citep{ACO}.
+\end{enumerate}
+
+The same algorithm is used for all drones within a simulation run to ensure internal consistency. All algorithms are tested across otherwise identical parameters to evaluate comparative performance. These were selected based on experimentation and prior research.
+
+\subsection{Data-Collection}
+
+As mentioned earlier the Simulation is created with the SAT model in mind. Therefore, a robust and extensive Data-Collector model is needed. At every step every agent's properties are stored in the \texttt{agent\_data} data-frame and the models properties in the \texttt{model\_data} data-frame. This data collection is enabled through the \texttt{mesa.datacollection.DataCollector{}} which is part of the Mesa framework. \texttt{agent\_reporters} and \texttt{model\_reporters} make this function possible. Extensive details can be found in the \href{https://github.com/kaispeidel/Autonomous-Drone-Firefighting-Simulation}{GitHub repository}.
+
+\subsection{Risk Assessment with Machine Learning}
+
+To evaluate whether the simulation output could support future autonomous risk-based decision-making, two unsupervised learning methods were integrated: 
+\begin{enumerate}
+    \item DBSCAN \citep{dbscan}: A density-based clustering algorithm to identify spatial risk zones.
+    \item K-Means \citep{kmeans}: A centroid-based algorithm to segment environments based on fire intensity and suppression delay.
+\end{enumerate}
+
+These algorithms were applied to the collected simulation data capturing fire intensity, suppression history, and spatial coordinates. The purpose was exploratory, testing whether simulated environments show meaningful emergent patterns that could later guide agent behavior. The main algorithms used was DBSCAN with falling back to K-Means if failing.
+
+No hyperparameter tuning was performed due to the exploratory nature of the task; default \texttt{scikit-learn} parameters were used, with basic preprocessing (normalization and NaN filtering).
+
+\subsection{Technical Implementation and Reproducibility}
+
+\begin{enumerate}
+    \item Language: Python 3.11 \citep{python3.11}
+    \item Packages: Key packages include \texttt{mesa} \citep{terMesa}, \texttt{numpy} \citep{numpy}, \texttt{pandas} \citep{reback2020pandas}, \texttt{matplotlib} \citep{Matplotlib}, \texttt{seaborn} \citep{seaborn} , \texttt{heapq} \citep{python-heapq} \texttt{scikit-learn} \citep{scikit-learn}, an exhaustive list of all requirements are listed in the repository: (\texttt{see requirements.txt})
+    \item Code repository: \href{https://github.com/kaispeidel/thesis}{AgentBasedFirefightingModel\_repository} \citep{AgentBasedFirefightingModel_repository}
+\end{enumerate}
+
+The entire simulation is designed to be reproducible and configurable. All agent parameters, environment size, and algorithm settings can be controlled via parameters.
+
 
 \section{Results}
 \section{Discussion}
 
+\appendix
+%ModelLogic
+
+%Water Station
+\begin{center}
+\begin{longtable}{>{\raggedright\arraybackslash}p{4.4cm} >{\raggedright\arraybackslash}p{1.4cm} >{\raggedright\arraybackslash}p{6.4cm}}
+\caption{Water Station Agent Parameters} \label{fig:waterStation} \\
+\toprule
+\textbf{Parameter Name} & \textbf{Default Value} & \textbf{Description} \\
+\midrule
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\toprule
+\textbf{Parameter Name} & \textbf{Default Value} & \textbf{Description} \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{3}{r}{{Continued on next page}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+\multicolumn{3}{l}{\textbf{Initialization Parameters}} \\
+\midrule
+location & [x,y] & Position of the water station \\
+capacity & \SI{1000}{\liter} & Maximum water capacity in liters \\
+unique\_id & int & Unique identifier for the agent \\
+typ & ``water\_station'' &  \\
+active & T/F & Boolean indicating operational status \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Operational Parameters}} \\
+\midrule
+refill\_rate & \SI{20}{\liter} & Water refilled automatically per step \\
+\midrule
+
+multicolumn{3}{l}{\textbf{Environmental Impact}} \\
+\midrule
+emissions\_factor & 0.20 & Emissions in kg of CO\textsubscript{2} per liter dispensed \\
+total\_emissions & 0.0 & Total emissions accumulated \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Cost Metrics}} \\
+water\_cost & €0.00061 & Cost per liter of water: Given €0.6 per m\textsuperscript{3} equals to 0.00061€ per liter \citep{waterPricing} \\
+maintenance\_cost & €0.03 & Fixed operating cost per step \\
+total\_cost & €0.0 & Cumulative cost of operations \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Usage Metrics}} \\
+\midrule
+total\_water\_provided & \SI{0}{\liter} & Total liters of water provided \\
+refill\_events & 0 & Accumulated number of refill events \\
+
+\end{longtable}
+\end{center}
+
+
+%recharge Station
+\begin{center}
+\begin{longtable}{>{\raggedright\arraybackslash}p{4.4cm} >{\raggedright\arraybackslash}p{1.4cm} >{\raggedright\arraybackslash}p{6.4cm}}
+\caption{Recharge Station Agent Parameters} \label{fig:rechargeStation} \\
+\toprule
+\textbf{Parameter Name} & \textbf{Default Value} & \textbf{Description} \\
+\midrule
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\toprule
+\textbf{Parameter Name} & \textbf{Default Value} & \textbf{Description} \\
+\midrule
+\endhead
+
+
+\bottomrule
+\multicolumn{3}{r}{{Continued on next page}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+\multicolumn{3}{l}{\textbf{Initialization Parameters}} \\
+\midrule
+location & [x,y] & Position of the recharge station \\
+unique\_id & int & Unique identifier for the agent \\
+typ & ``recharge\_station'' &  \\
+active & T/F & Boolean indicating active status \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Operational Parameters}} \\
+\midrule
+charge\_rate & 100 & Energy units provided per recharge step \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Environmental Impact}} \\
+\midrule
+emissions\_factor & 0.200 & Emissions in kg of CO\textsubscript{2} per kWh provided. The energy emission varies based on a various factors. The given value is based on a research done by \citet*{stolaroffEnergyUseLife2018} which shows energy emission efficiency in drones.\\
+total\_emissions & 0.0 & Total emissions accumulated \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Cost Metrics}} \\
+\midrule
+electricity\_cost & €0.2872 & Electricity cost per kWh taken from the EU average in 2023 \citep{ElectricityPriceStatistics}. \\
+maintenance\_cost & €0.05 & Fixed operational cost per step \\
+total\_cost & €0.0 & Total operational cost accumulated \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Usage Metrics}} \\
+\midrule
+total\_energy\_provided & 0.0 & Total kWh of energy provided \\
+recharge\_events & 0 & Accumulated number of recharge events \\
+
+\end{longtable}
+\end{center}
+
+
+
+
+
+
+%FireAgent
+\begin{center}
+\begin{longtable}{>{\raggedright\arraybackslash}p{4.4cm} >{\raggedright\arraybackslash}p{1.4cm} >{\raggedright\arraybackslash}p{6.4cm}}
+\caption{Fire Agent Parameters} \label{app:FireAgentParameters} \\
+\toprule
+\textbf{Parameter Name} & \textbf{Default Value} & \textbf{Description} \\
+\midrule
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\toprule
+\textbf{Parameter Name} & \textbf{Default Value} & \textbf{Description} \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{3}{r}{{Continued on next page}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+\multicolumn{3}{l}{\textbf{Initialization Parameters}} \\
+\midrule
+location & [x,y] &  Coordinates of the fire area \\
+intensity & 5 & Fire intensity on a scale from 1 to 10 \\
+size & 1 & Size of the fire (radius) \\
+unique\_id & int & Unique identifier for the agent \\
+typ & "fire" & Type identifier for the agent \\
+active & T/F & Boolean indicating whether the fire is currently burning \\
+age & 0 & Age of the fire in simulation steps \\
+water\_applied & 0 & Total water applied to this fire \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Spreading Behavior}} \\
+\midrule
+spread\_probability & 0.05 & Base chance of spreading per step \\
+last\_spread\_attempt & 0 & Step count of last spread attempt \\
+spread\_cooldown & 10 & Minimum steps between spread attempts \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Methods and Behaviors}} \\
+\midrule
+apply\_water(water\_amount) & — & Reduces intensity, extinguishes fire if intensity $\leq 0.5$ \\
+step() & — & Ages fire, increases intensity slightly, attempts spread \\
+attempt\_spread() & — & Checks for nearby cells and spreads if possible \\
+extinguish() & — & Manually sets fire as extinguished \\
+
+\end{longtable}
+\end{center}
+
+%Runwayparameters
+\begin{center}
+\begin{longtable}{>{\raggedright\arraybackslash}p{4.4cm} >{\raggedright\arraybackslash}p{1.4cm} >{\raggedright\arraybackslash}p{6.4cm}}
+\caption{Runway Agent Parameters} \label{app:runway_parameters} \\
+\toprule
+\textbf{Parameter Name} & \textbf{Default Value} & \textbf{Description} \\
+\midrule
+\endfirsthead
+
+\multicolumn{3}{l}{\textbf{Initialization Parameters}} \\
+\midrule
+location & [x,y] & Grid location of the runway \\
+typ & ``runway'' & Type identifier for the agent \\
+is\_occupied & T/F & Boolean indicating occupancy status \\
+occupying\_plane & None & Reference to the plane currently on the runway \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Resource Capacities}} \\
+\midrule
+fuel\_capacity & \SI{10000}{\liter} & Maximum amount of fuel the runway can store \\
+fuel\_level & \SI{10000}{\liter} & Current fuel level in the runway \\
+water\_capacity & \SI{20000}{\liter} & Maximum amount of water the runway can store \\
+water\_level & \SI{20000}{\liter} & Current water level in the runway \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Refill Rates (Per Step)}} \\
+\midrule
+fuel\_refill\_rate & \SI{200}{\liter} & Fuel replenished per simulation step \\
+water\_refill\_rate & \SI{500}{\liter} & Water replenished per simulation step \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Environmental Impact Parameters}} \\
+\midrule
+fuel\_emissions\_factor & 0.2 kg & CO\textsubscript{2} emissions per unit of fuel provided \\
+water\_emissions\_factor & 0.1 kg & CO\textsubscript{2} emissions per unit of water provided \\
+total\_emissions & 0.0 kg & Cumulative emissions generated \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Cost Parameters}} \\
+\midrule
+fuel\_cost & €0.3 & Cost per unit of fuel provided \\
+water\_cost & €0.05 & Cost per unit of water provided \\
+maintenance\_cost & €0.5 & Operational maintenance cost per step \\
+total\_cost & €0.0 & Accumulated operational costs \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Usage Statistics}} \\
+\midrule
+planes\_serviced & 0 & Total number of planes serviced \\
+fuel\_provided & 0.0 & Total fuel supplied to planes \\
+water\_provided & 0.0 & Total water supplied to planes \\
+
+\end{longtable}
+\end{center}
 
 
 \bibliographystyle{apalike}

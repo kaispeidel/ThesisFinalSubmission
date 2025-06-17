@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  17 JUN 2025 14:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  17 JUN 2025 17:04
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -395,29 +395,36 @@ Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 285.
 )
 \Hy@SectionHShift=\skip74
+) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count322
+\float@exts=\toks29
+\float@box=\box69
+\@float@everytoks=\toks30
+\@floatcapt=\box70
 )
-Package hyperref Info: Option `colorlinks' set `true' on input line 34.
-Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 34.
-Package hyperref Info: Option `bookmarksopen' set `true' on input line 34.
+Package hyperref Info: Option `colorlinks' set `true' on input line 35.
+Package hyperref Info: Option `bookmarksnumbered' set `true' on input line 35.
+Package hyperref Info: Option `bookmarksopen' set `true' on input line 35.
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/bookmark/bookmark.sty
 Package: bookmark 2023-12-10 v1.31 PDF bookmarks (HO)
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/bookmark/bkm-pdftex.def
 File: bkm-pdftex.def 2023-12-10 v1.31 bookmark driver for pdfTeX and luaTeX (HO)
-\BKM@id=\count322
+\BKM@id=\count323
 )) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/natbib/natbib.sty
 Package: natbib 2010/09/13 8.31b (PWD, AO)
 \bibhang=\skip75
 \bibsep=\skip76
 LaTeX Info: Redefining \cite on input line 694.
-\c@NAT@ctr=\count323
+\c@NAT@ctr=\count324
 ) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/titlesec/titlesec.sty
 Package: titlesec 2025/01/04 v2.17 Sectioning titles
-\ttl@box=\box69
+\ttl@box=\box71
 \beforetitleunit=\skip77
 \aftertitleunit=\skip78
 \ttl@plus=\dimen187
 \ttl@minus=\dimen188
-\ttl@toksa=\toks29
+\ttl@toksa=\toks31
 \titlewidth=\dimen189
 \titlewidthlast=\dimen190
 \titlewidthfirst=\dimen191
@@ -428,34 +435,34 @@ File: color.cfg 2016/01/02 v1.6 sample color configuration
 )
 Package color Info: Driver file: pdftex.def on input line 149.
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/graphics/mathcolor.ltx))
-LaTeX Font Info:    Trying to load font information for T1+lmr on input line 45.
+LaTeX Font Info:    Trying to load font information for T1+lmr on input line 46.
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 ) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/l3backend/l3backend-pdftex.def
 File: l3backend-pdftex.def 2024-05-08 L3 backend support: PDF output (pdfTeX)
-\l__color_backend_stack_int=\count324
-\l__pdf_internal_box=\box70
+\l__color_backend_stack_int=\count325
+\l__pdf_internal_box=\box72
 ) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
-LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 45.
-LaTeX Font Info:    ... okay on input line 45.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
+LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 46.
+LaTeX Font Info:    ... okay on input line 46.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -494,33 +501,33 @@ LaTeX Font Info:    ... okay on input line 45.
 (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl
 File: translations-basic-dictionary-english.trsl (english translation file `translations-basic-dictionary')
 )
-Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 45.
+Package translations Info: loading dictionary `translations-basic-dictionary' for `english'. on input line 46.
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count325
+\scratchcounter=\count326
 \scratchdimen=\dimen192
-\scratchbox=\box71
-\nofMPsegments=\count326
-\nofMParguments=\count327
-\everyMPshowfont=\toks30
-\MPscratchCnt=\count328
+\scratchbox=\box73
+\nofMPsegments=\count327
+\nofMParguments=\count328
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count329
 \MPscratchDim=\dimen193
-\MPnumerator=\count329
-\makeMPintoPDFobject=\count330
-\everyMPtoPDFconversion=\toks31
+\MPnumerator=\count330
+\makeMPintoPDFobject=\count331
+\everyMPtoPDFconversion=\toks33
 ) (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-Package hyperref Info: Link coloring ON on input line 45.
+Package hyperref Info: Link coloring ON on input line 46.
 
 
 [1
 
 {/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map}{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-ec.enc}]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 112.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 113.
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -529,37 +536,37 @@ File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 pdfTeX warning (ext4): destination with the same identifier (name{page.1}) has been already used, duplicate ignored
 <to be read again> 
                    \relax 
-l.135 
+l.136 
        [1]
 
 [2]
-LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 175.
+LaTeX Font Info:    Trying to load font information for OT1+lmr on input line 176.
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/ot1lmr.fd
 File: ot1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OML+lmm on input line 175.
+LaTeX Font Info:    Trying to load font information for OML+lmm on input line 176.
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/omllmm.fd
 File: omllmm.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 175.
+LaTeX Font Info:    Trying to load font information for OMS+lmsy on input line 176.
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/omslmsy.fd
 File: omslmsy.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
-LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 175.
+LaTeX Font Info:    Trying to load font information for OMX+lmex on input line 176.
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/omxlmex.fd
 File: omxlmex.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <10> on input line 175.
+(Font)              <10> on input line 176.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <7> on input line 175.
+(Font)              <7> on input line 176.
 LaTeX Font Info:    External font `lmex10' loaded for size
-(Font)              <5> on input line 175.
-LaTeX Font Info:    Trying to load font information for U+msa on input line 175.
+(Font)              <5> on input line 176.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 176.
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 175.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 176.
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
@@ -573,36 +580,32 @@ Underfull \vbox (badness 1895) has occurred while \output is active []
 
 [5{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathit.enc}{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
 
-Package natbib Warning: Citation `myCode' on page 6 undefined on input line 245.
-
-
-LaTeX Warning: Reference `sec:PathfindingAlgorithms' on page 6 undefined on input line 245.
-
-
-
 [6]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 260.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 250.
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
-[7{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
+LaTeX Warning: Reference `fig:modellogic' on page 7 undefined on input line 262.
 
-[8]
-<figures/DroneAgent_Logic.png, id=285, 2542.49875pt x 3854.4pt>
+
+
+[7{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] [8]
+<figures/DroneAgent_Logic.png, id=286, 2542.49875pt x 3854.4pt>
 File: figures/DroneAgent_Logic.png Graphic file (type png)
 <use figures/DroneAgent_Logic.png>
-Package pdftex.def Info: figures/DroneAgent_Logic.png  used on input line 387.
-(pdftex.def)             Requested size: 422.77664pt x 640.88889pt.
-
-
-LaTeX Warning: Float too large for page by 14.4033pt on input line 390.
-
+Package pdftex.def Info: figures/DroneAgent_Logic.png  used on input line 383.
+(pdftex.def)             Requested size: 375.80544pt x 569.66594pt.
 
 
 [9]
 
-[10 <./figures/DroneAgent_Logic.png>]
+[10
+pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.388 \newpage
+               <./figures/DroneAgent_Logic.png>]
 
 Package siunitx Warning: Unit macro \nauticalmile has been deprecated in this
 (siunitx)                release.
@@ -613,175 +616,101 @@ Package siunitx Warning: Unit macro \nauticalmile has been deprecated in this
 (siunitx)                
 (siunitx)                \DeclareSIUnit\nauticalmile{M}
 
-/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex:472: Missing \endcsname inserted.
-<to be read again> 
-                   \relax 
-l.472 fuel\_capacity & 36,000 \SI{\liter} &
-                                            9530 gallons equals to \SI{36000...
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex:472: Incomplete \ifcsname; all text was ignored after line 472.
-<inserted text> 
-                \fi 
-l.472 fuel\_capacity & 36,000 \SI{\liter} &
-                                            9530 gallons equals to \SI{36000...
-A forbidden control sequence occurred in skipped text.
-This kind of error happens when you say `\if...' and forget
-the matching `\fi'. I've inserted a `\fi'; this might work.
-
-/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex:472: Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.472 fuel\_capacity & 36,000 \SI{\liter} &
-                                            9530 gallons equals to \SI{36000...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex:472: Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.472 fuel\_capacity & 36,000 \SI{\liter} &
-                                            9530 gallons equals to \SI{36000...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex:472: Missing } inserted.
-<inserted text> 
-                }
-l.472 fuel\_capacity & 36,000 \SI{\liter} &
-                                            9530 gallons equals to \SI{36000...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex:472: Extra \endcsname.
-\tl_if_exist:cT #1->\if_cs_exist:w #1\cs_end: 
-                                              \__cs_if_exist_c_aux:w \fi: \u...
-l.472 fuel\_capacity & 36,000 \SI{\liter} &
-                                            9530 gallons equals to \SI{36000...
-I'm ignoring this, since I wasn't doing a \csname.
-
-/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex:472: Extra \fi.
-\__cs_if_exist_c_aux:w ...e:n #1\if_false: ->\fi: 
-                                                  \exp_after:wN \if_meaning:...
-l.472 fuel\_capacity & 36,000 \SI{\liter} &
-                                            9530 gallons equals to \SI{36000...
-I'm ignoring this; it doesn't match any \if.
-
-/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex:472: Missing \endcsname inserted.
-<to be read again> 
-                   \relax 
-l.472 fuel\_capacity & 36,000 \SI{\liter} &
-                                            9530 gallons equals to \SI{36000...
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex:472: Extra alignment tab has been changed to \cr.
-<recently read> \endtemplate 
-                             
-l.472 fuel\_capacity & 36,000 \SI{\liter} &
-                                            9530 gallons equals to \SI{36000...
-You have given more \span or & marks than there were
-in the preamble to the \halign or \valign now in progress.
-So I'll assume that you meant to type \cr instead.
-
-/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex:472: Extra \endcsname.
-\__cs_if_exist_c_aux:w ...ning:w \cs:w #1\cs_end: 
-                                                  \scan_stop: \else: 
-l.472 fuel\_capacity & 36,000 \SI{\liter} &
-                                            9530 gallons equals to \SI{36000...
-I'm ignoring this, since I wasn't doing a \csname.
-
-/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex:472: Missing \endcsname inserted.
-<to be read again> 
-                   \relax 
-l.472 fuel\_capacity & 36,000 \SI{\liter} &
-                                            9530 gallons equals to \SI{36000...
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex:472: Incomplete \ifcsname; all text was ignored after line 472.
-<inserted text> 
-                \fi 
-l.472 fuel\_capacity & 36,000 \SI{\liter} &
-                                            9530 gallons equals to \SI{36000...
-A forbidden control sequence occurred in skipped text.
-This kind of error happens when you say `\if...' and forget
-the matching `\fi'. I've inserted a `\fi'; this might work.
-
-/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex:472: Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.472 fuel\_capacity & 36,000 \SI{\liter} &
-                                            9530 gallons equals to \SI{36000...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex:472: Missing \endgroup inserted.
-<inserted text> 
-                \endgroup 
-l.472 fuel\_capacity & 36,000 \SI{\liter} &
-                                            9530 gallons equals to \SI{36000...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex:472: Missing } inserted.
-<inserted text> 
-                }
-l.472 fuel\_capacity & 36,000 \SI{\liter} &
-                                            9530 gallons equals to \SI{36000...
-I've inserted something that you may have forgotten.
-(See the <inserted text> above.)
-With luck, this will get me unwedged. But if you
-really didn't forget anything, try typing `2' now; then
-my insertion and my current dilemma will both disappear.
-
-/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex:472: Extra \endcsname.
-\tl_if_exist:cT #1->\if_cs_exist:w #1\cs_end: 
-                                              \__cs_if_exist_c_aux:w \fi: \u...
-l.472 fuel\_capacity & 36,000 \SI{\liter} &
-                                            9530 gallons equals to \SI{36000...
-I'm ignoring this, since I wasn't doing a \csname.
-
-/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex:472: Extra \fi.
-\__cs_if_exist_c_aux:w ...e:n #1\if_false: ->\fi: 
-                                                  \exp_after:wN \if_meaning:...
-l.472 fuel\_capacity & 36,000 \SI{\liter} &
-                                            9530 gallons equals to \SI{36000...
-I'm ignoring this; it doesn't match any \if.
-
-/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex:472: Missing \endcsname inserted.
-<to be read again> 
-                   \relax 
-l.472 fuel\_capacity & 36,000 \SI{\liter} &
-                                            9530 gallons equals to \SI{36000...
-The control sequence marked <to be read again> should
-not appear between \csname and \endcsname.
-
-/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex:472: Extra \endcsname.
-\__cs_if_exist_c_aux:w ...ning:w \cs:w #1\cs_end: 
-                                                  \scan_stop: \else: 
-l.472 fuel\_capacity & 36,000 \SI{\liter} &
-                                            9530 gallons equals to \SI{36000...
-I'm ignoring this, since I wasn't doing a \csname.
 
 
-/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex:472: Package siunitx Error: Invalid number '\liter '.
+[11{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
 
-For immediate help type H <return>.
- ...       
+[12]
+<figures/plane_logic.png, id=329, 1940.24875pt x 3854.4pt>
+File: figures/plane_logic.png Graphic file (type png)
+<use figures/plane_logic.png>
+Package pdftex.def Info: figures/plane_logic.png  used on input line 505.
+(pdftex.def)             Requested size: 281.85587pt x 559.90294pt.
+
+
+[13
+pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.509 \newpage
+               <./figures/plane_logic.png>]
+
+[14]
+Overfull \hbox (26.4118pt too wide) in paragraph at lines 558--559
+\T1/lmr/m/n/10 ([][]pan-das de-vel-op-ment team[][], [][]2020[][]), \T1/lmtt/m/n/10 matplotlib \T1/lmr/m/n/10 ([][]Hunter[][], [][]2007[][]), \T1/lmtt/m/n/10 seaborn \T1/lmr/m/n/10 ([][]Waskom[][], [][]2021[][]) , \T1/lmtt/m/n/10 heapq\T1/lmr/m/n/10 ([][]Foundation[][],
+ []
+
+
+Overfull \hbox (31.35648pt too wide) in paragraph at lines 599--599
+[]|\T1/lmr/m/n/10 ``water_station''|  
+ []
+
+
+Overfull \hbox (11.30135pt too wide) in paragraph at lines 608--609
+[]|\T1/lmr/m/n/10 multicolumn3l\T1/lmr/bx/n/10 Environmental 
+ []
+
+[15]
+Overfull \hbox (43.60664pt too wide) in paragraph at lines 657--657
+[]|\T1/lmr/m/n/10 ``recharge_station''|  
+ []
+
+[16]
+Overfull \hbox (3.19681pt too wide) in paragraph at lines 731--731
+[]|\T1/lmr/m/n/10 apply_water(water_amount)|  
+ []
+
+
+Overfull \hbox (1.30061pt too wide) in paragraph at lines 751--751
+[]|\T1/lmr/m/n/10 ``runway''|  
+ []
+
+[17] (./main.bbl
+
+[18]
+Underfull \hbox (badness 5446) in paragraph at lines 48--52
+[]\T1/lmr/m/n/10 Corporation, L. M. (2018).  C-130j su-per her-cules: Proven, ready, re-li-able, and af-ford-
+ []
+
+
+
+[19]
+
+[20]
+Underfull \hbox (badness 1874) in paragraph at lines 238--242
+\T1/lmr/m/n/10 D., Ar-menteras, D., Driscoll, D. A., Han-k-ins, D. L., Kel-ley, D. I., Langer, E. R., et al.
+ []
+
+
+Underfull \hbox (badness 2088) in paragraph at lines 238--242
+\T1/lmr/m/n/10 (2022).  Spread-ing like wild-fire: The ris-ing threat of ex-traor-di-nary land-scape fires.  Tech-
+ []
+
+)
+
+[21] (./main.aux)
+ ***********
+LaTeX2e <2024-11-01> patch level 2
+L3 programming layer <2025-01-18>
+ ***********
+
+
+LaTeX Warning: There were undefined references.
+
+ ) 
+Here is how much of TeX's memory you used:
+ 17488 strings out of 473190
+ 338722 string characters out of 5704335
+ 734302 words of memory out of 5000000
+ 40383 multiletter control sequences out of 15000+600000
+ 609558 words of font info for 67 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,12n,80p,1328b,1244s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
+Output written on main.pdf (22 pages, 881450 bytes).
+PDF statistics:
+ 637 PDF objects out of 1000 (max. 8388607)
+ 576 compressed objects within 6 object streams
+ 131 named destinations out of 1000 (max. 500000)
+ 243 words of extra memory for PDF output out of 10000 (max. 10000000)
+

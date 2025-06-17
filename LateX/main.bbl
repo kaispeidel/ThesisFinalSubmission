@@ -39,6 +39,11 @@ Chen, J. Y.~C. and Barnes, M.~J. (2014).
 \newblock Human–{{Agent Teaming}} for {{Multirobot Control}}: {{A Review}} of {{Human Factors Issues}}.
 \newblock {\em IEEE Transactions on Human-Machine Systems}, 44(1):13--29.
 
+\bibitem[Chen et~al., 2018]{chenSituationAwarenessbasedAgent2018}
+Chen, J. Y.~C., Lakhmani, S.~G., Stowers, K., Selkowitz, A.~R., Wright, J.~L., and Barnes, M. (2018).
+\newblock Situation awareness-based agent transparency and human-autonomy teaming effectiveness.
+\newblock {\em Theoretical Issues in Ergonomics Science}, 19(3):259--282.
+
 \bibitem[Corporation, 2018]{LockheedSuperHercules}
 Corporation, L.~M. (2018).
 \newblock C-130j super hercules: Proven, ready, reliable, and affordable.
@@ -69,6 +74,15 @@ Emimi, M., Khaleel, M., and Alkrash, A. (2023).
 \newblock The {{Current Opportunities}} and {{Challenges}} in {{Drone Technology}}.
 \newblock {\em International Journal of Electrical Engineering and Sustainability}, pages 74--89.
 
+\bibitem[Ester et~al., 1996]{dbscan}
+Ester, M., Kriegel, H.-P., Sander, J., and Xu, X. (1996).
+\newblock A density-based algorithm for discovering clusters in large spatial databases with noise.
+\newblock In {\em Proceedings of the Second International Conference on Knowledge Discovery and Data Mining}, KDD'96, page 226–231. AAAI Press.
+
+\bibitem[eurostat, 2024]{ElectricityPriceStatistics}
+eurostat (2024).
+\newblock Electricity price statistics.
+
 \bibitem[Finlay et~al., 2012]{Finlay2012}
 Finlay, S.~E., Moffat, A., Gazzard, R., Baker, D., and Murray, V. (2012).
 \newblock Health impacts of wildfires.
@@ -78,6 +92,32 @@ Finlay, S.~E., Moffat, A., Gazzard, R., Baker, D., and Murray, V. (2012).
 Finney, M.~A. and Andrews, P.~L. (1999).
 \newblock {FARSITE} - a program for fire growth simulation.
 \newblock {\em Fire Management Notes}, 59(2):13--15.
+
+\bibitem[Foundation, 2022]{python3.11}
+Foundation, P.~S. (2022).
+\newblock {\em Python 3.11 Reference Manual}.
+\newblock Python Software Foundation.
+\newblock Version 3.11.
+
+\bibitem[Foundation, 2024]{python-heapq}
+Foundation, P.~S. (2024).
+\newblock {\em heapq --- Heap queue algorithm}.
+\newblock Python 3.13.3 documentation.
+
+\bibitem[Fthenakis and Kim, 2007]{GreenhousegasEmissionsSolar2007}
+Fthenakis, V.~M. and Kim, H.~C. (2007).
+\newblock Greenhouse-gas emissions from solar electric- and nuclear power: {{A}} life-cycle study.
+\newblock {\em Energy Policy}, 35(4):2549--2557.
+
+\bibitem[Giannakis et~al., 2016]{waterPricing}
+Giannakis, E., Bruggeman, A., Djuma, H., Kozyra, J., and Hammer, J. (2016).
+\newblock Water pricing and irrigation across {{Europe}}: Opportunities and constraints for adopting irrigation scheduling decision support systems.
+\newblock {\em Water Supply}, 16(1):245--252.
+
+\bibitem[Harris et~al., 2020]{numpy}
+Harris, C.~R., Millman, K.~J., van~der Walt, S.~J., Gommers, R., Virtanen, P., Cournapeau, D., Wieser, E., Taylor, J., Berg, S., Smith, N.~J., Kern, R., Picus, M., Hoyer, S., van Kerkwijk, M.~H., Brett, M., Haldane, A., del R{\'{i}}o, J.~F., Wiebe, M., Peterson, P., G{\'{e}}rard-Marchant, P., Sheppard, K., Reddy, T., Weckesser, W., Abbasi, H., Gohlke, C., and Oliphant, T.~E. (2020).
+\newblock Array programming with {NumPy}.
+\newblock {\em Nature}, 585(7825):357--362.
 
 \bibitem[Hart et~al., 1968]{heuristic}
 Hart, P.~E., Nilsson, N.~J., and Raphael, B. (1968).
@@ -92,6 +132,11 @@ Hocraffer, A. and Nam, C.~S. (2017).
 Hu, X. and Ntaimo, L. (2009).
 \newblock Integrated simulation and optimization for wildfire containment.
 \newblock {\em ACM Trans. Model. Comput. Simul.}, 19.
+
+\bibitem[Hunter, 2007]{Matplotlib}
+Hunter, J.~D. (2007).
+\newblock Matplotlib: A 2d graphics environment.
+\newblock {\em Computing in Science \& Engineering}, 9(3):90--95.
 
 \bibitem[{Intergovernmental Panel on Climate Change}, 2023]{IPCC2023}
 {Intergovernmental Panel on Climate Change} (2023).
@@ -124,6 +169,11 @@ Lewis, M., Goodrich, M., Sycara, K., and Steinberg, M. (2012).
 \newblock Human {{Factors}} issues for {{Interaction}} with {{Bio-Inspired Swarms}}.
 \newblock {\em Proceedings of the Human Factors and Ergonomics Society Annual Meeting}, 56(1):61--64.
 
+\bibitem[Lloyd, 1982]{kmeans}
+Lloyd, S.~P. (1982).
+\newblock Least squares quantization in pcm.
+\newblock {\em IEEE Transactions on Information Theory}, 28(2):129--137.
+
 \bibitem[Macal and North, 2005]{intro_to_abm}
 Macal, C. and North, M. (2005).
 \newblock Tutorial on agent-based modeling and simulation.
@@ -134,6 +184,15 @@ Moreno-Espino, M., Reyes-Valdés, L.~M., Benitez, R.~R., López-González, A., Y
 \newblock Intelligent agent-based simulation of fire propagation in multiple environments.
 \newblock {\em Contemporary Mathematics}, 6(3):3033--3035.
 \newblock [cited 2025 Jun. 13].
+
+\bibitem[pandas~development team, 2020]{reback2020pandas}
+pandas~development team, T. (2020).
+\newblock pandas-dev/pandas: Pandas.
+
+\bibitem[Pedregosa et~al., 2011]{scikit-learn}
+Pedregosa, F., Varoquaux, G., Gramfort, A., Michel, V., Thirion, B., Grisel, O., Blondel, M., Prettenhofer, P., Weiss, R., Dubourg, V., Vanderplas, J., Passos, A., Cournapeau, D., Brucher, M., Perrot, M., and Duchesnay, E. (2011).
+\newblock Scikit-learn: Machine learning in {P}ython.
+\newblock {\em Journal of Machine Learning Research}, 12:2825--2830.
 
 \bibitem[Saffre et~al., 2022]{Saffre2022}
 Saffre, F., Hildmann, H., Karvonen, H., and Lind, T. (2022).
@@ -190,6 +249,11 @@ Taillandier, P., Gaudou, B., Grignard, A., Huynh, Q.-N., Marilleau, N., Caillou,
 ter Hoeven, E., Kwakkel, J., Hess, V., Pike, T., Wang, B., Rht, and Kazil, J. (2025).
 \newblock Mesa 3: Agent-based modeling with python in 2025.
 \newblock {\em Journal of Open Source Software}, 10(107):7668.
+
+\bibitem[Waskom, 2021]{seaborn}
+Waskom, M.~L. (2021).
+\newblock seaborn: statistical data visualization.
+\newblock {\em Journal of Open Source Software}, 6(60):3021.
 
 \bibitem[Wilensky and Rand, 2015]{wilensky2015introduction}
 Wilensky, U. and Rand, W. (2015).
