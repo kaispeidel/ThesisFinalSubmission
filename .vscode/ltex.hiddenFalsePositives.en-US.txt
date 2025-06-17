@@ -1,0 +1,1 @@
+{"rule":"UPPERCASE_SENTENCE_START","sentence":"^\\Qper plane, the total fleet capacity is 72736..\\E$"}

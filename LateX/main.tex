@@ -247,15 +247,18 @@ In the context of this research, sustainability is evaluated by water consumptio
 This study uses a simulation-based computational approach to evaluate different wildfire suppression strategies. At its core the methodology involves agent-based modeling, swarm path-finding algorithms, and machine learning-based post hoc analysis. The goal is to determine the operational, environmental, and economic effectiveness of drones, manned aircraft, and hybrid firefighting systems. All simulations are implemented in Python using the Mesa framework \citep{terMesa}, as it is ideal study complex emergent behavior. Given the complexity inherent in agent-based simulation studies, a detailed description of the initialization process and agent setup is provided to ensure clarity, reproducibility, and transparency.
 
 \subsection{Simulation Design and Setup}
-The simulation environment consists of a 250×250 discrete grid (62,500 total cells) representing the landscape where wildfire events occur, where one cell is equivalent to 10 meters. This creates a simulation area of 2.5 km × 2.5 km (6.25 km\textsuperscript{2}), representing a realistic wildfire scenario. This grid size was selected to balance computational efficiency, while maintaining an appropriate size for meaningful agent interactions and fire dynamics. Each cell tracks state information about occupancy status, fire state and resource station allocation, it can contain agents or fire.
-The simulation proceeds in fixed time steps defined by the steps variable. Fires can ignite, grow in intensity, and spread to adjacent cells probabilistically. Fire suppression agents attempt to extinguish them while managing internal
-resource constraints. (e.g., water supply, energy). 
-Three suppression approaches were simulated:
+\paragraph{Environment} The simulated environment consists of a 250×250 discrete grid (62,500 total cells) representing the landscape where wildfire events occur, where one cell is equivalent to 10 meters. This creates a simulation area of 2.5 km × 2.5 km (6.25 km\textsuperscript{2}), representing a realistic wildfire scenario. This grid size was selected to balance computational efficiency, while maintaining an appropriate size for meaningful agent interactions and fire dynamics. Each cell tracks state information about occupancy status, fire state and resource station allocation, it can contain agents or fire. The simulation proceeds in fixed time steps defined by the steps variable. Fires can ignite, grow in intensity, and spread to adjacent cells probabilistically. Fire suppression agents attempt to extinguish them while managing internal resource constraints. (e.g., water supply, energy). 
+\paragraph{Agent Configuration} To answer RQ1's comparative research focus, the simulation employs three different suppression approaches, while following ABM methodology introduced by \citet*{wilensky2015introduction}.
 \begin{enumerate}
-  \item Drone-Only: 30 autonomous drone agents
-  \item Plane-Only: 4 aircraft agents 
-  \item Hybrid: 30 drones, 5 planes, 2 runways
+  \item \textbf{Drone-only approach}: 30 autonomous drone agents are employed. Reflecting a frequently used a swarm size in swarm optimization studies of 30 (Z\textsubscript{max} = 30) \citep{swarm1_kozlov2022information,swarm2_optimization_drone}. This size ensures meaningful coordination strategies while balancing computational efficiency. The drones are initiated with an individual water capacity of \SI{50}{\liter} which results in a total swarm capacity of \SI{1500}{\liter}. Research Question 2 (RQ2) is addressed by implementing, comparing different path-finding algorithms, and analyzing how their distinct behaviors influence emergent wildfire suppression outcomes.
+  \item \textbf{Plane-Only}: 4 firefighting aircraft are employed, reflecting a realistic firefighting fleet in extreme scenarios \citep{sherryAerialFireFighting2025}. Given an individual water capacity of \SI{18184}{\liter} per plane, the total fleet capacity is \SI{72736}{\liter}. Considering that firefighting planes are the most used suppression technique, this approach acts as a baseline for the comparative assessment of RQ1.
+  \item \textbf{Hybrid approach}: 20 drones + 5 planes + 2 runways. This hybrid approach employs both the firefighting aircraft and drone agents, which enables coordination testing between heterogeneous agents. Given 20 drones and 5 planes the combined capacity is \SI{92920}{\liter} (\SI{2000}{\liter} + \SI{90920}{\liter}). This approach directly addresses RQ1's systematic comparison and RQ3's optimization potential. 
 \end{enumerate}
+
+The significantly different water capacities of the different approaches are intentional and reflect the limitations and advantages of each agent's architecture. This strategy is chosen to reflect real-world operational constraints such as the limited carrying capacity of drones.
+ The deployment frequency requirements, where 30 drones require coordinated refilling patterns, directly affect swarm coordination patterns relevant to RQ2's path-finding algorithm assessment. Furthermore, the different fuel and energy consumption profiles per unit of firefighting capacity provide essential data for RQ3's environmental impact evaluation.
+ This experimental design establishes a comparative framework for evaluating wildfire suppression techniques while directly addressing RQ3's central question about trade-offs among suppression effectiveness, efficiency, and sustainability. By maintaining realistic capacity differences, the simulation enables assessment of whether nature-inspired path-finding algorithms can achieve superior cost-effectiveness and environmental performance despite significantly lower individual water capacity. This approach specifically evaluates RQ3's sustainability trade-offs by comparing operational costs, environmental impact in kg CO\textsubscript{2}, and resource utilization efficiency (water usage per successful suppression) across drone, plane, and hybrid approaches, potentially demonstrating the sustainable advantages of drone approaches over traditional aircraft methods.
+
 
 \subsection{Agent Design and Setup}
 
@@ -567,6 +570,14 @@ The entire simulation is designed to be reproducible and configurable. All agent
 
 \appendix
 %ModelLogic
+\label{app:modellogic}
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=0.7\textwidth]{figures/modellogic.png}
+    \caption{Complete Model Architecture and Agent Interaction Logic}
+    \label{fig:modellogic}
+\end{figure}
 
 %Water Station
 \begin{center}

@@ -159,6 +159,17 @@ Karaboga, D. and Basturk, B. (2007).
 \newblock A powerful and efficient algorithm for numerical function optimization: artificial bee colony (abc) algorithm.
 \newblock {\em Journal of Global Optimization}, 39(3):459--471.
 
+\bibitem[Kozlov et~al., 2024]{swarm2_optimization_drone}
+Kozlov, O., Kondratenko, G., Aleksieieva, A., Maksymov, M., and Tarakhtij, O. (2024).
+\newblock Swarm optimization of the drone's intelligent control system: comparative analysis of hybrid techniques.
+\newblock In {\em Proceedings of the 12th International Conference on Smart Technologies (ICST 2024)}, pages 1--12. CEUR Workshop Proceedings.
+\newblock Electronic edition.
+
+\bibitem[Kozlov et~al., 2022]{swarm1_kozlov2022information}
+Kozlov, O.~V., Kondratenko, Y.~P., and Skakodub, O.~S. (2022).
+\newblock Information technology for parametric optimization of fuzzy systems based on hybrid grey wolf algorithms.
+\newblock {\em SN Computer Science}, 3(6):463.
+
 \bibitem[Lelis et~al., 2024]{Lelis2024}
 Lelis, C. A.~S., Roncal, J.~J., Silveira, L., De~Aquino, R. D.~G., Marcondes, C. A.~C., Marques, J., Loubach, D.~S., Verri, F. A.~N., Curtis, V.~V., and De~Souza, D.~G. (2024).
 \newblock Drone-based ai system for wildfire monitoring and risk prediction.
@@ -203,6 +214,11 @@ Saffre, F., Hildmann, H., Karvonen, H., and Lind, T. (2022).
 Santoni, P.-A., Filippi, J.-B., Balbi, J.-H., and Bosseur, F. (2011).
 \newblock Wildland fire behaviour case studies and fuel models for landscape-scale fire modeling.
 \newblock {\em Journal of Combustion}, 2011(1):613424.
+
+\bibitem[Sherry and Chaudhari, 2025]{sherryAerialFireFighting2025}
+Sherry, L. and Chaudhari, M. (2025).
+\newblock Aerial {{Fire Fighting Operational Statistics}} (2024): {{Very Large}}/{{Large Air Tankers}}.
+\newblock {\em Fire}, 8(4):160.
 
 \bibitem[Speidel, 2025]{AgentBasedFirefightingModel_repository}
 Speidel, K. (2025).

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  17 JUN 2025 17:04
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  17 JUN 2025 18:32
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -586,15 +586,13 @@ LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 25
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
-LaTeX Warning: Reference `fig:modellogic' on page 7 undefined on input line 262.
+[7{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}]
 
-
-
-[7{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}] [8]
-<figures/DroneAgent_Logic.png, id=286, 2542.49875pt x 3854.4pt>
+[8]
+<figures/DroneAgent_Logic.png, id=297, 2542.49875pt x 3854.4pt>
 File: figures/DroneAgent_Logic.png Graphic file (type png)
 <use figures/DroneAgent_Logic.png>
-Package pdftex.def Info: figures/DroneAgent_Logic.png  used on input line 383.
+Package pdftex.def Info: figures/DroneAgent_Logic.png  used on input line 386.
 (pdftex.def)             Requested size: 375.80544pt x 569.66594pt.
 
 
@@ -604,7 +602,7 @@ Package pdftex.def Info: figures/DroneAgent_Logic.png  used on input line 383.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.1}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.388 \newpage
+l.391 \newpage
                <./figures/DroneAgent_Logic.png>]
 
 Package siunitx Warning: Unit macro \nauticalmile has been deprecated in this
@@ -621,10 +619,10 @@ Package siunitx Warning: Unit macro \nauticalmile has been deprecated in this
 [11{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
 
 [12]
-<figures/plane_logic.png, id=329, 1940.24875pt x 3854.4pt>
+<figures/plane_logic.png, id=341, 1940.24875pt x 3854.4pt>
 File: figures/plane_logic.png Graphic file (type png)
 <use figures/plane_logic.png>
-Package pdftex.def Info: figures/plane_logic.png  used on input line 505.
+Package pdftex.def Info: figures/plane_logic.png  used on input line 508.
 (pdftex.def)             Requested size: 281.85587pt x 559.90294pt.
 
 
@@ -632,85 +630,96 @@ Package pdftex.def Info: figures/plane_logic.png  used on input line 505.
 pdfTeX warning (ext4): destination with the same identifier (name{figure.2}) has been already used, duplicate ignored
 <argument> ...shipout:D \box_use:N \l_shipout_box 
                                                   \__shipout_drop_firstpage_...
-l.509 \newpage
+l.512 \newpage
                <./figures/plane_logic.png>]
 
 [14]
-Overfull \hbox (26.4118pt too wide) in paragraph at lines 558--559
-\T1/lmr/m/n/10 ([][]pan-das de-vel-op-ment team[][], [][]2020[][]), \T1/lmtt/m/n/10 matplotlib \T1/lmr/m/n/10 ([][]Hunter[][], [][]2007[][]), \T1/lmtt/m/n/10 seaborn \T1/lmr/m/n/10 ([][]Waskom[][], [][]2021[][]) , \T1/lmtt/m/n/10 heapq\T1/lmr/m/n/10 ([][]Foundation[][],
- []
+<figures/modellogic.png, id=411, 2338.7375pt x 3854.4pt>
+File: figures/modellogic.png Graphic file (type png)
+<use figures/modellogic.png>
+Package pdftex.def Info: figures/modellogic.png  used on input line 577.
+(pdftex.def)             Requested size: 328.82707pt x 541.90605pt.
+
+Underfull \vbox (badness 10000) has occurred while \output is active []
 
 
-Overfull \hbox (31.35648pt too wide) in paragraph at lines 599--599
+
+[15]
+Overfull \hbox (31.35648pt too wide) in paragraph at lines 610--610
 []|\T1/lmr/m/n/10 ``water_station''|  
  []
 
 
-Overfull \hbox (11.30135pt too wide) in paragraph at lines 608--609
+Overfull \hbox (11.30135pt too wide) in paragraph at lines 619--620
 []|\T1/lmr/m/n/10 multicolumn3l\T1/lmr/bx/n/10 Environmental 
  []
 
-[15]
-Overfull \hbox (43.60664pt too wide) in paragraph at lines 657--657
+
+
+[16
+pdfTeX warning (ext4): destination with the same identifier (name{figure.3}) has been already used, duplicate ignored
+<argument> ...shipout:D \box_use:N \l_shipout_box 
+                                                  \__shipout_drop_firstpage_...
+l.636 \end{longtable}
+                      <./figures/modellogic.png>]
+Overfull \hbox (43.60664pt too wide) in paragraph at lines 668--668
 []|\T1/lmr/m/n/10 ``recharge_station''|  
  []
 
-[16]
-Overfull \hbox (3.19681pt too wide) in paragraph at lines 731--731
+[17]
+Overfull \hbox (3.19681pt too wide) in paragraph at lines 747--747
 []|\T1/lmr/m/n/10 apply_water(water_amount)|  
  []
 
 
-Overfull \hbox (1.30061pt too wide) in paragraph at lines 751--751
+Overfull \hbox (1.30061pt too wide) in paragraph at lines 767--767
 []|\T1/lmr/m/n/10 ``runway''|  
  []
 
-[17] (./main.bbl
 
-[18]
+
+[18] (./main.bbl
+
+[19]
 Underfull \hbox (badness 5446) in paragraph at lines 48--52
 []\T1/lmr/m/n/10 Corporation, L. M. (2018).  C-130j su-per her-cules: Proven, ready, re-li-able, and af-ford-
  []
 
 
 
-[19]
-
 [20]
-Underfull \hbox (badness 1874) in paragraph at lines 238--242
+
+[21]
+Underfull \hbox (badness 1874) in paragraph at lines 254--258
 \T1/lmr/m/n/10 D., Ar-menteras, D., Driscoll, D. A., Han-k-ins, D. L., Kel-ley, D. I., Langer, E. R., et al.
  []
 
 
-Underfull \hbox (badness 2088) in paragraph at lines 238--242
+Underfull \hbox (badness 2088) in paragraph at lines 254--258
 \T1/lmr/m/n/10 (2022).  Spread-ing like wild-fire: The ris-ing threat of ex-traor-di-nary land-scape fires.  Tech-
  []
 
 )
 
-[21] (./main.aux)
+[22] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
  ***********
-
-
-LaTeX Warning: There were undefined references.
-
  ) 
 Here is how much of TeX's memory you used:
- 17488 strings out of 473190
- 338722 string characters out of 5704335
- 734302 words of memory out of 5000000
- 40383 multiletter control sequences out of 15000+600000
+ 17510 strings out of 473190
+ 339366 string characters out of 5704335
+ 736520 words of memory out of 5000000
+ 40400 multiletter control sequences out of 15000+600000
  609558 words of font info for 67 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 75i,12n,80p,1328b,1244s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 75i,12n,80p,1328b,1238s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmbx12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmbx9.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr12.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr7.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr9.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (22 pages, 881450 bytes).
+Output written on main.pdf (23 pages, 1162516 bytes).
 PDF statistics:
- 637 PDF objects out of 1000 (max. 8388607)
- 576 compressed objects within 6 object streams
- 131 named destinations out of 1000 (max. 500000)
- 243 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 656 PDF objects out of 1000 (max. 8388607)
+ 592 compressed objects within 6 object streams
+ 136 named destinations out of 1000 (max. 500000)
+ 248 words of extra memory for PDF output out of 10000 (max. 10000000)
 
