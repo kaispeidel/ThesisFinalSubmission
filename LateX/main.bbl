@@ -11,6 +11,11 @@ Alkhatib, A.~A., Mohammad~Jaber, K., and Al-Madi, M. (2024).
 \newblock A {{Proposed Automatic Forest Fire Extinguishing}} and {{Prevention System Using Drones}}.
 \newblock In {\em 2024 {{IEEE International Humanitarian Technologies Conference}} ({{IHTC}})}, pages 1--6.
 
+\bibitem[Asavasirikulkij and Hanif, 2023]{asavasirikulkij2023human_Workload}
+Asavasirikulkij, C. and Hanif, M. (2023).
+\newblock Human workload evaluation of drone swarm formation control using virtual reality interface.
+\newblock In {\em Companion of the 2023 ACM/IEEE International Conference on Human-Robot Interaction (HRI '23 Companion)}, pages 132--136, Stockholm, Sweden. ACM.
+
 \bibitem[Aviation, 2018]{FleetInformationFirefighting}
 Aviation, C. (2018).
 \newblock Fleet information of firefighting.
@@ -39,6 +44,10 @@ Corporation, L.~M. (2018).
 \newblock C-130j super hercules: Proven, ready, reliable, and affordable.
 \newblock \url{https://www.lockheedmartin.com/content/dam/lockheed-martin/aero/documents/C-130J/MG180389_C-130Brochure_NewPurchase_Final_Web.pdf}.
 \newblock Brochure.
+
+\bibitem[DJI, 2025]{DJIAGRAST50}
+DJI (2025).
+\newblock {{DJI AGRAS T50}}.
 
 \bibitem[Dorigo et~al., 1996]{ACO}
 Dorigo, M., Maniezzo, V., and Colorni, A. (1996).
@@ -110,6 +119,11 @@ Lelis, C. A.~S., Roncal, J.~J., Silveira, L., De~Aquino, R. D.~G., Marcondes, C.
 \newblock Drone-based ai system for wildfire monitoring and risk prediction.
 \newblock {\em IEEE Access}, 12:139865--139882.
 
+\bibitem[Lewis et~al., 2012]{lewisHumanFactorsIssues2012}
+Lewis, M., Goodrich, M., Sycara, K., and Steinberg, M. (2012).
+\newblock Human {{Factors}} issues for {{Interaction}} with {{Bio-Inspired Swarms}}.
+\newblock {\em Proceedings of the Human Factors and Ergonomics Society Annual Meeting}, 56(1):61--64.
+
 \bibitem[Macal and North, 2005]{intro_to_abm}
 Macal, C. and North, M. (2005).
 \newblock Tutorial on agent-based modeling and simulation.
@@ -164,7 +178,7 @@ Sudhakar, S., Vijayakumar, V., Sathiya~Kumar, C., Priya, V., Ravi, L., and Subra
 \bibitem[Sullivan et~al., 2022]{Sullivan2022}
 Sullivan, A., Baker, E., Kurvits, T., Popescu, A., Paulson, A.~K., Cardinal~Christianson, A., Tulloch, A., Bilbao, B., Mathison, C., Robinson, C., Burton, C., Ganz, D., Nangoma, D., Saah, D., Armenteras, D., Driscoll, D.~A., Hankins, D.~L., Kelley, D.~I., Langer, E.~R., et~al. (2022).
 \newblock Spreading like wildfire: The rising threat of extraordinary landscape fires.
-\newblock Technical report, United Nations Environment Programme.
+\newblock Technical report, United Nations Environment Program.
 \newblock \url{https://www.unep.org/resources/report/spreading-wildfire-rising-threat-extraordinary-landscape-fires}.
 
 \bibitem[Taillandier et~al., 2019]{Gamma}

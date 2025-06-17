@@ -6,6 +6,7 @@
 \usepackage{lmodern}
 \usepackage[english]{babel}
 \usepackage{geometry}
+\usepackage{booktabs}
 \geometry{margin=1in}
 \usepackage{setspace}
 \usepackage{siunitx}
@@ -17,19 +18,19 @@
 \usepackage{hyperref}
 
 \hypersetup{
-    colorlinks=true,
-    linkcolor=black,
-    filecolor=magenta,      
-    urlcolor=blue,
-    citecolor=blue,
-    pdftitle={Investigating the Use of Agent-Based Modeling for Wildfire Prevention},
-    pdfauthor={Kai Speidel},
-    pdfsubject={Cognitive Science \& Artificial Intelligence Thesis},
-    pdfkeywords={agent-based modeling, wildfire, simulation, drone swarms, firefighting},
-    bookmarksnumbered=true,
-    bookmarksopen=true,
-    bookmarksopenlevel=1,
-    pdfstartview=Fit,
+  colorlinks=true,
+  linkcolor=black,
+  filecolor=magenta,   
+  urlcolor=blue,
+  citecolor=blue,
+  pdftitle={Investigating the Use of Agent-Based Modeling for Wildfire Prevention},
+  pdfauthor={Kai Speidel},
+  pdfsubject={Cognitive Science \& Artificial Intelligence Thesis},
+  pdfkeywords={agent-based modeling, wildfire, simulation, drone swarms, firefighting},
+  bookmarksnumbered=true,
+  bookmarksopen=true,
+  bookmarksopenlevel=1,
+  pdfstartview=Fit,
 }
 
 \usepackage{bookmark}
@@ -46,47 +47,47 @@
 
 % Title Page 
 \begin{titlepage}
-    \thispagestyle{empty}
-    \begin{center}
+  \thispagestyle{empty}
+  \begin{center}
 
-        \vspace{2cm}
-        
-        {\LARGE\bfseries Investigating the Use of Agent-Based Modeling for Wildfire Prevention: A Simulation Study\par}
-        
-        \vspace{2cm}
-        \large Name: Kai Speidel \\
-        \textsc{Student number: U627621}
+    \vspace{2cm}
+    
+    {\LARGE\bfseries Investigating the Use of Agent-Based Modeling for Wildfire Prevention: A Simulation Study\par}
+    
+    \vspace{2cm}
+    \large Name: Kai Speidel \\
+    \textsc{Student number: U627621}
 
-        \vspace{2cm}
-        \small
-        \textbf{THESIS SUBMITTED IN PARTIAL FULFILLMENT} \\
-        \textbf{OF THE REQUIREMENTS FOR THE DEGREE OF} \\
-        \textbf{BACHELOR OF SCIENCE IN COGNITIVE SCIENCE \& ARTIFICIAL INTELLIGENCE} \\
-        \textbf{DEPARTMENT OF COGNITIVE SCIENCE \& ARTIFICIAL INTELLIGENCE} \\
-        \textbf{SCHOOL OF HUMANITIES AND DIGITAL SCIENCES} \\
-        \textbf{TILBURG UNIVERSITY}
+    \vspace{2cm}
+    \small
+    \textbf{THESIS SUBMITTED IN PARTIAL FULFILLMENT} \\
+    \textbf{OF THE REQUIREMENTS FOR THE DEGREE OF} \\
+    \textbf{BACHELOR OF SCIENCE IN COGNITIVE SCIENCE \& ARTIFICIAL INTELLIGENCE} \\
+    \textbf{DEPARTMENT OF COGNITIVE SCIENCE \& ARTIFICIAL INTELLIGENCE} \\
+    \textbf{SCHOOL OF HUMANITIES AND DIGITAL SCIENCES} \\
+    \textbf{TILBURG UNIVERSITY}
 
-        \vspace{2cm}
+    \vspace{2cm}
 
-        \large\textbf{Thesis Committee:} \\
-        \normalsize
-        Supervisor: Dr. Travis J. Wiltshire \\
-        Second Reader: Natalie Ranzhi Wei, Msc. 
+    \large\textbf{Thesis Committee:} \\
+    \normalsize
+    Supervisor: Dr. Travis J. Wiltshire \\
+    Second Reader: Natalie Ranzhi Wei, Msc. 
 
-        \vfill
+    \vfill
 
-        Tilburg University \\
-        School of Humanities and Digital Sciences \\
-        Department of Cognitive Science \& Artificial Intelligence \\
-        Tilburg, The Netherlands \\
-        May 2025
-    \end{center}
+    Tilburg University \\
+    School of Humanities and Digital Sciences \\
+    Department of Cognitive Science \& Artificial Intelligence \\
+    Tilburg, The Netherlands \\
+    May 2025
+  \end{center}
 \end{titlepage}
 \setcounter{page}{1}
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
-\fancyhead[LE]{\small Kai Speidel}         
+\fancyhead[LE]{\small Kai Speidel}     
 \fancyhead[RE]{\small\nouppercase{\rightmark}}
 
 % Odd pages (right-hand side)
@@ -126,7 +127,7 @@ Generative models such as GitHub's Copilot, Claude and ChatGpt were used for har
 % - Why are wildfires problematic? 
 % - How are they currently studied? 
 % - What is ABM and why is it a powerful tool to study this phenomena? 
-%- What are the components of your RQ that need to be explained? - Also see the results comment on RQs.  
+%- What are the components of your RQ that need to be explained? - Also see the results comment on RQs. 
 
 Wildfires pose an escalating global threat, driven by climate change and human activity, with 96\% of wildfires being human-induced \citep{HybridAntColonyWildfire}. These events cause ecological, economic, and societal damage \citep{Saffre2022}, emitting over 2,000 megatons of carbon emissions globally in 2023 alone \citep{Lelis2024}. The UN Environment Program (UNEP2) forecasts a 50\% increase by the end of the century in extreme wildfires if no countermeasures are taken \citep{Sullivan2022}. Escalating wildfire frequency also threatens agricultural productivity \citep{IPCC2023} and poses significant health risks through smoke exposure \citep{Finlay2012}. These combined effects make wildfires one of the most urgent environmental and societal challenges today.
 
@@ -136,7 +137,7 @@ Field studies including controlled burns present another critical research appro
 
 Traditional aerial firefighting and data collection relies heavily on manned aircraft such as Helicopters or fixed-wing planes. For decades this has been the backbone of wildfire suppression \citep{janney2012airtankers}. These aircraft deliver water or fire retardant directly to the fire zones, often in dangerous conditions such as limited visibility. Their effectiveness comes with safety constraints, high operational cost and substantial carbon emissions \citep{spicerRapidMeasurementEmissions2009}.
 
-Recent technological advancements have sparked growing interest in autonomous drone systems for wildfire suppression. Modern drone technology potentially offers operation in extreme conditions without risking human life while being lower in cost and emissions. Research done by \citet{Yan2024} effectively demonstrates the possibility of using coordinated swarm behavior to detect forest fires. Current research presents promising applications such as new suppression techniques like the "fireball" by \citet{fireBalls}.
+Recent technological advancements have sparked growing interest in autonomous drone systems for wildfire suppression. Modern drone technology potentially offers operation in extreme conditions without risking human life while being lower in cost and emissions. Research done by \citet{Yan2024} effectively demonstrates the possibility of using coordinated swarm behavior to detect forest fires. Current research presents promising applications such as new suppression techniques like the ''fireball'' by \citet{fireBalls}.
 
 While the development is promising especially with more applied drone applications being tested, scientists have also turned to simulation studies as they provide evidence for fire spread behavior at a lower cost. One of the earliest tools in this domain was the fire area simulator FARSITE \citep{FARSITE}, which established a baseline for future work. This laid the groundwork for more advanced systems, such as the model proposed by \citet{integrated_simulation}, which integrates fire simulation with optimization-based analysis.
 This is where Agent-Based Modeling (ABM) plays an important role.
@@ -151,13 +152,13 @@ This research aims to fill this gap by asking:
 
 \paragraph{Research Question}
 
-"How can agent-based modeling be used to evaluate and optimize autonomous aerial wildfire suppression strategies across drone, plane, and hybrid systems, using path-finding algorithms to assess effectiveness, efficiency, and sustainability?"
+''How can agent-based modeling be used to evaluate and optimize autonomous aerial wildfire suppression strategies across drone, plane, and hybrid systems, using path-finding algorithms to assess effectiveness, efficiency, and sustainability?''
 
 Given the research question the following sub-questions arise and will guide this study:
 \begin{enumerate}
-    \item "How do drone swarms, hybrid systems, and planes compare in wildfire suppression?"
-    \item "What are path-finding algorithms and how do they influence the performance autonomous drone swarms in wildfire scenarios?"
-    \item "What trade-offs emerge among suppression effectiveness, efficiency and sustainability?"
+  \item ''How do drone swarms, hybrid systems, and planes compare in wildfire suppression?''
+  \item ''What are path-finding algorithms and how do they influence the performance autonomous drone swarms in wildfire scenarios?''
+  \item ''What trade-offs emerge among suppression effectiveness, efficiency and sustainability?''
 \end{enumerate}
 
 
@@ -178,7 +179,7 @@ As already mention wildfires are increasing, creating devastating destruction. A
 (Traditional) Aerial firefighting using manned planes has been employed since the 1950s, originating from repurposed military aircraft's \citep{janney2012airtankers}. Important advancements in the 1960s introduced specialized tactics and retardants, which significantly improved effectiveness \citep{struminskaFlightPerformanceAnalysis2024}.
 These methods made access to remote areas feasible and led to the development of aircraft specifically for firefighting roles \citep{struminskaFlightPerformanceAnalysis2024,LockheedSuperHercules}. Modern firefighting-fleets include a range of aerial vehicles for specific operational tasks \citep{FleetInformationFirefighting}. 
 
-Despite their effectiveness, these methods are costly and "dangerous and risky for the crew involved" \citep[p. 1896]{struminskaFlightPerformanceAnalysis2024}. \citet{struminskaFlightPerformanceAnalysis2024} also pointed out that aerial firefighting is fast and capable but economically and operationally demanding. Additionally, emissions from aircraft like the C-130 Hercules are immense and difficult to quantify \citep{LockheedC130Hercules2022,spicerRapidMeasurementEmissions2009}, highlighting the need for lower-emission alternatives.
+Despite their effectiveness, these methods are costly and ''dangerous and risky for the crew involved'' \citep[p. 1896]{struminskaFlightPerformanceAnalysis2024}. \citet{struminskaFlightPerformanceAnalysis2024} also pointed out that aerial firefighting is fast and capable but economically and operationally demanding. Additionally, emissions from aircraft like the C-130 Hercules are immense and difficult to quantify \citep{LockheedC130Hercules2022,spicerRapidMeasurementEmissions2009}, highlighting the need for lower-emission alternatives.
 Traditional aerial firefighting faces limitations regarding coordination and situational awareness, which motivate the development of autonomous alternatives. Current operations rely heavily on human pilots making real-time decisions in dangerous, low-visibility conditions due to smoke, wind and turbulence \citep{struminskaFlightPerformanceAnalysis2024}. These complex situations present challenges for human operators, which can result in suboptimal suppression strategies and safety risks. Autonomous systems offer the potential for real-time data sharing, coordinated swarm behavior and quick adaptation to changing fire conditions, forming the foundation for more effective suppression strategies. With multiple sources reporting that the frequency and intensity of wildfires are increasing \citep{copernicus-wildfires,IPCC2023,grassland_Wildfires}, the development of more responsive and autonomous strategies is of high importance.
 
 \subsection{Emergence of Drone-Based Solutions}
@@ -207,14 +208,14 @@ These studies demonstrate the relevance of ABM in capturing the dynamics of wild
 Path-finding algorithms are computational methods designed to find efficient routes between two points in a space, often while avoiding obstacles or minimizing costs (such as time, distance or energy). These algorithms often use heuristics, which are informed problem-solving techniques to efficiently explore potential solutions in a solution space under the premise that exploring every possible solution is computationally infeasible. When the heuristic is admissible, it guarantees that the algorithm will find an optimal path \citep{heuristic}.
 In the context of autonomous drone swarms for wildfire suppression, these algorithms must balance competing objectives: minimizing travel time to fire sites, avoiding collisions with other agents, optimizing resource consumption, and adapting to dynamic fire spread.
 
-\paragraph{A* Search} The A* algorithm, introduced by \citet*{heuristic}, is the foundation of modern heuristic pathfinding, It calculates:
+\paragraph{A* Search} The A* algorithm, introduced by \citet*{heuristic}, is the foundation of modern heuristic path-finding, It calculates:
 \begin{equation}
-    f(n) = g(n) + h(n)
+  f(n) = g(n) + h(n)
 \end{equation}
 
 where $g(n)$ represents the actual cost from the start node to node $n$, and $h(n)$ is the heuristic estimate of the cost from node $n$ to the goal. When the heuristic $h(n)$ is admissible (never overestimates the true cost) and consistent, A* guarantees finding the shortest path while expanding fewer nodes than uninformed search methods \citep{heuristic}. 
 While A* performs well in known environments, it faces limitations in dynamic scenarios where conditions change rapidly and multiple agents must coordinate simultaneously. This is where nature-inspired algorithms offer an alternative.
-Nature-inspired pathfinding algorithms draw their inspiration and theoretical concepts from biological systems that exhibit efficient collective navigation and optimization behaviors. These approaches are specifically valuable in wildfire suppression contexts because they enable decentralized decision-making, adaptive behavior, and emergent coordination, making them essential for effective swarm operations in unpredictable environments.
+Nature-inspired path-finding algorithms draw their inspiration and theoretical concepts from biological systems that exhibit efficient collective navigation and optimization behaviors. These approaches are specifically valuable in wildfire suppression contexts because they enable decentralized decision-making, adaptive behavior, and emergent coordination, making them essential for effective swarm operations in unpredictable environments.
 
 \paragraph{Ant Colony Optimization} (ACO) mimics the foraging behavior of ant colonies, where individual ants leave pheromone trails to guide other ants towards food sources \citep{ACO}. The original ACO algorithm, developed by \citet*{ACO}, has since been applied across various optimization domains \citep{ACO_recent_advances}.
 In drone applications, virtual pheromones can represent fire intensity levels or success suppression paths. This mechanism enables drones to converge on high-priority areas while maintaining swarm coordination.
@@ -224,23 +225,210 @@ In drone applications, virtual pheromones can represent fire intensity levels or
 \paragraph{Artificial Bee Colony} (ABC) is a swarm-based meta-heuristic algorithm. Inspired by the behavior of honeybee swarms, the algorithm simulates the decision-making processes of honeybee colonies during nectar foraging \citep{karaboga2007abc}. The algorithm divides the swarm into three types of bees: employed bees that exploit existing food sources, onlooker bees that select among these sources based on information shared by employed bees, and scout bees that search for new food sources randomly when existing ones are exhausted \citep{karaboga2007abc}.
 In wildfire suppression contexts, this translates to drones that can exploit known fire locations (employed behavior), explore new fire areas based on information from other drones (onlooker behavior), and conduct random searches when no fires are detected (scout behavior). This behavioral division enables effective load balancing between exploitation of current fire sites and exploration of potential new outbreaks. This property highlights the strength of ABC, which lies in its inherent balance of exploration and exploitation, making it particularly useful for dynamic environments where fire conditions and resource availability change rapidly.
 
-These nature-inspired algorithms provide the needed computational foundation for autonomous coordination. However, as demonstrated in the following sections the integration of human oversight with the mentioned autonomous capabilities can further enhance system performance and adaptability-
+These nature-inspired algorithms provide the needed computational foundation for autonomous coordination. However, as demonstrated in the following sections the integration of human oversight with the mentioned autonomous capabilities can further enhance system performance and adaptability.
 
 \subsection{Human-Drone Teaming}
 
-As the complexity of drone systems is increasing, maintaining effective coordination presents a growing trade-off between autonomy, control, and performance. Human drone teaming (HDT) offers a promising middle ground by balancing centralized oversight with distributed decision-making. Integrating humans into the loop, enhances strategy flexibility while reducing cognitive load. \citet{SAT_first} demonstrate that system where human operators oversee multiple UAVs and intervene only when necessary, enhance both situational awareness and mission reliability. This supervised control enables operators to take strategic decisions without managing each drone independently, thus reducing cognitive load and improving the flexibility of the operation.
-Sunar
+As the complexity of drone systems is increasing, maintaining effective coordination presents a growing trade-off between autonomy, control, and performance. Human drone teaming (HDT) offers a promising middle ground by balancing centralized oversight with distributed decision-making \citep{asavasirikulkij2023human_Workload}. Integrating humans into the loop, enhances strategy flexibility while reducing cognitive load. \citet{SAT_first} demonstrate that system where human operators oversee multiple UAVs and intervene only when necessary, enhance both situational awareness and mission reliability. This supervised control enables operators to take strategic decisions without managing each drone independently, thus reducing cognitive load and improving the flexibility of the operation. Similarly, \citet*{lewisHumanFactorsIssues2012} show that human operators can effectively direct swarm behavior by influencing a subset of agents rather than all agents at once.
+These findings, suggest that humans are essential for providing strategic decisions and maintaining oversight, while autonomous systems such as drone manage local coordination and provide situational data. This division of tasks supports flexible and informed decision-making in a highly complex environment.
+In this thesis such interactions are explored in a simulated environment ABM environment, where the agents provide date about the dynamic environment and respond to the changing conditions. The emergent interactions and collected data can be used for informed decision-making by providing evidence about drone and plane behavior.
 
+\subsection{Conclusion}
 
+While ABM research is growing especially in the field of swarm behavior and novel techniques to apply UAV in extreme situations, a research gap remains in comparative simulation studies that evaluate different aerial firefighting techniques within the same framework. Current literature often focuses on individual aspects such as drone swarms, sustainability, or suppression effectiveness, without systematic comparative analysis.
 
-
-
-
-
-The comparison of differnt systems remains largely under explored
-
+Furthermore, while nature-inspired path-finding algorithms show promise for autonomous coordination, their practical application and comparative performance in wildfire suppression scenarios remain underexplored in ABM. This thesis addresses these gaps by developing a comprehensive simulation environment that enables direct comparison of autonomous drone systems, traditional aircraft, and hybrid approaches, while integrating sophisticated path-finding algorithms to evaluate their combined impact on suppression effectiveness and sustainability.
+In the context of this research, sustainability is evaluated by water consumption, carbon emissions (kg CO\textsubscript{2}), and operational costs. This approach enables informed assessment of environmental and economic trade-offs across different aerial firefighting strategies.
 
 \section{Methodology}
+\label{sec:Methodology}
+The simulation model (see \citep{myCode}) implements three different nature-inspired path-finding algorithms ~\ref{sec:PathfindingAlgorithms} and agent logic for wildfire suppression as described in Figure ~\ref{fig:droneAgentlogic}. Different Firefighting approaches have been tested based on cost, emission and water consumption. With the approaches being a main Drone approach using autonomous drones ~\ref{sec:DroneAgent}, a plane approach using Firefighting planes ~\ref{sec:PlaneAgent} and a hybrid approach which combines the two mentioned approaches. The properties of the agents are based on their real-world counterpart in order to create meaningful data. Parameters can be customized to simulate a specific drone or plane model in order to do personalize comparisons. 
+
+\subsection{Simulation framework}
+
+The Simulation is developed in Python using the Mesa agent-based modeling framework \citep{terMesa}. Mesa provides a stable object-oriented programming platform, ideal to study complex emergent behavior. This framework aids in creating detailed models which can simulated wildfire dynamics and different firefighting approaches within a customizable environment.
+
+The simulation provides a framework with three key properties:
+
+\begin{enumerate}
+  \item Grid based Environment
+  \item Agent-Based System
+  \item A comprehensive Data Collection model with integrated analysis
+\end{enumerate}
+
+\subsection{Grid Based Environment}
+The simulation environment consists of a 250×250 discrete grid (62,500 total cells) representing the landscape where wildfire events occur, where one cell is equivalent to 10 meters. This creates a simulation area of 2.5 km × 2.5 km (6.25 km\textsuperscript{2}), representing a realistic wildfire scenario. This grid size was selected to balance computational efficiency, while maintaining an appropriate size for meaningful agent interactions and fire dynamics. Each cell tracks state information about occupancy status, fire state and resource station allocation.
+
+\subsection{Agent Design}
+
+For the simulation multiple agents classes (Drone, Fire, Water Station, Energy Station, Plane, Runway) are created which interact with each other within the environment in line with their properties. Each agent operates based on its internal decision-making logic while responding to the changing environment.
+\begin{itemize}
+  \item \textbf{Drone Agents:} Small, agile units responsible for detecting and suppressing fires. They manage water and energy levels autonomously and choose optimal paths using different search algorithms.
+  \item \textbf{Plane Agents:} Large aircraft with higher water capacity and faster movement. They require runways for takeoff/refueling and follow more structured patterns.
+  \item \textbf{Fire Agents:} Simulate active wildfire locations. Fires grow over time and can spread to nearby cells unless extinguished.
+  \item \textbf{Water and Recharge Stations:} Refill points for drones. Water stations provide firefighting resources; recharge stations restore energy levels. Regenerate level automatically.
+  \item \textbf{Runway Agents:} Infrastructure required for plane operations. They handle refueling and reloading operations.
+\end{itemize}
+
+\subsubsection{Drone Agent}
+\label{sec:DroneAgent}
+
+\paragraph{Overview and Purpose} The Drone Agent module simulates an autonomous firefighting drone within the agent-based model framework. Its primary function is to locate and extinguish fires efficiently while managing its own resources constraints. The agent incorporates nature-inspired path-finding algorithms, resource management systems, and decision-making mechanisms to simulate realistic drone behavior in firefighting scenarios.
+The parameters of the Agent are based on the '' DJI AGRAS T50'' —a state-of-the-art agricultural drone \citep{DJIAGRAST50}. The model is fully parametric, allowing for customization and implementation of other drones. To ground the findings in realistic conditions this specific drone was chosen.
+
+The implementation draws inspiration from current state-of-the-art agricultural drones, specifically the DJI AGRAS T50 model \citep{DJIAGRAST50}, with modifications to adapt it for firefighting purposes. The parametric design allows for customization of drone capabilities during model initialization to facilitate sensitivity analysis and scenario testing.
+
+\paragraph{Decision-making Architecture} The Drone Agent uses a state-based decision architecture that determines its behavior based on current conditions and resource levels. This approach has proven to be computationally more efficient than a rule-based approach by using a dictionary-based decision-making system that selects appropriate methods based on the drone's current mode of operation.
+The decision-making framework, illustrated in Figure Figure ~\ref{fig:droneAgentlogic}, consists of three primary components:
+\begin{enumerate}
+  \item {State Assessment:} The drone continuously monitors its current state, including position, resource levels (energy and water), and environmental conditions.
+  
+  \item{Mode Determination:} Based on the state assessment, the drone determines its operational mode through the \texttt{determine\_mode()} method, which acts as the central decision point.
+  
+  \item {Action Execution:} Once a mode is selected, corresponding action methods are executed, such as path-finding, recharging or firefighting.
+
+\end{enumerate}
+
+\paragraph{Resource Management} The Drone Agent monitors its two critical metrics constantly
+\begin{itemize}
+  \item {Water:} Which is used for fire-fighting and released on fire site, as shown in Figure ~\ref{fig:droneAgentlogic}/: when falling bellow a certain water threshold (35\% capacity) the Drones' priority becomes to refill the water and find the closest water station.
+  \item {Energy:} In addition to the Water levels the Drone keeps constant track of its own energy levels and based on the same logic makes sure to not run out of energy, hence when the energy level falls below the predefined energy Threshold (40\% of full capacity) it prioritizes locating and finding the closest recharge station.
+\end{itemize}
+
+
+\paragraph{Path-finding} Based on the defined path-finding algorithm (\texttt{self.pathfinding\_method}), one of the three path-finding methods is chosen: A* search, Artificial Bee Colony, or Ant Colony Optimization. The path-finding process follows a structured protocol: The \texttt{target identification} first determines the closest target based on the drone's current needs: ``fire'' (suppression), ``recharge'', ``refill'' (water), or ``runway'' (plane specific operation). The selected target coordinates are then passed to \texttt{self.calculate\_path(start, goal)} to compute the optimal route using the specified path-finding algorithm. Once a valid path is successfully calculated, it is executed through \texttt{self.move\_along\_path()}.
+
+\paragraph{Firefighting} The firefighting ability of the Drone is handled through the \texttt{apply\_water()} function. Given that the Drone is at the fire location, the water gets applied respecting the water threshold and water drop rate of the drone.
+
+\begin{center}
+\begin{longtable}{>{\raggedright\arraybackslash}p{4.4cm} >{\raggedright\arraybackslash}p{1.4cm} >{\raggedright\arraybackslash}p{6.4cm}}
+\caption{Drone Agent Model Parameters} \\
+\toprule
+\textbf{Parameter Name} & \textbf{Value} & \textbf{Description} \\
+\midrule
+\endfirsthead
+
+\multicolumn{3}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\toprule
+\textbf{Parameter Name} & \textbf{Default Value} & \textbf{Description} \\
+\midrule
+\endhead
+
+\bottomrule
+\multicolumn{3}{r}{{Continued on next page}} \\
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+\multicolumn{3}{l}{\textbf{Basic Properties}} \\
+\midrule
+location & None & Current position of the drone (x,y) \\
+goal & None & Target destination for the drone \\
+path & [pos] & Current calculated path to destination \\
+typ & ``drone'' & Type identifier for data collection \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Targeting Parameters}} \\
+\midrule
+current\_target & Fire & Current object being targeted \\
+target\_type & Fire & Type of target (fire, water, energy) \\
+target\_fire & pos[x,y] & Specific fire being targeted \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Water Related Metrics}} \\
+\midrule
+water\_capacity & 50 L & Maximum water storage \citep{DJIAGRAST50} \\
+water\_threshold & 35\% & Minimum water level before refill \\
+water & 50 L & Current water level (starts full) \\
+water\_drop\_rate & 3.0 L & Water used per firefighting action \\
+water\_used & 0.0 L & Total water used in firefighting \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Energy System}} \\
+\midrule
+max\_energy & 100 & Maximum battery capacity \\
+energy & 100 & Current energy level \\
+energy\_threshold & 40\% & Minimum energy before recharge \\
+recharging & T/F & Boolean indicating recharge status \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Firefighting Parameters}} \\
+\midrule
+firefighting & T/F & Boolean indicating active firefighting \\
+time\_at\_fire & 0 & Steps spent at current fire \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Weight Parameters}} \\
+\midrule
+weight & 52 kg & Weight with battery \citep{DJIAGRAST50} \\
+payload & 0 kg & Current payload weight \\
+total\_weight & 52 kg & Total weight (base + payload) \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Environmental Impact}} \\
+\midrule
+emission\_rate & 0.05 & Base emission rate per movement \\
+total\_emission & 0.0 & Cumulative emissions produced \\
+\midrule
+
+\multicolumn{3}{l}{\textbf{Economic Metrics}} \\
+\midrule
+cost\_per\_step & 0.02 & Base operational cost per step \\
+energy\_cost & 0.05 & Cost per energy unit consumed \\
+total\_cost & 0.0 & Accumulated operational costs \\
+
+\end{longtable}
+\end{center}
+
+\begin{figure}[!htbp]
+  \centering
+  \includegraphics[width=0.8\textwidth]{figures/DroneAgent_Logic.png}
+  \caption{Drone Agent Decision-Making Logic}
+  \label{fig:droneAgentlogic}
+\end{figure}
+
+\newpage
+\subsubsection{Plane Agent}
+\label{sec:PlaneAgent}
+
+The simulation framework incorporates manned aircraft as a benchmark to evaluate drone-based firefighting solutions. The Lockheed Martin C-130 Hercules was chosen as the reference platform due to its proven operational history, widespread use in aerial firefighting, and well-documented performance characteristics \citep{LockheedC130Hercules2022}. As a repurposed military transport aircraft, the C-130 represents a conventional approach to wildfire management, providing a solid baseline for assessing the effectiveness of emerging drone-based strategies. Due to its military design heritage it offers the capability to carry heavy payloads and has proven itself in reliability.
+The C-130 aircraft, used as a reference for the firefighting plane, has an estimated range of \SI{2047}{\nauticalmile} = \SI{3791}{\kilo\meter} with max payload and \SI{4522}{\nauticalmile} = \SI{8375}{\kilo\meter} with an empty payload \citep{LockheedC130Hercules2022}. Considering simplicity the simulation assumes an average range of \SI{6000}{\kilo\meter} given the fact that the Plane is full and empty based on whether the water was dropped or is being delivered to the fire site. Considering these metrics a fuel consumption of \SI{6}{\liter}/km is calculated.
+\[
+\text{Fuel Consumption per km} =\frac{36000~\text{L}}{6000~\text{km}} = 6~\text{L/km}
+\]
+
+Given that the drone has a speed of 1 field per step which accounts for 36 km/h \citep{DJIAGRAST50} (equivalent to 10~m/s). Therefore, the speed of the plane needs to be normalized. In comparison, the C-130 has a cruising speed of 600 ~km/h \citep{LockheedC130Hercules2022} (or 167~m/s), considering that the speed for firefighting is significantly lower a speed of 250~km/h \ (\(\approx 69.4~\text{m/s}\)) is chosen resulting in a relative speed factor of:
+
+\begin{equation}
+\text{Speed Factor}= \frac{70~\text{m/s}}{10~\text{m/s}} = 7
+\end{equation}
+
+Therefore, the speed of the plane is defined by the value 7 (positions per step)
+This factor is used to scale operational parameters when comparing drone and plane behavior within the simulation. To calculate the fuel consumption with a speed of 250~\text{km/h} \ (\(\approx 69.4~\text{m/s}\)), and simulation steps defined as 1-second intervals:
+
+\[
+\text{Fuel Consumption per Step}= (6~\text{L/km}) \times \frac{250}{3600}~\text{km/s} = 0.417\text{ L/step}
+\]
+
+The emission rate of the firefighting plane is based on data from \citet*{spicerRapidMeasurementEmissions2009}, which reports an emission of approximately \SI{0.3073}{\kilo\gram} CO\textsubscript{2} for every kilogram of fuel consumed assuming Jet-A fuel with a density of 0.8~kg/L. The emission per step is calculated as follows: 
+\[
+\text{Emission per Liter}  = 0.3073~\frac{\text{kg CO}_2}{\text{kg fuel}} \times 0.8~\frac{\text{kg fuel}}{\text{L}} = 0.24584~\frac{\text{kg CO}_2}{\text{L}}
+\]
+
+\[
+\text{Emissions per Step} = 0.417~\text{L/step} \times 0.24584~\frac{\text{kg CO}_2}{\text{L}} = 0.1025~\text{kg CO}_2/\text{step}
+\]
+
+
+As stated by \citet*{spicerRapidMeasurementEmissions2009} is it important to point out that the emissions fluctuate significantly depending on cruising speed and weather conditions. For simplicity reasons the emissions per step are a fixed parameter calculated as mentioned.
+
+In addition to similar parameters, the logic of the plane also works differently. A key difference is the plane specific interaction with the Runway class, simulating refueling, takeoff and landing behavior. A key difference between the Plane and Drone class is its characteristic behavior; the drone has a smaller turning radius and is able to refuel from the resource stations autonomously, whereas the plane is dependent on a runway in order to refuel water and fuel. In addition, the emissions are expected to be much higher because it runs on fossil fuels and not electricity. However, the plane moves faster and has a higher water loading capacity which enables it in theory to extinguish fires faster. 
+
+
+
+
 \section{Results}
 \section{Discussion}
 
