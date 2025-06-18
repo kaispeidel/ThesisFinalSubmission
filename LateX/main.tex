@@ -1,90 +1,75 @@
-\documentclass[twoside]{article}
+\documentclass[11pt, a4paper]{article}
+\usepackage[nochapters]{classicthesis}                              % template
+\usepackage[margin=42mm]{geometry}                                  % margins
+\usepackage[utf8]{inputenc}                                         % allow utf-8 input
+\usepackage[T1]{fontenc}                                            % use 8-bit T1 fonts
+\usepackage{graphicx}                                               % images
+\usepackage{url}                                                    % URL typesetting
+\usepackage{booktabs}                                               % good-looking tables
+\usepackage{multirow}                                               % for tables
+\usepackage{amsfonts}                                               % blackboard math symbols
+\usepackage{amsmath}
+\usepackage{microtype}
+
+% Your specific packages
+\usepackage{longtable}                                              % long tables spanning pages
+\usepackage{array}                                                  % enhanced table formatting
+\usepackage{siunitx}                                                % proper unit formatting
+\usepackage{float}                                                  % figure positioning
+\usepackage{caption}                                                % enhanced captions
+\usepackage{subcaption}                                             % subfigures
+\usepackage{tikz}                                                   % diagrams and drawings
+\usepackage{fancyhdr}                                               % custom headers/footers
+\usepackage{setspace}                                               % line spacing control
+\usepackage{enumitem}                                               % enhanced lists
+\usepackage{xcolor}       
+\usepackage{hyperref}                                          % color definitions
+
+\definecolor{darkblue}{rgb}{0, 0, 0.5}                              % define link color
 
 
-\usepackage[utf8]{inputenc}
-\usepackage[T1]{fontenc}
-\usepackage{lmodern}
-\usepackage[english]{babel}
-\usepackage{geometry}
-\usepackage{booktabs}
-\geometry{margin=1in}
-\usepackage{setspace}
-\usepackage{siunitx}
-\usepackage{graphicx}
-\usepackage{amsmath, amssymb}
-\usepackage{array}
-\usepackage{longtable}
-\usepackage{fancyhdr}
-\usepackage{hyperref}
-\usepackage{float}
+\def\thesistitle{INVESTIGATING THE USE OF AGENT-BASED MODELING FOR WILDFIRE PREVENTION: A SIMULATION STUDY}                      % title
+\def\subtitle{}             % subtitle
+    % ^if there is no subtitle, replace by \def\subtitle{}  
+\def\yourname{Kai Speidel}                                                                       % ^first and last nam
+ \def\yourprogramme{Cognitive Science \& Artificial Intelligence}    % uncomment this
+\def\yourstudentnumber{2095270}                                      % ANR (or u-number)
+\def\finalmonth{January}
+\def\finalyear{2000}
+\def\supervisor{Dr. Travis J. Wiltshire}
+\def\committee{Natalie Ranzhi Wei, Msc.}
+\def\acknowledgments{Many thanks to my supervisor, Dr. Travis J. Wiltshire, for their guidance and support throughout this project.}
+\def\wordcount{your word count should be here, ex 12000}
+% METADATA
 
-\hypersetup{
-  colorlinks=true,
-  linkcolor=black,
-  filecolor=magenta,   
-  urlcolor=blue,
-  citecolor=blue,
-  pdftitle={Investigating the Use of Agent-Based Modeling for Wildfire Prevention},
-  pdfauthor={Kai Speidel},
-  pdfsubject={Cognitive Science \& Artificial Intelligence Thesis},
-  pdfkeywords={agent-based modeling, wildfire, simulation, drone swarms, firefighting},
-  bookmarksnumbered=true,
-  bookmarksopen=true,
-  bookmarksopenlevel=1,
-  pdfstartview=Fit,
-}
+\hypersetup{colorlinks=true,
+            citecolor=darkblue,
+            linkcolor=darkblue, 
+            urlcolor=darkblue,
+            pdfauthor=\yourname,
+            pdftitle=\thesistitle}
+
+% \usepackage{natbib} % Removed because biblatex is used
 
 \usepackage{bookmark}
 \usepackage{natbib}
 
 
-\usepackage{titlesec}
-\titleformat{\section}{\normalfont\bfseries}{\thesection.}{1em}{}
-\titleformat{\subsection}{\normalfont\bfseries}{\thesubsection}{1em}{}
-
 
 \begin{document}
+\input{frontmatter.tex}  % don't remove this :)
 
+% --- start writing below:
 
-% Title Page 
-\begin{titlepage}
-  \thispagestyle{empty}
-  \begin{center}
-
-    \vspace{2cm}
-    
-    {\LARGE\bfseries Investigating the Use of Agent-Based Modeling for Wildfire Prevention: A Simulation Study\par}
-    
-    \vspace{2cm}
-    \large Name: Kai Speidel \\
-    \textsc{Student number: U627621}
-
-    \vspace{2cm}
-    \small
-    \textbf{THESIS SUBMITTED IN PARTIAL FULFILLMENT} \\
-    \textbf{OF THE REQUIREMENTS FOR THE DEGREE OF} \\
-    \textbf{BACHELOR OF SCIENCE IN COGNITIVE SCIENCE \& ARTIFICIAL INTELLIGENCE} \\
-    \textbf{DEPARTMENT OF COGNITIVE SCIENCE \& ARTIFICIAL INTELLIGENCE} \\
-    \textbf{SCHOOL OF HUMANITIES AND DIGITAL SCIENCES} \\
-    \textbf{TILBURG UNIVERSITY}
-
-    \vspace{2cm}
-
-    \large\textbf{Thesis Committee:} \\
-    \normalsize
-    Supervisor: Dr. Travis J. Wiltshire \\
-    Second Reader: Natalie Ranzhi Wei, Msc. 
-
-    \vfill
-
-    Tilburg University \\
-    School of Humanities and Digital Sciences \\
-    Department of Cognitive Science \& Artificial Intelligence \\
-    Tilburg, The Netherlands \\
-    May 2025
-  \end{center}
-\end{titlepage}
+\newpage
+\tableofcontents
+\cleardoublepage
 \setcounter{page}{1}
+
+\begin{abstract}
+Wildfires pose a growing threat resulting from climate change, biodiversity loss, and human activity \citep{copernicus-wildfires}. This research explores economic and sustainable firefighting approaches using autonomous drone swarms, traditional aircraft, and hybrid models. A simulation framework created in Python using the agent-based modeling library Mesa \citep{terMesa} simulates these methods, focusing on cost, environmental impact, and computational efficiency. Drones, planes, fires, and resource stations were modeled as agents in the environment with parameters supported by current research. Results from 1,000 steps over 1,000 simulation iterations demonstrate that drone swarms significantly and consistently outperform manned aircraft in both sustainability and cost-effectiveness. Hybrid systems offer the fastest response times but with higher emissions and operational costs. This research contributes an open-source framework for evaluating aerial firefighting strategies, designed to support evidence-based guidelines and encourage sustainable and frugal fire management practices.
+\end{abstract}
+
 
 \pagestyle{fancy}
 \fancyhf{} % clear all header and footer fields
@@ -97,9 +82,6 @@
 \fancyfoot[C]{\thepage}
 
 
-\begin{abstract}
-Wildfires pose a growing threat resulting from climate change, the loss of biodiversity and human activity \citep{copernicus-wildfires}. This research explores economic and sustainable firefighting approaches using autonomous drone swarms, traditional aircraft, and hybrid models. A simulation framework created in Python using the agent-based modeling library Mesa \citep{terMesa} simulates these methods focusing on cost, environmental impact, and computational efficiency. Drones, planes, fires, and resource stations were modeled as agents in the environment with parameters supported by current research. Results from 1000 steps over 1000 simulation iterations prove that drone swarms significantly and consistently outperform manned aircraft in both sustainability and cost. Hybrid systems offer the fastest response but with higher emissions and costs. This research contributes an open-source framework for evaluating aerial firefighting strategies, designed to support evidence-based guidelines and encourage sustainable and frugal fire management.
-\end{abstract}
 
 \section{Data Source, Ethics, Code, and Technology (DSECT) Statement}
 \label{sec:CodeOfCondunt}
@@ -120,7 +102,6 @@ The simulation uses multiple open-source Python libraries such as \texttt{ mesa,
 
 The thesis was typeset using the standard LaTeX thesis template provided by the university, with additional formatting packages such as \texttt{fancyhr, tikz} for formatting preferences. References were managed using BibTeX and LaTeX’s built-in bibliography environment. Zotero was used as a reference manager.
 Generative models such as GitHub's Copilot, Claude and ChatGpt were used for harsh feedback on personal created text and code. The content was not directly copied; instead used as a valuable tool to generate feedback and point out room for improvement. All conceptual, experimental, and implementation work was done by the author, with inspiration from the documentation of the mentioned libraries.
-
 
 \section{Introduction}
 \label{sec:Introduction}
@@ -149,19 +130,19 @@ ABM is particularly suited for wildfire suppression research because it allows f
 
 As wildfires grow in intensity and frequency, traditional suppression methods face increasing limitations. Agent-Based Modeling (ABM) presents a powerful tool for simulating complex scenarios involving autonomous firefighting drones. However, there is limited research directly comparing different suppression strategies, such as drone swarms, hybrid systems, and traditional aircraft, within the same simulation environment.
 
-This research aims to fill this gap by asking:
+\subsection{Research Question}
+Given the critical need for sustainable wildfire suppression and potential of autonomous approaches, this research addresses the following question:
 
-\paragraph{Research Question}
+\indent``How can agent-based modeling be used to evaluate and optimize autonomous aerial wildfire suppression strategies across drone, plane, and hybrid systems, using path-finding algorithms to assess effectiveness, efficiency, and sustainability?''
 
-''How can agent-based modeling be used to evaluate and optimize autonomous aerial wildfire suppression strategies across drone, plane, and hybrid systems, using path-finding algorithms to assess effectiveness, efficiency, and sustainability?''
-
-Given the research question the following sub-questions arise and will guide this study:
+Accordingly, the following sub-questions this research:
 \begin{enumerate}
-  \item ''How do drone swarms, hybrid systems, and planes compare in wildfire suppression?''
-  \item ''What are path-finding algorithms and how do they influence the performance autonomous drone swarms in wildfire scenarios?''
-  \item ''What trade-offs emerge among suppression effectiveness, efficiency and sustainability?''
+  \item ``How do drone swarms, hybrid systems, and planes compare in wildfire suppression?''
+  \item ``What are path-finding algorithms and how do they influence the performance autonomous drone swarms in wildfire scenarios?''
+  \item ``What trade-offs emerge among suppression effectiveness, efficiency and sustainability?''
 \end{enumerate}
 
+\subsection{Findings}
 
 
 The strength of this thesis is that it presents a robust open-source agent-based simulation framework developed in Python using the Mesa library. Its object-oriented and well-documented architecture promotes interdisciplinary research. Presenting the possibility of an easy integration for different algorithms such as Ant Colony Optimization and Artificial Bee Colony underlines its strengths. The framework provides researchers and relevant stakeholders such as policymakers, emergency response planners, and environmental scientists, with a flexible tool to build on top of and evaluate custom aerial vehicle models and coordination strategies across a range of simulated scenarios. Its public availability offers societal benefit, especially in resource-limited regions, by enabling access to advanced simulation and planning tools.
@@ -234,7 +215,7 @@ As the complexity of drone systems is increasing, maintaining effective coordina
 These findings, suggest that humans are essential for providing strategic decisions and maintaining oversight, while autonomous systems such as drone manage local coordination and provide situational data. This division of tasks supports flexible and informed decision-making in a highly complex environment.
 In this thesis such interactions are explored in a simulated environment ABM environment, where the agents provide date about the dynamic environment and respond to the changing conditions. The emergent interactions and collected data can be used for informed decision-making by providing evidence about drone and plane behavior.
 
-\subsection{Conclusion}
+\subsection{Summary}
 
 While ABM research is growing especially in the field of swarm behavior and novel techniques to apply UAV in extreme situations, a research gap remains in comparative simulation studies that evaluate different aerial firefighting techniques within the same framework. Current literature often focuses on individual aspects such as drone swarms, sustainability, or suppression effectiveness, without systematic comparative analysis.
 
@@ -544,18 +525,15 @@ As mentioned earlier the Simulation is created with the SAT model in mind. There
 
 \subsection{Risk Assessment with Machine Learning}
 
-To evaluate whether the simulation output could support future autonomous risk-based decision-making, two unsupervised learning methods were integrated: 
+To address the main research question of how agent-based modeling can be used to evaluate and optimize autonomous aerial wildfire suppression strategies, two unsupervised learning methods, DBSCAN and K-Means, were implemented for exploratory analysis. This analysis aims to investigate whether simulation outputs contain meaningful patterns that could support more advanced analysis and agent decision-making in future research, rather than direct comparisons between suppression approaches.
 \begin{enumerate}
-    \item DBSCAN \citep{dbscan}: A density-based clustering algorithm to identify spatial risk zones.
+    \item DBSCAN \citep{dbscan}: A density-based clustering algorithm to identify spatial risk zone and corrdination patterns.
     \item K-Means \citep{kmeans}: A centroid-based algorithm to segment environments based on fire intensity and suppression delay.
 \end{enumerate}
 
-These algorithms were applied to the collected simulation data capturing fire intensity, suppression history, and spatial coordinates. The purpose was exploratory, testing whether simulated environments show meaningful emergent patterns that could later guide agent behavior. The main algorithms used was DBSCAN with falling back to K-Means if failing.
-
-No hyperparameter tuning was performed due to the exploratory nature of the task; default \texttt{scikit-learn} parameters were used, with basic preprocessing (normalization and NaN filtering).
+This exploratory machine learning clustering analysis serves as a proof-of-concept, demonstrating that the ABM framework generates informative emergent patterns, which can be used for further investigation. These algorithms were applied to simulation data capturing fire intensity, suppression history, and spatial coordinates. The main algorithm used was DBSCAN, with falling back to K-Meansn if DBSCAN failed to converge. Default \texttt{scikit-learn} parameters were used \citep{scikit-learn}, with basic preprocessing (normalization and NaN filtering). The clustering results are presented as a foundation for future research where risk assessment is used as a tool to guide agent behavior. 
 
 \subsection{Technical Implementation and Reproducibility}
-
 \begin{enumerate}
     \item Language: Python 3.11 \citep{python3.11}
     \item Packages: Key packages include \texttt{mesa} \citep{terMesa}, \texttt{numpy} \citep{numpy}, \texttt{pandas} \citep{reback2020pandas}, \texttt{matplotlib} \citep{Matplotlib}, \texttt{seaborn} \citep{seaborn} , \texttt{heapq} \citep{python-heapq} \texttt{scikit-learn} \citep{scikit-learn}, an exhaustive list of all requirements are listed in the repository: (\texttt{see requirements.txt})
@@ -564,8 +542,39 @@ No hyperparameter tuning was performed due to the exploratory nature of the task
 
 The entire simulation is designed to be reproducible and configurable. All agent parameters, environment size, and algorithm settings can be controlled via parameters.
 
+\subsection{Expected Outcomes and Performance Metrics}
+Based on the research questions and experimental setup, this research evaluates the different approaches using the following metrics.
+\begin{table}[h!]
+\centering
+\begin{tabular}{|l|p{10cm}|}
+\hline
+\textbf{Metric} & \textbf{Definition}\\
+\hline
+Effectiveness & Time steps required until successful fire suppression \\
+\hline
+Efficiency & Total accumulated operational cost in euros (€) \\
+\hline
+Sustainability & Resource analysis of total CO\textsubscript{2} emissions in (kg) and water consumption in (L)  \\
+\hline
+Path-finding Performance & Comparative analysis based on effectiveness, efficiency and sustainability across A*, ACO, and ABC algorithms\\
+\hline
+Trade-off Analysis & Scenarios with higher effectiveness (faster suppression) may exhibit lower sustainability (higher emissions/costs). However, the containment of wildfires has the highest priority. \\
+\hline
+\end{tabular}
+\caption{Performance Metrics}
+\end{table}
+
+Drone swarms are expected to demonstrate superior cost-effectiveness and lower environmental impact with higher coordination completely, in line with their individual capacity limitations. In contrast, the plane approach is likely to be the least sustainable but most capable at wildfire suppression. Hybrid systems may offer optimal trade-offs between suppression speed and sustainability. The machine learning model analysis is expected to reveal operational patterns that could inform future decision-making strategies. The performance of the path-finding algorithms is expected to reveal that the A* algorithm performs well in structured environments, while ACO and ABC excel in more dynamic environment. These hypotheses are based on the 
+simulation architecture, agent properties, and path-finding behavior.
+
 
 \section{Results}
+
+
+
+
+
+
 \section{Discussion}
 
 \appendix
@@ -810,5 +819,6 @@ water\_provided & 0.0 & Total water supplied to planes \\
 
 \bibliographystyle{apalike}
 \bibliography{references}
+
 
 \end{document}
