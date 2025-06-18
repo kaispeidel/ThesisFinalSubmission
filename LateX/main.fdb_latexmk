@@ -1,14 +1,14 @@
 # Fdb version 4
-["bibtex main"] 0 "main.aux" "main.bbl" "main" 1750260739.0688 -1
+["bibtex main"] 1750261137.99862 "main.aux" "main.bbl" "main" 1750261140.58119 0
   "./references.bib" 1750175594.62041 53647 96771dc0f636e8f74def6cde4eaad6c8 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/bibtex/bst/base/apalike.bst" 1741388039 24635 604dafcc79f521a11ea73e506e1fbd98 ""
-  "main.aux" 1750260738.84439 26483 2a4aa4cc3f4a46fa954f1a6eb4a27675 "pdflatex"
+  "main.aux" 1750261140.36997 26457 74c2575297c8cf5452aacb7da4fb83e9 "pdflatex"
   (generated)
   "main.bbl"
   "main.blg"
   (rewritten before read)
-["pdflatex"] 1750260736.56784 "/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex" "main.pdf" "main" 1750260739.06897 2
-  "/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex" 1750260733.60659 69706 20cc01a0735f334be9622c346128bd1d ""
+["pdflatex"] 1750261138.06594 "/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex" "main.pdf" "main" 1750261140.58134 0
+  "/Users/kaispeidel/Downloads/ThesisFinalSubmission/LateX/main.tex" 1750261134.91019 67714 eccc5b087e0e44b5b428f537793613ca ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/base/8r.enc" 1741388039 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/map/fontname/texfonts.map" 1741388039 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/map/pdftex/updmap/pdftex.map" 1741388039 5466553 2748998d7db8078826afa1f272036265 ""
@@ -156,7 +156,6 @@
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/enumitem/enumitem.sty" 1741388039 52272 63d293bc0d496619edb57585740861a2 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1741388039 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1741388039 46850 d87daedc2abdc653769a6f1067849fe0 ""
-  "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty" 1741388039 31715 19e60610b63819fe670dfa1cd84a4e94 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/float/float.sty" 1741388039 6749 16d2656a1984957e674b149555f1ea1d ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/footmisc/footmisc.sty" 1741388039 21517 e6c380e6f383c61a6a04ddbdffb45d81 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/geometry/geometry.sty" 1741388039 41601 9cf6c5257b1bc7af01a58859749dd37a ""
@@ -228,6 +227,7 @@
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/tools/longtable.sty" 1741388039 15900 3cb191e576c7a313634d2813c55d4bf1 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/translations/translations-basic-dictionary-english.trsl" 1741388039 5588 0c1628daf15f4411ff1f463114c634a3 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/translations/translations.sty" 1741388039 44247 2188b95d0ee74e31eca4d316263c58a7 ""
+  "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/units/nicefrac.sty" 1741388039 4029 0462ee5ab265cf59dc15a41a3b883101 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/url/url.sty" 1741388039 12796 8edb7d69a20b857904dd0ea757c14ec9 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/xcolor/xcolor.sty" 1741388039 55384 b454dec21c2d9f45ec0b793f0995b992 ""
   "/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/web2c/texmf.cnf" 1741388039 42151 79f67285bdd95beca4d137b380b4b9e5 ""
@@ -235,15 +235,13 @@
   "figures/DroneAgent_Logic.png" 1750157984.16597 389200 519968ba2ee7e16568d98f8ced1d4b55 ""
   "figures/modellogic.png" 1750172714.03122 356699 aee7046b3537661349a1efad9e9dabeb ""
   "figures/plane_logic.png" 1750165257.49607 249885 ef751fa10de22fa2be0e3408880575cf ""
-  "frontmatter.tex" 1750260626.59555 1764 8c3ca94737fb726bdc1ab2934177c341 ""
+  "frontmatter.tex" 1750261059.3368 1764 8c3ca94737fb726bdc1ab2934177c341 ""
   "logo.eps" 1750260617.93502 1093622 093f63d042513f0ccc15394223a221a3 ""
-  "main.aux" 1750260738.84439 26483 2a4aa4cc3f4a46fa954f1a6eb4a27675 "pdflatex"
-  "main.bbl" 1750258611.15544 15926 dd10145061f0cb5daa29ee721a71bb76 "bibtex main"
-  "main.tex" 1750260733.60659 69706 20cc01a0735f334be9622c346128bd1d ""
-  "main.toc" 1750260738.84863 3489 7d45dc98900a2a3fdb10e38dbb3ce7a0 "pdflatex"
+  "main.aux" 1750261140.36997 26457 74c2575297c8cf5452aacb7da4fb83e9 "pdflatex"
+  "main.bbl" 1750261138.06302 15926 dd10145061f0cb5daa29ee721a71bb76 "bibtex main"
+  "main.tex" 1750261134.91019 67714 eccc5b087e0e44b5b428f537793613ca ""
   (generated)
   "main.aux"
   "main.log"
   "main.pdf"
-  "main.toc"
   (rewritten before read)

@@ -1,0 +1,49 @@
+This is BibTeX, Version 0.99d (TeX Live 2025/Homebrew)
+Capacity: max_strings=200000, hash_size=200000, hash_prime=170003
+The top-level auxiliary file: main.aux
+The style file: apalike.bst
+Database file #1: references.bib
+Warning--entry type for "reback2020pandas" isn't style-file defined
+--line 678 of file references.bib
+You've used 56 entries,
+            1935 wiz_defined-function locations,
+            840 strings with 17574 characters,
+and the built_in function-call counts, 26051 in all, are:
+= -- 2446
+> -- 1547
+< -- 36
++ -- 572
+- -- 556
+* -- 2373
+:= -- 4618
+add.period$ -- 174
+call.type$ -- 56
+change.case$ -- 553
+chr.to.int$ -- 56
+cite$ -- 56
+duplicate$ -- 839
+empty$ -- 1508
+format.name$ -- 640
+if$ -- 4956
+int.to.chr$ -- 1
+int.to.str$ -- 0
+missing$ -- 46
+newline$ -- 284
+num.names$ -- 170
+pop$ -- 470
+preamble$ -- 1
+purify$ -- 556
+quote$ -- 0
+skip$ -- 657
+stack$ -- 0
+substring$ -- 1513
+swap$ -- 121
+text.length$ -- 8
+text.prefix$ -- 0
+top$ -- 0
+type$ -- 332
+warning$ -- 0
+while$ -- 178
+width$ -- 0
+write$ -- 728
+(There was 1 warning)

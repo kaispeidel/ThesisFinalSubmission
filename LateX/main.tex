@@ -1,46 +1,44 @@
 \documentclass[11pt, a4paper]{article}
-\usepackage[nochapters]{classicthesis}                              % template
-\usepackage[margin=42mm]{geometry}                                  % margins
-\usepackage[utf8]{inputenc}                                         % allow utf-8 input
-\usepackage[T1]{fontenc}                                            % use 8-bit T1 fonts
-\usepackage{graphicx}                                               % images
-\usepackage{url}                                                    % URL typesetting
-\usepackage{booktabs}                                               % good-looking tables
-\usepackage{multirow}                                               % for tables
-\usepackage{amsfonts}                                               % blackboard math symbols
+\usepackage[nochapters]{classicthesis}
+\usepackage[margin=42mm]{geometry}
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}
+\usepackage{url}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{amsfonts}
 \usepackage{amsmath}
+\usepackage{nicefrac}
 \usepackage{microtype}
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{siunitx}
+\usepackage{float}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{setspace}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{natbib}
+\usepackage{hyperref}
+\usepackage{bookmark}
 
-% Your specific packages
-\usepackage{longtable}                                              % long tables spanning pages
-\usepackage{array}                                                  % enhanced table formatting
-\usepackage{siunitx}                                                % proper unit formatting
-\usepackage{float}                                                  % figure positioning
-\usepackage{caption}                                                % enhanced captions
-\usepackage{subcaption}                                             % subfigures
-\usepackage{tikz}                                                   % diagrams and drawings
-\usepackage{fancyhdr}                                               % custom headers/footers
-\usepackage{setspace}                                               % line spacing control
-\usepackage{enumitem}                                               % enhanced lists
-\usepackage{xcolor}       
-\usepackage{hyperref}                                          % color definitions
+\definecolor{darkblue}{rgb}{0, 0, 0.5}
 
-\definecolor{darkblue}{rgb}{0, 0, 0.5}                              % define link color
-
-
-\def\thesistitle{INVESTIGATING THE USE OF AGENT-BASED MODELING FOR WILDFIRE PREVENTION: A SIMULATION STUDY}                      % title
-\def\subtitle{}             % subtitle
-    % ^if there is no subtitle, replace by \def\subtitle{}  
-\def\yourname{Kai Speidel}                                                                       % ^first and last nam
- \def\yourprogramme{Cognitive Science \& Artificial Intelligence}    % uncomment this
-\def\yourstudentnumber{2095270}                                      % ANR (or u-number)
-\def\finalmonth{January}
-\def\finalyear{2000}
+% ALL variable definitions (required by frontmatter.tex)
+\def\thesistitle{INVESTIGATING THE USE OF AGENT-BASED MODELING FOR WILDFIRE PREVENTION: A SIMULATION STUDY}
+\def\subtitle{}
+\def\yourname{Kai Speidel}
+\def\yourprogramme{Cognitive Science \& Artificial Intelligence}
+\def\yourstudentnumber{U627621}
+\def\finalmonth{June}
+\def\finalyear{2025}
 \def\supervisor{Dr. Travis J. Wiltshire}
-\def\committee{Natalie Ranzhi Wei, Msc.}
+\def\committee{Natalie Ranzhi Wei, MSc.}
 \def\acknowledgments{Many thanks to my supervisor, Dr. Travis J. Wiltshire, for their guidance and support throughout this project.}
-\def\wordcount{your word count should be here, ex 12000}
-% METADATA
+\def\wordcount{12000}
 
 \hypersetup{colorlinks=true,
             citecolor=darkblue,
@@ -49,37 +47,18 @@
             pdfauthor=\yourname,
             pdftitle=\thesistitle}
 
-% \usepackage{natbib} % Removed because biblatex is used
-
-\usepackage{bookmark}
-\usepackage{natbib}
-
-
-
 \begin{document}
-\input{frontmatter.tex}  % don't remove this :)
+\input{frontmatter.tex}
 
-% --- start writing below:
+% Remove the duplicate title page stuff you had after frontmatter
+% The frontmatter already creates title pages
 
-\newpage
-\tableofcontents
-\cleardoublepage
 \setcounter{page}{1}
 
 \begin{abstract}
 Wildfires pose a growing threat resulting from climate change, biodiversity loss, and human activity \citep{copernicus-wildfires}. This research explores economic and sustainable firefighting approaches using autonomous drone swarms, traditional aircraft, and hybrid models. A simulation framework created in Python using the agent-based modeling library Mesa \citep{terMesa} simulates these methods, focusing on cost, environmental impact, and computational efficiency. Drones, planes, fires, and resource stations were modeled as agents in the environment with parameters supported by current research. Results from 1,000 steps over 1,000 simulation iterations demonstrate that drone swarms significantly and consistently outperform manned aircraft in both sustainability and cost-effectiveness. Hybrid systems offer the fastest response times but with higher emissions and operational costs. This research contributes an open-source framework for evaluating aerial firefighting strategies, designed to support evidence-based guidelines and encourage sustainable and frugal fire management practices.
 \end{abstract}
 
-
-\pagestyle{fancy}
-\fancyhf{} % clear all header and footer fields
-\fancyhead[LE]{\small Kai Speidel}     
-\fancyhead[RE]{\small\nouppercase{\rightmark}}
-
-% Odd pages (right-hand side)
-\fancyhead[LO]{\small Cognitive Science \& Artificial Intelligence}
-\fancyhead[RO]{\small 2025} 
-\fancyfoot[C]{\thepage}
 
 
 
