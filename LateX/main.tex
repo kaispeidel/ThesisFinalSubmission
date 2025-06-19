@@ -6,6 +6,7 @@
 \usepackage{graphicx}
 \usepackage{url}
 \usepackage{booktabs}
+\usepackage{csquotes}
 \usepackage{multirow}
 \usepackage{amsfonts}
 \usepackage{amsmath}
@@ -111,8 +112,7 @@ As wildfires grow in intensity and frequency, traditional suppression methods fa
 
 \subsection{Research Question}
 Given the critical need for sustainable wildfire suppression and potential of autonomous approaches, this research addresses the following question:
-
-\indent``How can agent-based modeling be used to evaluate and optimize autonomous aerial wildfire suppression strategies across drone, plane, and hybrid systems, using path-finding algorithms to assess effectiveness, efficiency, and sustainability?''
+\indent \enquote{How can agent-based modeling be used to evaluate and optimize autonomous aerial wildfire suppression strategies across drone, plane, and hybrid systems, using path-finding algorithms to assess effectiveness, efficiency, and sustainability?}
 
 Accordingly, the following sub-questions this research:
 \begin{enumerate}
@@ -133,7 +133,7 @@ In the scope of this research different wildfire suppression methods, namely tra
 \section{Related Work}
 
 \subsection{The Importance of preventing Wildfires}
-As already mention wildfires are increasing, creating devastating destruction. Additionally, the economic damage from wildfires is immense, while the annual cost of wildfire management in the U.S. is estimated to be \$7.6 billion to \$62.8 billion, the economic damage is estimated between \$63.5 billion to \$285.0 billion \cite{Afghah2019}. This highlights the importance of this research topic and the need for practical, cost-effective and quick solutions. Aiming for a sustainable approach should be emphasized as traditional methods are costly and emit a lot of CO\textsubscript{2} \cite{Saffre2022}. The ecological impact especially on the agricultural sector is seen as a societal threat as several sources report \citep{grassland_Wildfires,IPCC2023}. 
+As already mention wildfires are increasing, creating devastating destruction. Additionally, the economic damage from wildfires is immense, while the annual cost of wildfire management in the U.S. is estimated to be \$7.6 billion to \$62.8 billion, the economic damage is estimated between \$63.5 billion to \$285.0 billion \citep{Afghah2019}. This highlights the importance of this research topic and the need for practical, cost-effective and quick solutions. Aiming for a sustainable approach should be emphasized as traditional methods are costly and emit a lot of CO\textsubscript{2} \citep{Saffre2022}. The ecological impact especially on the agricultural sector is seen as a societal threat as several sources report \citep{grassland_Wildfires,IPCC2023}. 
 
 \subsection{Traditional Methods}
 
@@ -204,7 +204,7 @@ In the context of this research, sustainability is evaluated by water consumptio
 \section{Methodology}
 \label{sec:Methodology}
 
-This study uses a simulation-based computational approach to evaluate different wildfire suppression strategies. At its core the methodology involves agent-based modeling, swarm path-finding algorithms, and machine learning-based post hoc analysis. The goal is to determine the operational, environmental, and economic effectiveness of drones, manned aircraft, and hybrid firefighting systems. All simulations are implemented in Python using the Mesa framework \citep{terMesa}, as it is ideal study complex emergent behavior. Given the complexity inherent in agent-based simulation studies, a detailed description of the initialization process and agent setup is provided to ensure clarity, reproducibility, and transparency.
+This study uses a simulation-based computational approach to evaluate different wildfire suppression strategies. At its core the methodology involves agent-based modeling, swarm path-finding algorithms, and machine learning-based post hoc analysis. The goal is to determine the operational, environmental, and economic effectiveness of drones, manned aircraft, and hybrid firefighting systems. All simulations are implemented in Python using the Mesa framework \citep{terMesa}, as it is ideal to study complex emergent behavior. Given the complexity inherent in agent-based simulation studies, a detailed description of the initialization process and agent setup is provided to ensure clarity, reproducibility, and transparency.
 
 \subsection{Simulation Design and Setup}
 \paragraph{Environment} The simulated environment consists of a 250×250 discrete grid (62,500 total cells) representing the landscape where wildfire events occur, where one cell is equivalent to 10 meters. This creates a simulation area of 2.5 km × 2.5 km (6.25 km\textsuperscript{2}), representing a realistic wildfire scenario. This grid size was selected to balance computational efficiency, while maintaining an appropriate size for meaningful agent interactions and fire dynamics. Each cell tracks state information about occupancy status, fire state and resource station allocation, it can contain agents or fire. The simulation proceeds in fixed time steps defined by the steps variable. Fires can ignite, grow in intensity, and spread to adjacent cells probabilistically. Fire suppression agents attempt to extinguish them while managing internal resource constraints. (e.g., water supply, energy). 
@@ -212,7 +212,7 @@ This study uses a simulation-based computational approach to evaluate different 
 \begin{enumerate}
   \item \textbf{Drone-only approach}: 30 autonomous drone agents are employed. Reflecting a frequently used a swarm size in swarm optimization studies of 30 (Z\textsubscript{max} = 30) \citep{swarm1_kozlov2022information,swarm2_optimization_drone}. This size ensures meaningful coordination strategies while balancing computational efficiency. The drones are initiated with an individual water capacity of \SI{50}{\liter} which results in a total swarm capacity of \SI{1500}{\liter}. Research Question 2 (RQ2) is addressed by implementing, comparing different path-finding algorithms, and analyzing how their distinct behaviors influence emergent wildfire suppression outcomes.
   \item \textbf{Plane-Only}: 4 firefighting aircraft are employed, reflecting a realistic firefighting fleet in extreme scenarios \citep{sherryAerialFireFighting2025}. Given an individual water capacity of \SI{18184}{\liter} per plane, the total fleet capacity is \SI{72736}{\liter}. Considering that firefighting planes are the most used suppression technique, this approach acts as a baseline for the comparative assessment of RQ1.
-  \item \textbf{Hybrid approach}: 20 drones + 5 planes + 2 runways. This hybrid approach employs both the firefighting aircraft and drone agents, which enables coordination testing between heterogeneous agents. Given 20 drones and 5 planes the combined capacity is \SI{92920}{\liter} (\SI{2000}{\liter} + \SI{90920}{\liter}). This approach directly addresses RQ1's systematic comparison and RQ3's optimization potential. 
+  \item \textbf{Hybrid approach}: 20 drones + 5 planes + 3 runways. This hybrid approach employs both the firefighting aircraft and drone agents, which enables coordination testing between heterogeneous agents. Given 20 drones and 5 planes the combined capacity is \SI{92920}{\liter} (\SI{2000}{\liter} + \SI{90920}{\liter}). This approach directly addresses RQ1's systematic comparison and RQ3's optimization potential. 
 \end{enumerate}
 
 The significantly different water capacities of the different approaches are intentional and reflect the limitations and advantages of each agent's architecture. This strategy is chosen to reflect real-world operational constraints such as the limited carrying capacity of drones.
@@ -377,7 +377,7 @@ The emission rate of the firefighting plane is based on data from \citet*{spicer
 \]
 
 \[
-\text{Emissions per Step} = 0.417~\text{L/step} \times 0.24584~\frac{\text{kg CO}_2}{\text{L}} = 0.1025~\text{kg CO}_2/\text{step}
+\text{Emissions per Step} = 0.417~\text{L/step} \times 0.24584~\frac{\text{kg CO}_2}{\text{L}} = 0.1025~\text{kg CO}_2
 \]
 
 
@@ -389,7 +389,7 @@ In addition to similar parameters, the logic of the plane also works differently
 
 %TC:ignore
 \begin{center}
-\begin{longtable}{>{\raggedright\arraybackslash}p{4.4cm} >{\raggedright\arraybackslash}p{1.4cm} >{\raggedright\arraybackslash}p{6.4cm}}
+\begin{longtable}{>{\raggedright\arraybackslash}p{4.4cm} >{\raggedright\arraybackslash}p{1.4cm} >{\raggedright\arraybackslash}p{6cm}}
 \caption{Firefighting Plane Class Parameters} \\
 \toprule
 \textbf{Parameter Name} & \textbf{Default Value} & \textbf{Description} \\
@@ -525,11 +525,11 @@ The entire simulation is designed to be reproducible and configurable. All agent
 Based on the research questions and experimental setup, this research evaluates the different approaches using the following metrics.
 \begin{table}[h!]
 \centering
-\begin{tabular}{|l|p{10cm}|}
+\begin{tabular}{|l|p{7cm}|}
 \hline
 \textbf{Metric} & \textbf{Definition}\\
 \hline
-Effectiveness & Time steps required until successful fire suppression \\
+Effectiveness & Time steps required until successful fire suppression ~\ref{sec:supression_analysis}\\
 \hline
 Efficiency & Total accumulated operational cost in euros (€) \\
 \hline
@@ -546,15 +546,235 @@ Trade-off Analysis & Scenarios with higher effectiveness (faster suppression) ma
 Drone swarms are expected to demonstrate superior cost-effectiveness and lower environmental impact with higher coordination completely, in line with their individual capacity limitations. In contrast, the plane approach is likely to be the least sustainable but most capable at wildfire suppression. Hybrid systems may offer optimal trade-offs between suppression speed and sustainability. The machine learning model analysis is expected to reveal operational patterns that could inform future decision-making strategies. The performance of the path-finding algorithms is expected to reveal that the A* algorithm performs well in structured environments, while ACO and ABC excel in more dynamic environment. These hypotheses are based on the 
 simulation architecture, agent properties, and path-finding behavior.
 
-
 \section{Results}
 
+\subsection{Path-Finding}
+
+To address the main research question and RQ1, it is necessary to first present the results addressing RQ2, which investigates the performance of different path-finding algorithms. The simulation provides clear visual evidence that each algorithm employs a distinct movement strategy. In the visualizations, each drone’s path is depicted as a blue line, recharge stations are shown as yellow circles, and water stations as blue circles. Separate figures are dedicated to A*~\ref{fig:a_star}, Ant Colony Optimization (ACO)~\ref{fig:aco} and Artificial Bee Colony (ABC)~\ref{fig:abc}, each illustrating the algorithm’s trajectory under identical initial fire conditions (\texttt{fires\_n = 50}), respecting model complexity considerations ~\ref{sec:model_complexity}. Each plot is generated after 1000 simulation steps.
+It is important to note that results can vary between simulation runs, thus the figures presented here serve as representative examples. Accordingly, it is possible that some fires are still not contained, those are marked as red circles, with the size reflecting its intensity. The same logic applies for extinguished fires, marked as green circles.
+The ``active'' label in the plot describes ongoing fires, while the ``total fires'' metric represents the cumulative number of ignited fires throughout the simulation, highlighting that the fire spread mechanic is working properly.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\linewidth]{figures/A*_agent_paths.jpeg}
+    \caption{Path trajectories of drone agents using A*}
+    \label{fig:a_star}
+\end{figure}
+
+Figure~\ref{fig:a_star} demonstrates the operational success of the drone-based approach using the A* algorithm, achieving 100\% fire suppression (81 out of 81 ignites fires extinguished). Its trajectory can be described as direct and efficient while maintaining coordinated suppression behavior and resource management. In contrast, the ACO algorithm exhibits emergent swarm intelligence through its distinct path trajectories, showing adaptive route optimization. Figure~\ref{fig:aco} demonstrates a simulation that does not converge, the drones do not manage to contain all fires in the given simulation steps (46.4\% extinguished). In order to differentiate between extinguished and active fires, this example was intentionally selected. Accordingly, this visualization provides evidence into the drone's trajectory which can inform resource allocation decisions. For example, in this simulation, fires in three areas grew larger than others, suggesting that resource station placement in these regions should be adjusted for more effective suppression or more drones should be allocated in this area. 
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\linewidth]{figures/ACO_agent_paths.jpeg}
+    \caption{Path trajectories of drone agents using Ant Colony Optimization}
+    \label{fig:aco}
+\end{figure}
+
+The trajectory of the ABC algorithm, exhibit a similar organic behavior, characterized by an initial phase of broad exploration, followed by a progressive concentration on the most promising areas. Figure~\ref{fig:abc} shows that this approach yields promising results with 98.5\% effectiveness. Additionally, an interesting behavior can be observed, the paths appear less coordinated compared to the A* and ACO approaches. This phenomenon is likely attributable ABC's initial broad exploration behavior, which uses significant resources, resulting in frequent visits to resource stations, as evidenced by the denser clustering of paths around resource stations. While this intensive exploration strategy may compromise immediate efficiency, it potentially enhances long-term coverage optimization through comprehensive environmental exploration.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\linewidth]{figures/Artificial_Bee_Colony_agent_paths.jpeg}
+    \caption{Path trajectories of drone agents using Artificial Bee Colony}
+    \label{fig:abc}
+\end{figure}
+
+Drones demonstrate efficient resource management by clustering around resource  while maintaining distributed fire suppression coverage across the 250×250 coordinate space. The high effectiveness in fire suppression with minimal path redundancy supports the sustainability hypothesis, as efficient routing reduces energy consumption and operational costs, directly addressing RQ3. The successful coordination of 30 autonomous agents validates the scalability potential for larger environmental applications.
+Additional figures are provided for the plane’s approach ~\ref{fig:plane_path} and the hybrid approach~\ref{fig:hybrid_paths}, each revealing unique response patterns. In contrast to the drone approaches these approaches include a runway class (purple cross). From the figures it is evident that the behavior of the aircraft is different from the drones, this can be observed in the higher turning radius and runway dependency.
+
+\begin{figure}[H]
+    \centering
+    \includegraphics[width=1\linewidth]{figures/Firefighting_Plane_agent_paths.jpeg}
+    \caption{Path trajectories of aircraft agents}
+    \label{fig:plane_path}
+\end{figure}
+
+Figure~\ref{fig:plane_path} reveals the unique operational characteristics of the aircraft-based approach. The trajectories exhibit mainly linear patterns, constrained by mandatory runway interactions for takeoff, landing, and refueling operations. This infrastructure dependency significantly limits operational flexibility, particularly impacting the suppression of fires located at greater distances from the runway, thus achieving only 52.4\% suppression effectiveness with 258 active fires remaining. The resulting coverage pattern demonstrates clear spatial differences, with reduced effectiveness in peripheral areas of the simulation environment. This emergent behavior clearly demonstrates the trade-off between aircraft capacity and operational flexibility.
+In contrast, the hybrid approach exhibits observable patterns suggesting intelligent resource allocation between aircraft and drone technologies. Figure~\ref{fig:hybrid_path} provides evidence of planes handling most suppression tasks, while drones appear to provide supplementary coverage for distant or smaller fires. These behavioral characteristics suggest the potential of collaborative systems, with additional evidence presented in Section~\ref{sec:suppression_analysis}.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\linewidth]{figures/Hybrid_agent_paths.jpeg}
+    \caption{Path trajectories of drone agents and aircraft}
+    \label{fig:hybrid_path}
+\end{figure}
+
+Collectively, these individual plots validate the correct integration of all algorithms into the simulation and showcase how different navigation strategies and swarm behaviors emerge in the defined environment. 
+
+%The high effectiveness in fire suppression with minimal path redundancy supports the sustainability hypothesis, as efficient routing reduces energy consumption and operational costs. The successful coordination of 30 autonomous agents validates the scalability potential for larger environmental applications.
+
+\subsection{Suppression Analysis}
+\label{sec:supression_analysis}
+
+Research Question 1 addresses the comparative effectiveness of drone swarms, hybrid systems, and planes in wildfire suppression. To evaluate this, the mean number of active fires at each time step was calculated across 1000 independent simulation runs. Figure~\ref{fig:comparitive_analysislineplot} presents these results, with 95\% confidence intervals (CIs) depicted as shaded regions around each suppression line. Wider confidence intervals indicate greater variability and thus lower consistency in suppression performance.
+The results show that drone-based approaches (using ABC, A*, and ACO algorithms) and the hybrid approach maintain consistent suppression performance, as indicated by thinner confidence intervals. In contrast, the plane-only approach displays the widest confidence intervals and the greatest variability in the number of active fires throughout the simulations. This indicates that the plane approach is less consistent in its suppression effectiveness.
+Overall, these findings suggest that drone-based and hybrid approaches not only achieve similar levels of effectiveness but also provide more consistent results than the plane-only approach. The results also imply that incorporating drones into traditional plane-based suppression strategies could improve consistency and reliability in wildfire management within the context of this simulation study.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\linewidth]{figures/fire_progression_analysis.jpeg}
+    \caption{Fire Progression Analysis: Active Fires Across 1000 Simulations with 95\% Confidence Intervals}
+    \label{fig:comparitive_analysislineplot}
+\end{figure}
+
+Effectiveness was further assessed by analyzing the number of simulation steps required to achieve complete fire suppression for each approach. Figure~\ref{fig:comparitive_analysis} displays the mean suppression times and associated variability (as standard deviation) for each configuration, with error bars representing a 95\% confidence interval.
+The drone-only approaches: ABC (229.3 ± 15.9 steps), A* (237.9 ± 16.2 steps), and ACO (291.6 ± 16.5 steps); consistently outperformed the aircraft-only approach (505.1 ± 14.6 steps), which also regularly failed to converge within the defined runtime. The hybrid approach (drones + aircraft) demonstrated the fastest average suppression time (223.3 ± 7.0 steps) and the lowest variability, indicating both efficiency and reliability.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\linewidth]{figures/fire_extinction_comparison.jpeg}
+    \caption{Mean Fire Extinction Time with 95\% Confidence Intervals}
+    \label{fig:comparitive_analysis}
+\end{figure}
+
+These results suggest that drone-based approaches are not only more effective than the plane-only configuration but also maintain consistent performance across different path-finding algorithms. The superior results of the hybrid approach further imply that integrating drones with traditional aircraft can significantly enhance wildfire suppression efficiency within the context of this simulation.
 
 
 
+\subsection{Resource Analysis}
 
+Figure~\ref{fig:resources_analysisBIG} reports average water use, energy/fuel consumption, and emissions per simulation with a 95\% confidence interval and error bars. It is evident that the Plane approach is by far the most expensive and pollutant approach in terms of water usage and emitted CO\textsubscript{2} emissions. Given the significantly different resource usages the values are displayed in log scale to make them more comparable Additionally, the cost factor is significantly higher than the compared approaches. The values for the Plane approach go in line with the finding that the plane did not manage to condemn the fire in the given 1000 step time-frame. Given the downward trend of the slope it is expected that the plane manages to condemn the fire eventually and therefore making the simulation converge. The findings emphasize the fact that the plane approach although possibly being able to condemn the fire is inferior to the drone's resource management abilities. Drones generated the lowest emissions and resource usage, supporting their role in sustainable firefighting. However, the Hybrid system, despite higher emissions, achieved the fastest containment a speed-sustainability trade-off ~\ref{fig:computational_complexity_comparison}. When analyzing cost and water parameters, the same logic applies: drone approaches outperform their competitors, but the hybrid approach still significantly outperforms the plane approach.
+
+\begin{figure}[htbp]
+    \centering
+    \includegraphics[width=1\linewidth]{figures/resource_analysis_log.jpeg}
+    \caption{Comparative Analysis of Resource Usage and Environmental Impact by Approach (Log Scale)}
+    \label{fig:resources_analysisBIG}
+\end{figure}
+
+
+
+\begin{table}[htbp]
+\centering
+\caption{Resource Usage and Environmental Impact by Approach}
+\label{tab:resource_usage}
+\begin{tabular}{lSSS}
+\toprule
+\textbf{Approach} & {\textbf{Water (L)}} & {\textbf{Emissions (kg CO\textsubscript{2})}} & {\textbf{Cost (€)}} \\
+\midrule
+\multicolumn{4}{l}{\textit{Drone Approaches}} \\
+A* & 685 & 3400 & 4700 \\
+ABC & 685 & 3300 & 4500 \\
+ACO & 776 & 3200 & 4400 \\
+\midrule
+Plane & 877500 & 218800 & 62100 \\
+Hybrid & 312600 & 76900 & 21500 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+\subsection{Computational Complexity}
+
+\label{sec:computational_complexity}
+
+Figure~\ref{fig:computational_complexity_comparison} presents the average simulation time required by each path-finding algorithm. Computational efficiency is a key factor when deploying such systems; while some algorithms may find the fastest route, their high computational cost can be a significant trade-off. The results indicate that all evaluated path-finding methods exhibit similar performance when run 1000 times. 
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=1\linewidth]{figures/computational.jpg}
+    \caption{Computational Complexity Comparison}
+    \label{fig:computational_complexity_comparison}
+\end{figure}
+
+\subsection{Fire Risk Clustering and Analysis}
+\label{sec:risk_assesment}
+
+Figure~\ref{sec:risk_assesment} presents a fire risk analysis based on post-simulation data, where DBSCAN was primarily used to detect high-risk zones—areas where fires repeatedly re-ignited or were slow to extinguish. K-Means was applied only when DBSCAN failed to form meaningful clusters. The highlighted scenario shows a plane-approach that did not converge within the 1000-step limit, emphasizing the adaptive fire response tactics. These results demonstrate that the model successfully incorporates machine learning to identify high-risk  regions, validating its ability to support data-driven risk assessment and intervention strategies. 
+
+\begin{figure}[!htbp]
+    \centering
+    \includegraphics[width=1\linewidth]{figures/enhanced_fire_risk_analysis.png}
+    \caption{Risk assessment with DBSCAN on the \texttt{Plane\_agent\_data}}
+    \label{fig:risk_assesment}
+\end{figure}
+
+%validation of why 50 fire agents - what happens if there are more fireagents
+% faster suppression is better as firs grow further
+
+\subsection{Summary of the Results}
+
+These results demonstrate the value of the proposed integrated simulation approach. By modeling suppression time, emissions, operational costs and water usage within a single system, this study enables comparisons of customizable firefighting strategies under consistent constraints. The simulation under the defined parameters reveals that drones provide the most cost-effective and sustainable option, while hybrid configurations excel in speed. The modular design incorporating agent based properties and different search algorithms proves its flexibility and robustness. Furthermore, the integration of machine learning, such as clustering analysis, further supports its potential as a decision-support tool. This integrated framework not only models complex wildfire scenarios but sets the foundation for transparent, data-driven, and flexible fire prevention strategies in the real world.
 
 \section{Discussion}
+
+\section{Discussion}
+\label{sec:discussion}
+
+The main goal of this thesis was to evaluate the effectiveness of autonomous drone swarms in wildfire prevention, comparing them to traditional manned aircraft and hybrid approaches. The study aimed to assess these strategies based on suppression efficiency, emissions, operational cost, and water usage using a custom agent-based simulation framework. The project also pursued to explore the use of nature-inspired path-finding algorithms and unsupervised learning for enhancing decision-making in complex, dynamic fire environments.
+
+\subsection{Interpretation of Key Findings}
+
+\subsubsection{Suppression Efficiency \& Resource Analysis}
+
+The simulation results demonstrate that the choice of aerial vehicle approach significantly impacts wildfire containment success. The quantitative analysis revealed that a drone-only approach contained fires on averages under 300 steps, compared to the plane approach not converging on average. With the fastest and most consistent convergence having the hybrid approach. 
+Regarding the cost and environmental parameters the hybrid approach had higher values, but significantly lower than those of the plane approach. However it is to be investigated if the great performance of the drone approach holds under harsher weather conditions and fires with increased intensity, spread and volume. Considering this fact the hybrid approach might be the most interesting solution to look into considering real world applications. The nature-inspired algorithms all performed comparably well with acceptable computational complexity and successful fire contentment. The robustness of the model is important and the fact that it can easily be equipped with different path-finding algorithms is a great insight. These findings reinforce prior work \cite{Saffre2022} \cite{stolaroffEnergyUseLife2018}, underlining the environmental advantage of electrified, decentralized suppression systems. 
+
+\subsubsection{Cost and Infrastructure Trade-offs}
+
+The cost analysis showed drone-only systems to be the most cost-efficient due to lower maintenance, fuel, and infrastructure requirements. Hybrid configurations, while fastest, still produced high costs. Mainly due to the need for runways as refuel stations. These findings align with previous  research employing new ways to fight wildfires and showing their potential \cite{fireBalls} but go further by simulating these metrics in a direct comparison. 
+
+\subsubsection{Path-Finding Behavior}
+
+Path-finding visualization results displayed that the algorithms were functionally integrated and generated realistic emergent behavior, validating their inclusion in the simulation. This highlights the value of swarm intelligence in dynamically evolving environments and supports further integration of nature-inspired decision systems.
+
+
+\subsection{Limitations}
+
+While the simulation produced clear trends, it operates under several assumptions and simplifications. The Simulation introduces several limitations regarding the limited scope for this research, therefore it is important to acknowledge these and point out room for future improvement. 
+
+\subsubsection{Dimension Constraints}
+The environment is set-up as a two dimensional environment which makes computation quick and integrating the agents easy but lacks realistic properties. Especially for aerial vehicles a three dimensional environment is preferable. A three dimensional model would better capture altitude-dependent factors such as visibility, wind effects, and water/retardant dispersal patterns. 
+
+\subsubsection{Non-Dynamic Parameters} 
+Both the parameters for the drone and the plane agent were initialized as fixed values whereas in reality these values are much more dynamic with flight speed changing based on environmental factors and operation focus. Logically the speed for firefighting should be different than for reaching the fire site as fast as possible. For the scope and analysis of this research fixed values are acceptable, however for a deeper analysis the dynamic, more complex values are needed.
+
+\subsubsection{Grid-Environment}
+
+Due to the lack of a three dimensional environment the grid based environment, while ensuring easy computation, lacks the details a real world environment has. The goal is to develop a more complex environment, one that incorporates realistic obstacles, dynamic weather patterns, and potentially uses external data sources like satellite imagery. The absence of seasonality is another limitation worth addressing in future developments, as the true nature of wildfires is inherently seasonal.
+
+\subsubsection{Cost and Emission Variability}
+The model uses fixed cost and emission parameters whereas in reality these values fluctuate and depend on factors such as day time and location, this model with parameters fitted to a specific location would yield drastically different results. For instance, electricity prices and emissions vary significantly across countries; Germany, as such, has noticeably higher electricity prices than Hungary (see Figure 1 \cite{ElectricityPriceStatistics}). While average values serve as a reasonable indicator for the scope of this research, incorporating more realistic and adaptive parameters is valuable for future development.
+
+\subsubsection{Agent Intelligence and Communication}
+
+While the model goes in the right direction by being built in Python to allow for meaningful AI implementation in the future, the agents are still lacking intelligent behavior. The path-finding algorithms could be seen as intelligent behavior since they use swarm properties to make decisions which appear smart. However, the limitation is that no autonomous decision-making framework is integrated. The risk assessment explored this direction: being a model-wide analyzer, which makes the drones all-knowing instead of enabling individual intelligent decision-making limits its potential benefits. More intelligent behavior could also result in too high computation time. Therefore, a trade-off between these two opposites has to be established to find an optimal solution.
+
+
+\subsection{Contributions}
+
+This thesis contributes an open-source, modular simulation environment that unifies drone and plane behavior, nature-inspired algorithms, emissions and cost modeling, and ML-based risk mapping. While prior work has focused either on UAV coordination \cite{Afghah2019} or novel suppression techniques \cite{fireBalls}, this project integrates these dimensions to allow direct comparison and scenario testing. It works as a baseline to build upon making the integration of potentially sustainable planes or other UAV's possible. It also demonstrates that performance trade-off's are essential when evaluating different approaches. Entailing that: certain infrastructure limitations might be advantages making certain strategies more favorable based on other parameters. This research synthesizes research from different disciplines, highlighting the potential of interdisciplinary research in the area of sustainable wildfire monitoring.
+From a practical perspective the findings of this thesis challenge the binary thinking often applied to wildfire management solutions. Rather than treating drones and traditional aircraft as competing technologies, dynamic and collaborative approaches between a range of technologies should be considered.
+The simulation framework provides a foundation for developing decision support tools.
+
+
+\subsection{Future Research}
+
+Given the strong foundation of this model several directions can be taken into consideration. The goal of this research would be a tool in which input a real world environment data works as input and then simulation runs given the specified environment taking into account seasonality, weather and other unforeseen changes in the environment. After simulating, the output would be an estimate of the cost and emissions which would be needed to effectively monitor the given environment. The tool can aid in deciding which firefighting approach to choose, based on differences in environments and local phenomena the result are different and provide valuable insight. This research was aimed to give a step in the right direction motivating cheaper and more sustainable wildfire prevention techniques.
+To name a few directions of development the following ideas could be pursued:
+\begin{enumerate}
+    \item The integration of realistic terrain, weather and wind models.
+    \item Connection to live data sources such as satellite data and weather API's.
+    \item Applying more complex AI-driven decision making such as deep-reinforcement learning to enable unsupervised swarm behavior.
+    \item Human-swarm interaction drawing inspiration form current research ensuring ethical implications and interactive planning \cite{lewisHumanFactorsIssues2012}.
+    \item More realistic parameters such as adaptive cost, emission and speed.
+\end{enumerate}
+
+Logically, there are seemingly endless possibilities in different directions. While it is beneficial to simulate the environment in greater complexity, there is a trade-off between over complicating the model by representing everything as realistically as possible and producing a fast, usable simulation. This fact must be carefully considered.
+
+\section{Conclusion}
+
+This thesis presents an integrated simulation framework for evaluating autonomous wildfire suppression strategies, combining agent-based modeling, nature-inspired path-finding, operational cost modeling, and machine learning-based risk analysis. By implementing drones, planes, and hybrid strategies all into a single simulation environment, the work enables a transparent comparison grounded in performance, sustainability, and cost-efficiency.
+
+The results show that drone swarms are not only technically viable, but outperform traditional aircraft given the set parameters. Hybrid systems offer faster suppression but with significant environmental and financial trade-offs compared to a drone-only approach. Nature-inspired algorithms like ACO and ABC enable swarm behavior in complex environments, while post-simulation clustering reveals potential for risk-aware deployment planning.
+
+Scientifically, this work contributes a modular and extensible tool for wildfire research. It challenges the domain by linking efficiency, and technological advancement without dismissing sustainability, all within a transparent and reproducible open-source framework. Societal, it encourages a shift toward scalable, lower-emission fire response systems that reduce dependency on costly solutions through aiding in taking informed decisions.
+
+As wildfires continue to grow in frequency and intensity, there is an urgent need for adaptable, sustainable, and fast deployable solutions. The work presented here offers a foundation for future research and policy making.
+
+
+\bibliographystyle{apalike}
+\bibliography{references}
 
 \appendix
 %ModelLogic
@@ -795,9 +1015,6 @@ water\_provided & 0.0 & Total water supplied to planes \\
 \end{longtable}
 \end{center}
 
-
-\bibliographystyle{apalike}
-\bibliography{references}
 
 
 \end{document}
