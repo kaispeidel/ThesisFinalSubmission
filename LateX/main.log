@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  19 JUN 2025 19:12
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  20 JUN 2025 14:48
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1222,112 +1222,123 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 
 [25]
 
-LaTeX Warning: Reference `sec:model_complexity' on page 26 undefined on input line 553.
-
-
-
 [26]
-<figures/A*_agent_paths.jpeg, id=519, 807.2559pt x 686.8059pt>
+
+LaTeX Warning: Reference `sec:model_complexity' on page 27 undefined on input line 554.
+
+<figures/A*_agent_paths.jpeg, id=516, 807.2559pt x 686.8059pt>
 File: figures/A*_agent_paths.jpeg Graphic file (type jpg)
 <use figures/A*_agent_paths.jpeg>
-Package pdftex.def Info: figures/A*_agent_paths.jpeg  used on input line 559.
+Package pdftex.def Info: figures/A*_agent_paths.jpeg  used on input line 560.
 (pdftex.def)             Requested size: 358.50473pt x 305.0041pt.
-
-
-[27 <./figures/A*_agent_paths.jpeg>]
-<figures/ACO_agent_paths.jpeg, id=528, 809.6649pt x 691.8648pt>
+<figures/ACO_agent_paths.jpeg, id=519, 809.6649pt x 691.8648pt>
 File: figures/ACO_agent_paths.jpeg Graphic file (type jpg)
 <use figures/ACO_agent_paths.jpeg>
-Package pdftex.def Info: figures/ACO_agent_paths.jpeg  used on input line 568.
+Package pdftex.def Info: figures/ACO_agent_paths.jpeg  used on input line 569.
 (pdftex.def)             Requested size: 358.50473pt x 306.34283pt.
-<figures/Artificial_Bee_Colony_agent_paths.jpeg, id=530, 3410.7425pt x 2904.8525pt>
+
+
+[27]
+
+[28 <./figures/A*_agent_paths.jpeg>]
+
+[29 <./figures/ACO_agent_paths.jpeg>]
+<figures/Artificial_Bee_Colony_agent_paths.jpeg, id=539, 3410.7425pt x 2904.8525pt>
 File: figures/Artificial_Bee_Colony_agent_paths.jpeg Graphic file (type jpg)
 <use figures/Artificial_Bee_Colony_agent_paths.jpeg>
-Package pdftex.def Info: figures/Artificial_Bee_Colony_agent_paths.jpeg  used on input line 577.
+Package pdftex.def Info: figures/Artificial_Bee_Colony_agent_paths.jpeg  used on input line 578.
 (pdftex.def)             Requested size: 358.50473pt x 305.30663pt.
 
 
-[28 <./figures/ACO_agent_paths.jpeg>]
-
-LaTeX Warning: Reference `fig:hybrid_paths' on page 29 undefined on input line 583.
+LaTeX Warning: Reference `fig:hybrid_paths' on page 30 undefined on input line 584.
 
 
-Overfull \hbox (2.5013pt too wide) in paragraph at lines 582--584
+Overfull \hbox (2.5013pt too wide) in paragraph at lines 583--585
 []\T1/pplj/m/n/10.95 (-20) Drones demon-strate ef-fi-cient re-source man-age-ment by clus-ter-ing around
  []
 
-<figures/Firefighting_Plane_agent_paths.jpeg, id=536, 859.2903pt x 694.0329pt>
+
+
+[30 <./figures/Artificial_Bee_Colony_agent_paths.jpeg>]
+<figures/Firefighting_Plane_agent_paths.jpeg, id=546, 859.2903pt x 694.0329pt>
 File: figures/Firefighting_Plane_agent_paths.jpeg Graphic file (type jpg)
 <use figures/Firefighting_Plane_agent_paths.jpeg>
-Package pdftex.def Info: figures/Firefighting_Plane_agent_paths.jpeg  used on input line 587.
+Package pdftex.def Info: figures/Firefighting_Plane_agent_paths.jpeg  used on input line 588.
 (pdftex.def)             Requested size: 358.50473pt x 289.55383pt.
 
 
-[29 <./figures/Artificial_Bee_Colony_agent_paths.jpeg>]
+LaTeX Warning: Reference `sec:suppression_analysis' on page 31 undefined on input line 594.
 
-LaTeX Warning: Reference `sec:suppression_analysis' on page 30 undefined on input line 593.
-
-<figures/Hybrid_agent_paths.jpeg, id=545, 852.786pt x 692.8284pt>
+<figures/Hybrid_agent_paths.jpeg, id=549, 852.786pt x 692.8284pt>
 File: figures/Hybrid_agent_paths.jpeg Graphic file (type jpg)
 <use figures/Hybrid_agent_paths.jpeg>
-Package pdftex.def Info: figures/Hybrid_agent_paths.jpeg  used on input line 597.
+Package pdftex.def Info: figures/Hybrid_agent_paths.jpeg  used on input line 598.
 (pdftex.def)             Requested size: 358.50473pt x 291.25023pt.
 
 
-[30 <./figures/Firefighting_Plane_agent_paths.jpeg>]
+[31 <./figures/Firefighting_Plane_agent_paths.jpeg>]
 
-[31 <./figures/Hybrid_agent_paths.jpeg>]
-<figures/fire_progression_analysis.jpeg, id=556, 832.0686pt x 485.4135pt>
+[32 <./figures/Hybrid_agent_paths.jpeg>]
+<figures/fire_progression_analysis.jpeg, id=561, 832.0686pt x 485.4135pt>
 File: figures/fire_progression_analysis.jpeg Graphic file (type jpg)
 <use figures/fire_progression_analysis.jpeg>
-Package pdftex.def Info: figures/fire_progression_analysis.jpeg  used on input line 615.
+Package pdftex.def Info: figures/fire_progression_analysis.jpeg  used on input line 616.
 (pdftex.def)             Requested size: 358.50473pt x 209.14592pt.
-<figures/fire_extinction_comparison.jpeg, id=558, 3020.28375pt x 1677.26625pt>
+<figures/fire_extinction_comparison.jpeg, id=563, 3020.28375pt x 1677.26625pt>
 File: figures/fire_extinction_comparison.jpeg Graphic file (type jpg)
 <use figures/fire_extinction_comparison.jpeg>
-Package pdftex.def Info: figures/fire_extinction_comparison.jpeg  used on input line 625.
+Package pdftex.def Info: figures/fire_extinction_comparison.jpeg  used on input line 626.
 (pdftex.def)             Requested size: 358.50473pt x 199.08786pt.
 
 
-[32]
-
-[33 <./figures/fire_progression_analysis.jpeg> <./figures/fire_extinction_comparison.jpeg>]
-<figures/resource_analysis_log.jpeg, id=571, 821.469pt x 491.6769pt>
+[33 <./figures/fire_progression_analysis.jpeg>]
+<figures/resource_analysis_log.jpeg, id=573, 821.469pt x 491.6769pt>
 File: figures/resource_analysis_log.jpeg Graphic file (type jpg)
 <use figures/resource_analysis_log.jpeg>
-Package pdftex.def Info: figures/resource_analysis_log.jpeg  used on input line 640.
+Package pdftex.def Info: figures/resource_analysis_log.jpeg  used on input line 637.
 (pdftex.def)             Requested size: 358.50473pt x 214.58295pt.
 
 
-[34 <./figures/resource_analysis_log.jpeg>]
-<figures/computational.jpg, id=580, 1194.4625pt x 752.8125pt>
+[34 <./figures/fire_extinction_comparison.jpeg>]
+
+[35 <./figures/resource_analysis_log.jpeg>]
+<figures/computational.jpg, id=589, 1194.4625pt x 752.8125pt>
 File: figures/computational.jpg Graphic file (type jpg)
 <use figures/computational.jpg>
-Package pdftex.def Info: figures/computational.jpg  used on input line 675.
+Package pdftex.def Info: figures/computational.jpg  used on input line 673.
 (pdftex.def)             Requested size: 358.50473pt x 225.94887pt.
 
 
-[35 <./figures/computational.jpg>]
-<figures/enhanced_fire_risk_analysis.png, id=590, 821.2281pt x 714.9912pt>
-File: figures/enhanced_fire_risk_analysis.png Graphic file (type png)
-<use figures/enhanced_fire_risk_analysis.png>
-Package pdftex.def Info: figures/enhanced_fire_risk_analysis.png  used on input line 687.
-(pdftex.def)             Requested size: 358.50473pt x 312.12056pt.
+[36 <./figures/computational.jpg>]
+<figures/enhanced_fire_risk_analysis.jpeg, id=599, 839.5365pt x 716.6775pt>
+File: figures/enhanced_fire_risk_analysis.jpeg Graphic file (type jpg)
+<use figures/enhanced_fire_risk_analysis.jpeg>
+Package pdftex.def Info: figures/enhanced_fire_risk_analysis.jpeg  used on input line 685.
+(pdftex.def)             Requested size: 358.50473pt x 306.03288pt.
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 688.
+(Font)              scaled to size 8.50006pt on input line 686.
 
 
-[36 <./figures/enhanced_fire_risk_analysis.png>]
+[37 <./figures/enhanced_fire_risk_analysis.jpeg>]
 
-[37]
+Package siunitx Info: Option "separate-uncertainty" has been deprecated in
+(siunitx)             this release.
+(siunitx)             
+(siunitx)             Use "uncertainty-mode = separate" as a replacement.
+
+
 
 [38]
 
 [39]
 
-[40] (./main.bbl
+[40]
 
 [41]
+
+[42] (./main.bbl
+
+[43]
 Underfull \hbox (badness 5359) in paragraph at lines 48--52
 \T1/pplj/m/n/10.95 (+20) and af-ford-able.  [][]$\T1/fvm/m/n/10.95 https : / / www . lockheedmartin . com / content / dam /
  []
@@ -1339,13 +1350,11 @@ Underfull \hbox (badness 10000) in paragraph at lines 48--52
 
 
 
-[42]
-
-[43]
-
 [44]
 
 [45]
+
+[46]
 Underfull \hbox (badness 1189) in paragraph at lines 254--258
 \T1/pplj/m/n/10.95 (+20) En-vi-ron-ment Pro-gram.  [][]$\T1/fvm/m/n/10.95 https : / / www . unep . org / resources / report /
  []
@@ -1357,127 +1366,127 @@ Overfull \hbox (3.60703pt too wide) in paragraph at lines 254--258
 
 
 
-[46])
-<figures/modellogic.png, id=682, 2338.7375pt x 3854.4pt>
+[47])
+<figures/modellogic.png, id=687, 2338.7375pt x 3854.4pt>
 File: figures/modellogic.png Graphic file (type png)
 <use figures/modellogic.png>
-Package pdftex.def Info: figures/modellogic.png  used on input line 785.
+Package pdftex.def Info: figures/modellogic.png  used on input line 799.
 (pdftex.def)             Requested size: 250.95221pt x 413.57536pt.
 
-Overfull \hbox (24.61835pt too wide) in alignment at lines 792--797
+
+[48]
+Overfull \hbox (24.61835pt too wide) in alignment at lines 806--811
  [] [] [] 
  []
 
 
-Overfull \hbox (24.61835pt too wide) in alignment at lines 797--804
+Overfull \hbox (24.61835pt too wide) in alignment at lines 811--818
  [] [] [] 
  []
 
 
-Overfull \hbox (24.61835pt too wide) in alignment at lines 804--808
+Overfull \hbox (24.61835pt too wide) in alignment at lines 818--822
  [] [] [] 
  []
 
 
-Overfull \hbox (24.61835pt too wide) in alignment at lines 808--811
+Overfull \hbox (24.61835pt too wide) in alignment at lines 822--825
  [] [] [] 
  []
 
 
-Overfull \hbox (35.24397pt too wide) in paragraph at lines 818--818
+Overfull \hbox (35.24397pt too wide) in paragraph at lines 832--832
 []|\T1/pplj/m/n/10.95 (-20) ``water_station''|  
  []
 
 
-Overfull \hbox (18.24919pt too wide) in paragraph at lines 827--828
+Overfull \hbox (18.24919pt too wide) in paragraph at lines 841--842
 []|\T1/pplj/m/n/10.95 (-20) multicolumn3l\T1/pplj/b/n/10.95 (-20) Environmental 
  []
 
 
-Overfull \hbox (24.61835pt too wide) in alignment at lines 811--844
+Overfull \hbox (24.61835pt too wide) in alignment at lines 825--858
+ [] [] [] 
+ []
+
+[49 <./figures/modellogic.png>]
+Overfull \hbox (24.61835pt too wide) in alignment at lines 864--869
  [] [] [] 
  []
 
 
-
-[47 <./figures/modellogic.png>]
-Overfull \hbox (24.61835pt too wide) in alignment at lines 850--855
+Overfull \hbox (24.61835pt too wide) in alignment at lines 869--876
  [] [] [] 
  []
 
 
-Overfull \hbox (24.61835pt too wide) in alignment at lines 855--862
+Overfull \hbox (24.61835pt too wide) in alignment at lines 876--881
  [] [] [] 
  []
 
 
-Overfull \hbox (24.61835pt too wide) in alignment at lines 862--867
+Overfull \hbox (24.61835pt too wide) in alignment at lines 881--884
  [] [] [] 
  []
 
 
-Overfull \hbox (24.61835pt too wide) in alignment at lines 867--870
- [] [] [] 
- []
-
-
-Overfull \hbox (49.31558pt too wide) in paragraph at lines 876--876
+Overfull \hbox (49.31558pt too wide) in paragraph at lines 890--890
 []|\T1/pplj/m/n/10.95 (-20) ``recharge_station''|  
  []
 
 
-Overfull \hbox (24.61835pt too wide) in alignment at lines 870--903
- [] [] [] 
- []
-
-[48]
-Overfull \hbox (24.61835pt too wide) in alignment at lines 913--918
- [] [] [] 
- []
-
-
-Overfull \hbox (24.61835pt too wide) in alignment at lines 918--925
- [] [] [] 
- []
-
-
-Overfull \hbox (24.61835pt too wide) in alignment at lines 925--929
- [] [] [] 
- []
-
-
-Overfull \hbox (24.61835pt too wide) in alignment at lines 929--932
- [] [] [] 
- []
-
-
-Overfull \hbox (10.63751pt too wide) in paragraph at lines 955--955
-[]|\T1/pplj/m/n/10.95 (-20) apply_water(water_amount)|  
- []
-
-
-Overfull \hbox (24.61835pt too wide) in alignment at lines 932--960
- [] [] [] 
- []
-
-[49]
-Overfull \hbox (24.61835pt too wide) in alignment at lines 965--970
- [] [] [] 
- []
-
-
-Overfull \hbox (7.35637pt too wide) in paragraph at lines 975--975
-[]|\T1/pplj/m/n/10.95 (-20) ``runway''|  
- []
-
-
-Overfull \hbox (24.61835pt too wide) in alignment at lines 970--1015
+Overfull \hbox (24.61835pt too wide) in alignment at lines 884--917
  [] [] [] 
  []
 
 [50]
+Overfull \hbox (24.61835pt too wide) in alignment at lines 927--932
+ [] [] [] 
+ []
 
-[51] (./main.aux)
+
+Overfull \hbox (24.61835pt too wide) in alignment at lines 932--939
+ [] [] [] 
+ []
+
+
+Overfull \hbox (24.61835pt too wide) in alignment at lines 939--943
+ [] [] [] 
+ []
+
+
+Overfull \hbox (24.61835pt too wide) in alignment at lines 943--946
+ [] [] [] 
+ []
+
+
+Overfull \hbox (10.63751pt too wide) in paragraph at lines 969--969
+[]|\T1/pplj/m/n/10.95 (-20) apply_water(water_amount)|  
+ []
+
+
+Overfull \hbox (24.61835pt too wide) in alignment at lines 946--974
+ [] [] [] 
+ []
+
+[51]
+Overfull \hbox (24.61835pt too wide) in alignment at lines 979--984
+ [] [] [] 
+ []
+
+
+Overfull \hbox (7.35637pt too wide) in paragraph at lines 989--989
+[]|\T1/pplj/m/n/10.95 (-20) ``runway''|  
+ []
+
+
+Overfull \hbox (24.61835pt too wide) in alignment at lines 984--1029
+ [] [] [] 
+ []
+
+[52]
+
+[53] (./main.aux)
  ***********
 LaTeX2e <2024-11-01> patch level 2
 L3 programming layer <2025-01-18>
@@ -1488,18 +1497,18 @@ LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
- 34732 strings out of 473190
- 715595 string characters out of 5704335
- 1132149 words of memory out of 5000000
- 56574 multiletter control sequences out of 15000+600000
+ 34723 strings out of 473190
+ 715500 string characters out of 5704335
+ 1131267 words of memory out of 5000000
+ 56568 multiletter control sequences out of 15000+600000
  712752 words of font info for 628 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 123i,23n,121p,1563b,1320s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ 123i,23n,121p,1687b,1317s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/fpl/fplbj8a.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/mathpazo/fplmb.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/mathpazo/fplmr.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/fpl/fplrc8a.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/fpl/fplrij8a.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
-Output written on main.pdf (53 pages, 9984840 bytes).
+Output written on main.pdf (55 pages, 10005041 bytes).
 PDF statistics:
- 966 PDF objects out of 1000 (max. 8388607)
- 861 compressed objects within 9 object streams
- 216 named destinations out of 1000 (max. 500000)
- 150003 words of extra memory for PDF output out of 154059 (max. 10000000)
+ 951 PDF objects out of 1000 (max. 8388607)
+ 845 compressed objects within 9 object streams
+ 213 named destinations out of 1000 (max. 500000)
+ 149939 words of extra memory for PDF output out of 154059 (max. 10000000)
 
