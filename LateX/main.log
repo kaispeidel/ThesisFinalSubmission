@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  23 JUN 2025 17:49
+This is pdfTeX, Version 3.141592653-2.6-1.40.27 (TeX Live 2025/Homebrew) (preloaded format=pdflatex 2025.3.15)  23 JUN 2025 17:52
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1163,13 +1163,13 @@ Package microtype Info: Character `029' is missing
 [9]
 
 [10]
-LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 204.
+LaTeX Font Info:    Trying to load font information for TS1+lmr on input line 205.
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/ts1lmr.fd
 File: ts1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
 
 [11{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-ts1.enc}{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-rm.enc}]
-LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 222.
+LaTeX Font Info:    Trying to load font information for T1+lmtt on input line 223.
  (/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/tex/latex/lm/t1lmtt.fd
 File: t1lmtt.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
 )
@@ -1182,10 +1182,10 @@ Package microtype Info: Loading generic protrusion settings for font family
 [12]
 
 [13]
-<figures/DroneAgent_Logic.png, id=355, 2542.49875pt x 3854.4pt>
+<figures/DroneAgent_Logic.png, id=354, 2542.49875pt x 3854.4pt>
 File: figures/DroneAgent_Logic.png Graphic file (type png)
 <use figures/DroneAgent_Logic.png>
-Package pdftex.def Info: figures/DroneAgent_Logic.png  used on input line 307.
+Package pdftex.def Info: figures/DroneAgent_Logic.png  used on input line 308.
 (pdftex.def)             Requested size: 358.50473pt x 543.49402pt.
 
 
@@ -1209,31 +1209,31 @@ Package siunitx Warning: Unit macro \nauticalmile has been deprecated in this
 [17{/opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/enc/dvips/lm/lm-mathsy.enc}]
 
 [18]
-Overfull \hbox (3.80536pt too wide) in paragraph at lines 380--380
+Overfull \hbox (3.80536pt too wide) in paragraph at lines 381--381
 []|\T1/lmr/m/n/10 (-20) water_drop_rate| 
  []
 
 
-Overfull \hbox (10.56184pt too wide) in paragraph at lines 389--389
+Overfull \hbox (10.56184pt too wide) in paragraph at lines 390--390
 []|\T1/lmr/m/n/10 (-20) max_time_at_fire| 
  []
 
 
-Overfull \hbox (1.36668pt too wide) in paragraph at lines 394--394
+Overfull \hbox (1.36668pt too wide) in paragraph at lines 395--395
 []|\T1/lmr/m/n/10 (-20) operational_cost| 
  []
 
-<figures/plane_logic.png, id=417, 1940.24875pt x 3854.4pt>
+<figures/plane_logic.png, id=416, 1940.24875pt x 3854.4pt>
 File: figures/plane_logic.png Graphic file (type png)
 <use figures/plane_logic.png>
-Package pdftex.def Info: figures/plane_logic.png  used on input line 412.
+Package pdftex.def Info: figures/plane_logic.png  used on input line 413.
 (pdftex.def)             Requested size: 286.80487pt x 569.72476pt.
 
 
 [19]
 
 [20 <./figures/plane_logic.png>]
-Overfull \hbox (3.868pt too wide) in paragraph at lines 425--426
+Overfull \hbox (3.868pt too wide) in paragraph at lines 426--427
 []\T1/lmr/m/n/10.95 (-20) Ant Colony Op-ti-miza-tion (ACO): Prob-a-bilis-tic method us-ing pheromone
  []
 
@@ -1248,79 +1248,79 @@ LaTeX Warning: `!h' float specifier changed to `!ht'.
 [22]
 
 [23]
-<figures/A*_agent_paths.jpeg, id=509, 807.2559pt x 686.8059pt>
+<figures/A*_agent_paths.jpeg, id=508, 807.2559pt x 686.8059pt>
 File: figures/A*_agent_paths.jpeg Graphic file (type jpg)
 <use figures/A*_agent_paths.jpeg>
-Package pdftex.def Info: figures/A*_agent_paths.jpeg  used on input line 512.
+Package pdftex.def Info: figures/A*_agent_paths.jpeg  used on input line 513.
 (pdftex.def)             Requested size: 322.65205pt x 274.50789pt.
 
 
 [24 <./figures/A*_agent_paths.jpeg>]
-<figures/ACO_agent_paths.jpeg, id=520, 809.6649pt x 691.8648pt>
+<figures/ACO_agent_paths.jpeg, id=519, 809.6649pt x 691.8648pt>
 File: figures/ACO_agent_paths.jpeg Graphic file (type jpg)
 <use figures/ACO_agent_paths.jpeg>
-Package pdftex.def Info: figures/ACO_agent_paths.jpeg  used on input line 521.
+Package pdftex.def Info: figures/ACO_agent_paths.jpeg  used on input line 522.
 (pdftex.def)             Requested size: 322.65205pt x 275.70644pt.
-<figures/Artificial_Bee_Colony_agent_paths.jpeg, id=522, 3410.7425pt x 2904.8525pt>
+<figures/Artificial_Bee_Colony_agent_paths.jpeg, id=521, 3410.7425pt x 2904.8525pt>
 File: figures/Artificial_Bee_Colony_agent_paths.jpeg Graphic file (type jpg)
 <use figures/Artificial_Bee_Colony_agent_paths.jpeg>
-Package pdftex.def Info: figures/Artificial_Bee_Colony_agent_paths.jpeg  used on input line 530.
+Package pdftex.def Info: figures/Artificial_Bee_Colony_agent_paths.jpeg  used on input line 531.
 (pdftex.def)             Requested size: 322.65205pt x 274.76709pt.
 
 
 [25 <./figures/ACO_agent_paths.jpeg>]
-<figures/Firefighting_Plane_agent_paths.jpeg, id=530, 859.2903pt x 694.0329pt>
+<figures/Firefighting_Plane_agent_paths.jpeg, id=529, 859.2903pt x 694.0329pt>
 File: figures/Firefighting_Plane_agent_paths.jpeg Graphic file (type jpg)
 <use figures/Firefighting_Plane_agent_paths.jpeg>
-Package pdftex.def Info: figures/Firefighting_Plane_agent_paths.jpeg  used on input line 542.
+Package pdftex.def Info: figures/Firefighting_Plane_agent_paths.jpeg  used on input line 543.
 (pdftex.def)             Requested size: 322.65205pt x 260.60057pt.
 
 
 [26 <./figures/Artificial_Bee_Colony_agent_paths.jpeg>]
-<figures/Hybrid_agent_paths.jpeg, id=538, 852.786pt x 692.8284pt>
+<figures/Hybrid_agent_paths.jpeg, id=537, 852.786pt x 692.8284pt>
 File: figures/Hybrid_agent_paths.jpeg Graphic file (type jpg)
 <use figures/Hybrid_agent_paths.jpeg>
-Package pdftex.def Info: figures/Hybrid_agent_paths.jpeg  used on input line 549.
+Package pdftex.def Info: figures/Hybrid_agent_paths.jpeg  used on input line 550.
 (pdftex.def)             Requested size: 322.65205pt x 262.12521pt.
 
 
 [27 <./figures/Firefighting_Plane_agent_paths.jpeg> <./figures/Hybrid_agent_paths.jpeg>]
-<figures/fire_progression_analysis.jpeg, id=544, 832.0686pt x 485.4135pt>
+<figures/fire_progression_analysis.jpeg, id=543, 832.0686pt x 485.4135pt>
 File: figures/fire_progression_analysis.jpeg Graphic file (type jpg)
 <use figures/fire_progression_analysis.jpeg>
-Package pdftex.def Info: figures/fire_progression_analysis.jpeg  used on input line 567.
+Package pdftex.def Info: figures/fire_progression_analysis.jpeg  used on input line 568.
 (pdftex.def)             Requested size: 358.50473pt x 209.14592pt.
 
 
 [28 <./figures/fire_progression_analysis.jpeg>]
-<figures/fire_extinction_comparison.jpeg, id=551, 3020.28375pt x 1677.26625pt>
+<figures/fire_extinction_comparison.jpeg, id=550, 3020.28375pt x 1677.26625pt>
 File: figures/fire_extinction_comparison.jpeg Graphic file (type jpg)
 <use figures/fire_extinction_comparison.jpeg>
-Package pdftex.def Info: figures/fire_extinction_comparison.jpeg  used on input line 577.
+Package pdftex.def Info: figures/fire_extinction_comparison.jpeg  used on input line 578.
 (pdftex.def)             Requested size: 358.50473pt x 199.08786pt.
 
 
 [29 <./figures/fire_extinction_comparison.jpeg>]
-<figures/resource_analysis_log.jpeg, id=562, 821.469pt x 491.6769pt>
+<figures/resource_analysis_log.jpeg, id=561, 821.469pt x 491.6769pt>
 File: figures/resource_analysis_log.jpeg Graphic file (type jpg)
 <use figures/resource_analysis_log.jpeg>
-Package pdftex.def Info: figures/resource_analysis_log.jpeg  used on input line 589.
+Package pdftex.def Info: figures/resource_analysis_log.jpeg  used on input line 590.
 (pdftex.def)             Requested size: 358.50473pt x 214.58295pt.
 
 
 [30 <./figures/resource_analysis_log.jpeg>]
-<figures/computational.jpg, id=572, 1194.4625pt x 752.8125pt>
+<figures/computational.jpg, id=571, 1194.4625pt x 752.8125pt>
 File: figures/computational.jpg Graphic file (type jpg)
 <use figures/computational.jpg>
-Package pdftex.def Info: figures/computational.jpg  used on input line 623.
+Package pdftex.def Info: figures/computational.jpg  used on input line 624.
 (pdftex.def)             Requested size: 358.50473pt x 225.94887pt.
 
 
 [31 <./figures/computational.jpg>]
-<figures/enhanced_fire_risk_analysis.jpeg, id=581, 718.6047pt x 709.4505pt>
+<figures/enhanced_fire_risk_analysis.jpeg, id=580, 718.6047pt x 709.4505pt>
 File: figures/enhanced_fire_risk_analysis.jpeg Graphic file (type jpg)
 <use figures/enhanced_fire_risk_analysis.jpeg>
-Package pdftex.def Info: figures/enhanced_fire_risk_analysis.jpeg  used on input line 635.
+Package pdftex.def Info: figures/enhanced_fire_risk_analysis.jpeg  used on input line 636.
 (pdftex.def)             Requested size: 358.50473pt x 353.93413pt.
 
 
@@ -1370,10 +1370,10 @@ Overfull \hbox (12.72325pt too wide) in paragraph at lines 278--282
  []
 
 )
-<figures/modellogic.png, id=666, 2338.7375pt x 3854.4pt>
+<figures/modellogic.png, id=665, 2338.7375pt x 3854.4pt>
 File: figures/modellogic.png Graphic file (type png)
 <use figures/modellogic.png>
-Package pdftex.def Info: figures/modellogic.png  used on input line 739.
+Package pdftex.def Info: figures/modellogic.png  used on input line 740.
 (pdftex.def)             Requested size: 358.50473pt x 590.83875pt.
 
 
@@ -1383,62 +1383,62 @@ Overfull \vbox (47.35913pt too high) has occurred while \output is active []
 
 
 [43 <./figures/modellogic.png>]
-Underfull \hbox (badness 10000) in paragraph at lines 751--751
+Underfull \hbox (badness 10000) in paragraph at lines 752--752
 []|\T1/lmr/bx/n/10 (+20) Default
  []
 
 
-Overfull \hbox (12.85529pt too wide) in paragraph at lines 758--758
+Overfull \hbox (12.85529pt too wide) in paragraph at lines 759--759
 []|\T1/lmr/m/n/10 (-20) ``water_station''| 
  []
 
 
-Overfull \hbox (6.92831pt too wide) in paragraph at lines 749--782
+Overfull \hbox (6.92831pt too wide) in paragraph at lines 750--783
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 791--791
+Underfull \hbox (badness 10000) in paragraph at lines 792--792
 []|\T1/lmr/bx/n/10 (+20) Default
  []
 
 
-Overfull \hbox (24.86044pt too wide) in paragraph at lines 797--797
+Overfull \hbox (24.86044pt too wide) in paragraph at lines 798--798
 []|\T1/lmr/m/n/10 (-20) ``recharge_station''| 
  []
 
 
-Overfull \hbox (6.92831pt too wide) in paragraph at lines 789--821
+Overfull \hbox (6.92831pt too wide) in paragraph at lines 790--822
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 830--830
+Underfull \hbox (badness 10000) in paragraph at lines 831--831
 []|\T1/lmr/bx/n/10 (+20) Default
  []
 
 
-Underfull \hbox (badness 1466) in paragraph at lines 847--848
+Underfull \hbox (badness 1466) in paragraph at lines 848--849
 []|\T1/lmr/m/n/10 (+20) Minimum steps be-tween spread at-
  []
 
 
-Overfull \hbox (11.99329pt too wide) in paragraph at lines 851--851
+Overfull \hbox (11.99329pt too wide) in paragraph at lines 852--852
 []|\T1/lmr/m/n/10 (-20) apply_water(water_amount)| 
  []
 
 
-Overfull \hbox (6.92831pt too wide) in paragraph at lines 828--857
+Overfull \hbox (6.92831pt too wide) in paragraph at lines 829--858
  [][] 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 866--866
+Underfull \hbox (badness 10000) in paragraph at lines 867--867
 []|\T1/lmr/bx/n/10 (+20) Default
  []
 
 
-Overfull \hbox (6.92831pt too wide) in paragraph at lines 864--907
+Overfull \hbox (6.92831pt too wide) in paragraph at lines 865--908
  [][] 
  []
 
@@ -1465,10 +1465,10 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  123i,23n,121p,1718b,1338s stack positions out of 10000i,1000n,20000p,200000b,200000s
 </opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmbx10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmbx8.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmcsc10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmmi10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmr8.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmri10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmsy10.pfb></opt/homebrew/Cellar/texlive/20250308_1/share/texmf-dist/fonts/type1/public/lm/lmtt10.pfb>
-Output written on main.pdf (49 pages, 10313542 bytes).
+Output written on main.pdf (49 pages, 10313423 bytes).
 PDF statistics:
- 921 PDF objects out of 1000 (max. 8388607)
- 819 compressed objects within 9 object streams
+ 920 PDF objects out of 1000 (max. 8388607)
+ 818 compressed objects within 9 object streams
  195 named destinations out of 1000 (max. 500000)
  108939 words of extra memory for PDF output out of 128383 (max. 10000000)
 
