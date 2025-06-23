@@ -11,6 +11,12 @@ Alkhatib, A.~A., Mohammad~Jaber, K., and Al-Madi, M. (2024).
 \newblock A {{Proposed Automatic Forest Fire Extinguishing}} and {{Prevention System Using Drones}}.
 \newblock In {\em 2024 {{IEEE International Humanitarian Technologies Conference}} ({{IHTC}})}, pages 1--6.
 
+\bibitem[{Anthropic}, 2024]{claudeai}
+{Anthropic} (2024).
+\newblock Claude ai natural language generation service.
+\newblock \url{https://www.anthropic.com}.
+\newblock Accessed June, 2025.
+
 \bibitem[Asavasirikulkij and Hanif, 2023]{asavasirikulkij2023human_Workload}
 Asavasirikulkij, C. and Hanif, M. (2023).
 \newblock Human workload evaluation of drone swarm formation control using virtual reality interface.
@@ -49,6 +55,12 @@ Corporation, L.~M. (2018).
 \newblock C-130j super hercules: Proven, ready, reliable, and affordable.
 \newblock \url{https://www.lockheedmartin.com/content/dam/lockheed-martin/aero/documents/C-130J/MG180389_C-130Brochure_NewPurchase_Final_Web.pdf}.
 \newblock Brochure.
+
+\bibitem[{Corporation for Digital Scholarship}, 2025]{zotero}
+{Corporation for Digital Scholarship} (2025).
+\newblock Zotero.
+\newblock \url{https://www.zotero.org}.
+\newblock Version 7.0, reference management software, Vienna, VA, USA.
 
 \bibitem[DJI, 2025]{DJIAGRAST50}
 DJI (2025).
@@ -190,11 +202,23 @@ Macal, C. and North, M. (2005).
 \newblock Tutorial on agent-based modeling and simulation.
 \newblock In {\em Proceedings of the Winter Simulation Conference, 2005.}, pages 14 pp.--.
 
+\bibitem[{Microsoft Corporation}, 2025]{github_copilot}
+{Microsoft Corporation} (2025).
+\newblock Github copilot.
+\newblock \url{https://github.com/features/copilot}.
+\newblock AI pair programming tool.
+
 \bibitem[Moreno-Espino et~al., 2025]{MorenoEspino2025}
 Moreno-Espino, M., Reyes-Valdés, L.~M., Benitez, R.~R., López-González, A., Yáñez-Márquez, C., and Hadfeg-Fernández, Y. (2025).
 \newblock Intelligent agent-based simulation of fire propagation in multiple environments.
 \newblock {\em Contemporary Mathematics}, 6(3):3033--3035.
 \newblock [cited 2025 Jun. 13].
+
+\bibitem[{OpenAI}, 2023]{openai_chatgpt}
+{OpenAI} (2023).
+\newblock Chatgpt (march 14 version) [large language model].
+\newblock \url{https://chat.openai.com/chat}.
+\newblock Accessed June 22, 2025.
 
 \bibitem[pandas~development team, 2020]{reback2020pandas}
 pandas~development team, T. (2020).
